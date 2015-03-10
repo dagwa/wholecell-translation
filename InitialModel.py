@@ -130,11 +130,29 @@ def create_model():
   check(r1.setId('r1'),                     'set reaction id')
   check(r1.setReversible(False),            'set reaction reversibility flag')
   check(r1.setFast(False),                  'set reaction "fast" attribute')
-
+ 
   species_ref1 = r1.createReactant()
   check(species_ref1,                       'create reactant')
   check(species_ref1.setSpecies('s1'),      'assign reactant species')
   check(species_ref1.setConstant(True),     'set "constant" on species ref 1')
-
+ 
   species_ref2 = r1.createProduct()
   check(species_ref2,                       'create product')
+  check(species_ref2.setSpecies('s2'),      'assign product species')
+  check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
+ 
+  math_ast = parseL3Formula('k * s1 * c1')
+  check(math_ast,                           'create AST for rate expression')
+ 
+  kinetic_law = r1.createKineticLaw()
+  check(kinetic_law,                        'create kinetic law')
+  check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
+ 
+  # And we're done creating the basic model.
+  # Now return a text string containing the model in XML format.
+ 
+  return writeSBMLToString(document)
+ 
+ 
+if __name__ == '__main__':
+  print(create_model())

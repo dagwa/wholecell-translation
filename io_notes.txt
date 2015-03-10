@@ -1,0 +1,28 @@
+Protein Monomers
+Read: 0
+Read/Write: 15 (some tRNA synthetases [others are complex]; elongation, initiation, recycling factors etc)
+Write: 467 (all except those with read/write)
+
+
+Protein Complexes
+Read: 4
+Read/Write: 17 (Ribosomes & some tRNA synthetases [others are monomer])
+Write: 0
+
+
+Metabolites
+Read: 0
+Read/Write: 52 (amino acids, ATP, GTP etc)
+Write: 5 (PPi, Pi, H+, AMP, GDP)
+
+
+Transcription Units
+Read: 0
+Read/Write: 0
+Write: 0
+
+
+RNAs
+Read: 0
+Read/Write: 522 (all, including tRNAs
+Write: 0

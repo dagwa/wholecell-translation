@@ -23,13 +23,8 @@ for i in range(1,len(your_list)): #skip the first one
     prot_len   = prot_len+[your_list[i][1]]
     sequence   = sequence+[your_list[i][2]]
 
-# print prot_names
-print prot_len[0]
-# print sequence[0]
-
 f.close()
-# extractProteinSequence.py
-# print prot_names
+
 
 
 
@@ -59,6 +54,17 @@ from libsbml import *
 
 
 
+def create_species(model, var_name):
+  s1 = model.createSpecies()
+  check(s1,                                 'create species s1')
+  check(s1.setName(var_name),                     'set species s1 name')
+  check(s1.setId(var_name),                     'set species s1 id')
+  check(s1.setCompartment('c'),            'set species s1 compartment')
+  check(s1.setConstant(False),              'set "constant" attribute on s1')
+  check(s1.setInitialAmount(0),             'set initial amount for s1')
+  check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
+  check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+  check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
 
 
 def check(value, message):
@@ -128,38 +134,22 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
   c1 = model.createCompartment()
   check(c1,                                 'create compartment')
-  check(c1.setId('c1'),                     'set compartment id')
+  check(c1.setId('c'),                     'set compartment id')
   check(c1.setConstant(True),               'set compartment "constant"')
   check(c1.setSize(1),                      'set compartment "size"')
   check(c1.setSpatialDimensions(3),         'set compartment dimensions')
   check(c1.setUnits('litre'),               'set compartment size units')
 
-  # Create two species inside this model, set the required attributes
-  # for each species in SBML Level 3 (which are the 'id', 'compartment',
-  # 'constant', 'hasOnlySubstanceUnits', and 'boundaryCondition'
-  # attributes), and initialize the amount of the species along with the
-  # units of the amount.
+  #############################################
+  # Create ribosome position species 
+  #############################################
 
-# for n in range(len(names)): 
-#   for p in range(int(lengthsofseq[n])):
-#     print names[n] + '_p' + str(p)
-
-n=0
-for p in range(2):
-  print names[n] + '_p' + str(p)
-
-  exec( names[n] + '_p' + str(p) + ' = model.createSpecies()')
+  for n in range(len(names)): 
+    for p in range(int(lengthsofseq[n])):
+      create_species(model, names[n] + '_p' + str(p))
 
 
-  s1 = model.createSpecies()
-  check(s1,                                 'create species s1')
-  check(s1.setId('s1'),                     'set species s1 id')
-  check(s1.setCompartment('c1'),            'set species s1 compartment')
-  check(s1.setConstant(False),              'set "constant" attribute on s1')
-  check(s1.setInitialAmount(5),             'set initial amount for s1')
-  check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
-  check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
-  check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+  
 
   # Create a parameter object inside this model, set the required
   # attributes 'id' and 'constant' for a parameter in SBML Level 3, and
@@ -204,8 +194,8 @@ for p in range(2):
   # And we're done creating the basic model.
   # Now return a text string containing the model in XML format.
  
-  return writeSBMLToString(document)
+  return writeSBMLToFile(document,'model1.xml')
  
  
 if __name__ == '__main__':
-  print(create_model())
+  print(create_model(prot_names, prot_len, sequence))

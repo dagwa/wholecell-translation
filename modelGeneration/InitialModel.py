@@ -1,12 +1,64 @@
+
+#################################
 # Initialization Block
+#################################
+
+
+# Get the Protein sequences
+import sys
+import csv
+
+
+prot_names=list()
+prot_len=list()
+sequence=list()
+
+f = open('ProtSeq.csv', 'rt')
+
+reader = csv.reader(f)
+your_list = list(reader)
+
+for i in range(1,len(your_list)): #skip the first one
+    prot_names = prot_names+[your_list[i][0]]
+    prot_len   = prot_len+[your_list[i][1]]
+    sequence   = sequence+[your_list[i][2]]
+
+# print prot_names
+print prot_len[0]
+# print sequence[0]
+
+f.close()
+# extractProteinSequence.py
+# print prot_names
+
+
+
+#  List of ribosome-bound mRNAs
+#  Lengths of nascent polypeptides (proteolysis tags)
+#  tRNA sequences of protein monomers and proteolysis tags 
+#  List of ribosome-bound mRNAs
+#  Lengths of nascent polypeptides (proteolysis tags)
+#  State of each ribosome: free, actively translating, or stalled
+#  Counts of mRNA, aminoacylated tRNA, and aminoacylated tmRNA species
+
+
+
+#
+# mRNAspecies = ['mRNA1', 'mRNA2']
+
 
 
 
 # Model builing Block
 
 
-import sys
+
 from libsbml import *
+
+
+
+
+
 
 
 def check(value, message):
@@ -31,7 +83,7 @@ def check(value, message):
     return
 
 
-def create_model():
+def create_model(names,lengthsofseq,sequenceAAs):
   """Returns a simple but complete SBML Level 3 model for illustration."""
 
   # Create an empty SBMLDocument object.  It's a good idea to check for
@@ -54,22 +106,22 @@ def create_model():
   model = document.createModel()
   check(model,                              'create model')
   check(model.setTimeUnits("second"),       'set model-wide time units')
-  check(model.setExtentUnits("mole"),       'set model units of extent')
-  check(model.setSubstanceUnits('mole'),    'set model substance units')
+  check(model.setExtentUnits("item"),       'set model units of extent')
+  check(model.setSubstanceUnits('item'),    'set model substance units')
 
   # Create a unit definition we will need later.  Note that SBML Unit
   # objects must have all four attributes 'kind', 'exponent', 'scale'
   # and 'multiplier' defined.
 
-  per_second = model.createUnitDefinition()
-  check(per_second,                         'create unit definition')
-  check(per_second.setId('per_second'),     'set unit definition id')
-  unit = per_second.createUnit()
-  check(unit,                               'create unit on per_second')
-  check(unit.setKind(UNIT_KIND_SECOND),     'set unit kind')
-  check(unit.setExponent(-1),               'set unit exponent')
-  check(unit.setScale(0),                   'set unit scale')
-  check(unit.setMultiplier(1),              'set unit multiplier')
+  # per_second = model.createUnitDefinition()
+  # check(per_second,                         'create unit definition')
+  # check(per_second.setId('per_second'),     'set unit definition id')
+  # unit = per_second.createUnit()
+  # check(unit,                               'create unit on per_second')
+  # check(unit.setKind(UNIT_KIND_SECOND),     'set unit kind')
+  # check(unit.setExponent(-1),               'set unit exponent')
+  # check(unit.setScale(0),                   'set unit scale')
+  # check(unit.setMultiplier(1),              'set unit multiplier')
 
   # Create a compartment inside this model, and set the required
   # attributes for an SBML compartment in SBML Level 3.
@@ -88,6 +140,17 @@ def create_model():
   # attributes), and initialize the amount of the species along with the
   # units of the amount.
 
+# for n in range(len(names)): 
+#   for p in range(int(lengthsofseq[n])):
+#     print names[n] + '_p' + str(p)
+
+n=0
+for p in range(2):
+  print names[n] + '_p' + str(p)
+
+  exec( names[n] + '_p' + str(p) + ' = model.createSpecies()')
+
+
   s1 = model.createSpecies()
   check(s1,                                 'create species s1')
   check(s1.setId('s1'),                     'set species s1 id')
@@ -97,16 +160,6 @@ def create_model():
   check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
   check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
   check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
-
-  s2 = model.createSpecies()
-  check(s2,                                 'create species s2')
-  check(s2.setId('s2'),                     'set species s2 id')
-  check(s2.setCompartment('c1'),            'set species s2 compartment')
-  check(s2.setConstant(False),              'set "constant" attribute on s2')
-  check(s2.setInitialAmount(0),             'set initial amount for s2')
-  check(s2.setSubstanceUnits('mole'),       'set substance units for s2')
-  check(s2.setBoundaryCondition(False),     'set "boundaryCondition" on s2')
-  check(s2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s2')
 
   # Create a parameter object inside this model, set the required
   # attributes 'id' and 'constant' for a parameter in SBML Level 3, and

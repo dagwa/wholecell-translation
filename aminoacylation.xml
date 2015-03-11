@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model substanceUnits="item" timeUnits="second" extentUnits="item">
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_second">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="c" spatialDimensions="3" size="0.01" units="litre" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s1" compartment="c" initialAmount="5" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s2" compartment="c" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="k" value="1" units="per_second" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="MG471_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ALA" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG471" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG471" constant="false"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="MG_292_TETRAMER"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG472_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ILE" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG472" constant="false"/>
+          <speciesReference species="MG_345_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_345_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG472" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG475_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG475" constant="false"/>
+          <speciesReference species="MG_005_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_005_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG475" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG479_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG479" constant="false"/>
+          <speciesReference species="MG_375_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_375_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG479" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG483_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CYS" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG483" constant="false"/>
+          <speciesReference species="MG_253_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_253_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG483" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG484_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PRO" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG484" constant="false"/>
+          <speciesReference species="MG_283_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_283_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG484" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG485_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MET" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG485" constant="false"/>
+          <speciesReference species="MG_021_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_021_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG485" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG486_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ILE" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG486" constant="false"/>
+          <speciesReference species="MG_345_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_345_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG486" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG487_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG487" constant="false"/>
+          <speciesReference species="MG_005_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_005_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG487" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG488_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MET" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG488" constant="false"/>
+          <speciesReference species="MG_021_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_021_DIMER" constant="false"/>
+          <speciesReference species="met_aminoacylated_MG488" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG488_Formyltransferase" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="met_aminoacylated_MG488" constant="false"/>
+          <speciesReference species="FTHF10" constant="false"/>
+          <speciesReference species="H2O" constant="false"/>
+          <speciesReference species="MG_365_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="THF" constant="false"/>
+          <speciesReference species="MG_365_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG488" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG489_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ASP" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG489" constant="false"/>
+          <speciesReference species="MG_036_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_036_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG489" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG490_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PHE" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG490" constant="false"/>
+          <speciesReference species="MG_194_195_TETRAMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_194_195_TETRAMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG490" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG492_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ARG" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG492" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG492" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG493_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="GLY" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG493" constant="false"/>
+          <speciesReference species="MG_251_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_251_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG493" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG495_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ARG" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG495" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG495" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG496_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="TRP" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG496" constant="false"/>
+          <speciesReference species="MG_126_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_126_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG496" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG497_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ARG" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG497" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_378_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG497" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG499_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="GLY" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG499" constant="false"/>
+          <speciesReference species="MG_251_DIMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_251_DIMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG499" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG500_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LEU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG500" constant="false"/>
+          <speciesReference species="MG_266_MONOMER" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="MG_266_MONOMER" constant="false"/>
+          <speciesReference species="aminoacylated_MG500" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG501_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LYS" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG501" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG501" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG502_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="GLU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG502" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="GLU_aminoacylated_MG502" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG502_Amidotransferase" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="GLU_aminoacylated_MG502" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="GLN" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ADP" constant="false"/>
+          <speciesReference species="PI" constant="false"/>
+          <speciesReference species="GLU" constant="false"/>
+          <speciesReference species="aminoacylated_MG502" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG503_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="TYR" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG503" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG503" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG504_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="TRP" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG504" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG504" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG506_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG506" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG506" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG507_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG507" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG507" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG508_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LEU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG508" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG508" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG509_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LYS" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG509" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG509" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG510_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="THR" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG510" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG510" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG511_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="VAL" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG511" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG511" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG512_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="THR" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG512" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG512" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG513_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="GLU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG513" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG513" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG514_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ASN" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG514" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG514" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG518_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="HIS" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG518" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG518" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG519_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LEU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG519" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG519" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG520_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LEU" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG520" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG520" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG523_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ARG" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG523" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG523" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> s1 </ci>
+              <ci> c1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

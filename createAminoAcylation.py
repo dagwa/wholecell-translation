@@ -1,28 +1,5 @@
 # misc data to integrate in to the code
 
-# Enzymes/Complexes Composition Gene Name(s)
-# Alanyl-tRNA synthetase (4) MG292 alaS
-# Arginyl-tRNA synthetase (1) MG378 argS
-# Aspartyl-tRNA synthetase (2) MG036 aspS
-# Asparaginyl-tRNA synthetase (2) MG113 asnS
-# Cysteinyl-tRNA synthetase (1) MG253 cysS
-# Glutamyl-tRNA synthetase (1) MG462 gltX
-# Glycyl-tRNA synthetase (2) MG251 glyS
-# Histidyl-tRNA synthetase (2) MG035 hisS
-# Isoleucyl-tRNA synthetase (1) MG345 ileS
-# Leucyl-tRNA synthetase (1) MG266 leuS
-# Lysyl-tRNA synthetase (2) MG136 lysS
-# Methionyl-tRNA synthetase (2) MG021 metG
-# Phenylalanyl-tRNA synthetase (2) MG194, (2) MG195 pheS, -
-# Prolyl-tRNA synthetase (2) MG283 proS
-# Seryl-tRNA synthetase (2) MG005 serS
-# Threonyl-tRNA synthetase (2) MG375 thrS
-# Tryptophanyl-tRNA synthetase (2) MG126 trpS
-# Tyrosyl-tRNA synthetase (2) MG455 tyrS
-# Valyl-tRNA synthetase (1) MG334 valS
-# Glutamyl-tRNA(Gln) amidotransferase (1) MG098, (1) MG099, (1) MG100 -, -, gatB
-# Methionyl-tRNA formyltransferase (1) MG365
-
 # MG_0004_Aminoacylation
 
 # Initialization Block
@@ -97,15 +74,15 @@ def create_model():
     # Create a compartment inside this model, and set the required
     # attributes for an SBML compartment in SBML Level 3.
 
-    c1 = model.createCompartment()
-    check(c1,                                 'create compartment')
-    check(c1.setId('c1'),                     'set compartment id')
-    check(c1.setConstant(True),               'set compartment "constant"')
-    check(c1.setSize(0.01),                   'set compartment "size"')
-    check(c1.setSpatialDimensions(3),         'set compartment dimensions')
-    check(c1.setUnits('litre'),               'set compartment size units')
+    cytocompartment = model.createCompartment()
+    check(cytocompartment,                                 'create compartment')
+    check(cytocompartment.setId('c'),                     'set compartment id')
+    check(cytocompartment.setConstant(True),               'set compartment "constant"')
+    check(cytocompartment.setSize(0.01),                   'set compartment "size"')
+    check(cytocompartment.setSpatialDimensions(3),         'set compartment dimensions')
+    check(cytocompartment.setUnits('litre'),               'set compartment size units')
 
-    # Create two species inside this model, set the required attributes
+    # Create species for the model, set the required attributes
     # for each species in SBML Level 3 (which are the 'id', 'compartment',
     # 'constant', 'hasOnlySubstanceUnits', and 'boundaryCondition'
     # attributes), and initialize the amount of the species along with the
@@ -114,20 +91,20 @@ def create_model():
     s1 = model.createSpecies()
     check(s1,                                 'create species s1')
     check(s1.setId('s1'),                     'set species s1 id')
-    check(s1.setCompartment('c1'),            'set species s1 compartment')
+    check(s1.setCompartment('c'),            'set species s1 compartment')
     check(s1.setConstant(False),              'set "constant" attribute on s1')
-    check(s1.setInitialAmount(5),             'set initial amount for s1')
-    check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
+    check(s1.setInitialAmount(0),             'set initial amount for s1')
+    check(s1.setSubstanceUnits('item'),       'set substance units for s1')
     check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
     check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
 
     s2 = model.createSpecies()
     check(s2,                                 'create species s2')
     check(s2.setId('s2'),                     'set species s2 id')
-    check(s2.setCompartment('c1'),            'set species s2 compartment')
+    check(s2.setCompartment('c'),            'set species s2 compartment')
     check(s2.setConstant(False),              'set "constant" attribute on s2')
     check(s2.setInitialAmount(0),             'set initial amount for s2')
-    check(s2.setSubstanceUnits('mole'),       'set substance units for s2')
+    check(s2.setSubstanceUnits('item'),       'set substance units for s2')
     check(s2.setBoundaryCondition(False),     'set "boundaryCondition" on s2')
     check(s2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s2')
 
@@ -171,6 +148,10 @@ def create_model():
     check(mg471aminoacylreact3,                       'create reactant')
     check(mg471aminoacylreact3.setSpecies('MG471'),      'assign reactant species')
     check(mg471aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg471aminoacylenzyme = mg471aminoacyl.createModifier()
+    check(mg471aminoacylenzyme,                       'create reactant')
+    check(mg471aminoacylenzyme.setSpecies('MG_292_TETRAMER'),      'assign reactant species')
 
     mg471aminoacylprod1 = mg471aminoacyl.createProduct()
     check(mg471aminoacylprod1,                       'create product')
@@ -219,6 +200,10 @@ def create_model():
     check(mg472aminoacylreact3.setSpecies('MG472'),      'assign reactant species')
     check(mg472aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg472aminoacylenzyme = mg472aminoacyl.createModifier()
+    check(mg472aminoacylenzyme,                       'create reactant')
+    check(mg472aminoacylenzyme.setSpecies('MG_345_MONOMER'),      'assign reactant species')
+
     mg472aminoacylprod1 = mg472aminoacyl.createProduct()
     check(mg472aminoacylprod1,                       'create product')
     check(mg472aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -265,6 +250,10 @@ def create_model():
     check(mg475aminoacylreact3,                       'create reactant')
     check(mg475aminoacylreact3.setSpecies('MG475'),      'assign reactant species')
     check(mg475aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg475aminoacylenzyme = mg475aminoacyl.createModifier()
+    check(mg475aminoacylenzyme,                       'create reactant')
+    check(mg475aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg475aminoacylprod1 = mg475aminoacyl.createProduct()
     check(mg475aminoacylprod1,                       'create product')
@@ -313,6 +302,10 @@ def create_model():
     check(mg479aminoacylreact3.setSpecies('MG479'),      'assign reactant species')
     check(mg479aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg479aminoacylenzyme = mg479aminoacyl.createModifier()
+    check(mg479aminoacylenzyme,                       'create reactant')
+    check(mg479aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg479aminoacylprod1 = mg479aminoacyl.createProduct()
     check(mg479aminoacylprod1,                       'create product')
     check(mg479aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -359,6 +352,10 @@ def create_model():
     check(mg483aminoacylreact3,                       'create reactant')
     check(mg483aminoacylreact3.setSpecies('MG483'),      'assign reactant species')
     check(mg483aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg483aminoacylenzyme = mg483aminoacyl.createModifier()
+    check(mg483aminoacylenzyme,                       'create reactant')
+    check(mg483aminoacylenzyme.setSpecies('MG_253_MONOMER'),      'assign reactant species')
 
     mg483aminoacylprod1 = mg483aminoacyl.createProduct()
     check(mg483aminoacylprod1,                       'create product')
@@ -407,6 +404,10 @@ def create_model():
     check(mg484aminoacylreact3.setSpecies('MG484'),      'assign reactant species')
     check(mg484aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg484aminoacylenzyme = mg484aminoacyl.createModifier()
+    check(mg484aminoacylenzyme,                       'create reactant')
+    check(mg484aminoacylenzyme.setSpecies('MG_283_DIMER'),      'assign reactant species')
+
     mg484aminoacylprod1 = mg484aminoacyl.createProduct()
     check(mg484aminoacylprod1,                       'create product')
     check(mg484aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -453,6 +454,10 @@ def create_model():
     check(mg485aminoacylreact3,                       'create reactant')
     check(mg485aminoacylreact3.setSpecies('MG485'),      'assign reactant species')
     check(mg485aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg485aminoacylenzyme = mg485aminoacyl.createModifier()
+    check(mg485aminoacylenzyme,                       'create reactant')
+    check(mg485aminoacylenzyme.setSpecies('MG_021_DIMER'),      'assign reactant species')
 
     mg485aminoacylprod1 = mg485aminoacyl.createProduct()
     check(mg485aminoacylprod1,                       'create product')
@@ -501,6 +506,10 @@ def create_model():
     check(mg486aminoacylreact3.setSpecies('MG486'),      'assign reactant species')
     check(mg486aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg486aminoenzyme = mg486aminoacyl.createModifier()
+    check(mg486aminoenzyme,                       'create reactant')
+    check(mg486aminoenzyme.setSpecies('MG_345_MONOMER'),      'assign reactant species')
+
     mg486aminoacylprod1 = mg486aminoacyl.createProduct()
     check(mg486aminoacylprod1,                       'create product')
     check(mg486aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -547,6 +556,10 @@ def create_model():
     check(mg487aminoacylreact3,                       'create reactant')
     check(mg487aminoacylreact3.setSpecies('MG487'),      'assign reactant species')
     check(mg487aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg487aminoacylenzyme = mg487aminoacyl.createModifier()
+    check(mg487aminoacylenzyme,                       'create reactant')
+    check(mg487aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg487aminoacylprod1 = mg487aminoacyl.createProduct()
     check(mg487aminoacylprod1,                       'create product')
@@ -598,6 +611,10 @@ def create_model():
     check(mg488aminoacylreact3.setSpecies('MG488'),      'assign reactant species')
     check(mg488aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg488aminoacylenzyme = mg488aminoacyl.createModifier()
+    check(mg488aminoacylenzyme,                       'create reactant')
+    check(mg488aminoacylenzyme.setSpecies('MG_021_DIMER'),      'assign reactant species')
+
     mg488aminoacylprod1 = mg488aminoacyl.createProduct()
     check(mg488aminoacylprod1,                       'create product')
     check(mg488aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -643,12 +660,14 @@ def create_model():
     check(mg488methtransreact3.setSpecies('H2O'),      'assign reactant species')
     check(mg488methtransreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg488methtransenzyme = mg488methtrans.createModifier()
+    check(mg488methtransenzyme,                       'create reactant')
+    check(mg488methtransenzyme.setSpecies('MG_365_MONOMER'),      'assign reactant species')
+
     mg488methtransprod1 = mg488methtrans.createProduct()
     check(mg488methtransprod1,                       'create product')
     check(mg488methtransprod1.setSpecies('THF'),      'assign product species')
     check(mg488methtransprod1.setConstant(False),     'set "constant" on species ref 2')
-
-    # FIX: why is there no proton flying off here?
 
     # FIX FROM HERE
     mg488methtransprod2 = mg488methtrans.createProduct()
@@ -686,6 +705,10 @@ def create_model():
     check(mg489aminoacylreact3,                       'create reactant')
     check(mg489aminoacylreact3.setSpecies('MG489'),      'assign reactant species')
     check(mg489aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg489aminoacylenzyme = mg489aminoacyl.createModifier()
+    check(mg489aminoacylenzyme,                       'create reactant')
+    check(mg489aminoacylenzyme.setSpecies('MG_036_DIMER'),      'assign reactant species')
 
     mg489aminoacylprod1 = mg489aminoacyl.createProduct()
     check(mg489aminoacylprod1,                       'create product')
@@ -734,6 +757,10 @@ def create_model():
     check(mg490aminoacylreact3.setSpecies('MG490'),      'assign reactant species')
     check(mg490aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg490aminoacylenzyme = mg490aminoacyl.createModifier()
+    check(mg490aminoacylenzyme,                       'create reactant')
+    check(mg490aminoacylenzyme.setSpecies('MG_194_195_TETRAMER'),      'assign reactant species')
+
     mg490aminoacylprod1 = mg490aminoacyl.createProduct()
     check(mg490aminoacylprod1,                       'create product')
     check(mg490aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -780,6 +807,10 @@ def create_model():
     check(mg492aminoacylreact3,                       'create reactant')
     check(mg492aminoacylreact3.setSpecies('MG492'),      'assign reactant species')
     check(mg492aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg492aminoacylenzyme = mg492aminoacyl.createModifier()
+    check(mg492aminoacylenzyme,                       'create reactant')
+    check(mg492aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg492aminoacylprod1 = mg492aminoacyl.createProduct()
     check(mg492aminoacylprod1,                       'create product')
@@ -828,6 +859,10 @@ def create_model():
     check(mg493aminoacylreact3.setSpecies('MG493'),      'assign reactant species')
     check(mg493aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg493aminoacylenzyme = mg493aminoacyl.createModifier()
+    check(mg493aminoacylenzyme,                       'create reactant')
+    check(mg493aminoacylenzyme.setSpecies('MG_251_DIMER'),      'assign reactant species')
+
     mg493aminoacylprod1 = mg493aminoacyl.createProduct()
     check(mg493aminoacylprod1,                       'create product')
     check(mg493aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -874,6 +909,10 @@ def create_model():
     check(mg495aminoacylreact3,                       'create reactant')
     check(mg495aminoacylreact3.setSpecies('MG495'),      'assign reactant species')
     check(mg495aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg495aminoacylenzyme = mg495aminoacyl.createModifier()
+    check(mg495aminoacylenzyme,                       'create reactant')
+    check(mg495aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg495aminoacylprod1 = mg495aminoacyl.createProduct()
     check(mg495aminoacylprod1,                       'create product')
@@ -922,6 +961,10 @@ def create_model():
     check(mg496aminoacylreact3.setSpecies('MG496'),      'assign reactant species')
     check(mg496aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg496aminoacylenzyme = mg496aminoacyl.createModifier()
+    check(mg496aminoacylenzyme,                       'create reactant')
+    check(mg496aminoacylenzyme.setSpecies('MG_126_DIMER'),      'assign reactant species')
+
     mg496aminoacylprod1 = mg496aminoacyl.createProduct()
     check(mg496aminoacylprod1,                       'create product')
     check(mg496aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -968,6 +1011,10 @@ def create_model():
     check(mg497aminoacylreact3,                       'create reactant')
     check(mg497aminoacylreact3.setSpecies('MG497'),      'assign reactant species')
     check(mg497aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg497aminoacylenzyme = mg497aminoacyl.createModifier()
+    check(mg497aminoacylenzyme,                       'create reactant')
+    check(mg497aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg497aminoacylprod1 = mg497aminoacyl.createProduct()
     check(mg497aminoacylprod1,                       'create product')
@@ -1016,6 +1063,10 @@ def create_model():
     check(mg499aminoacylreact3.setSpecies('MG499'),      'assign reactant species')
     check(mg499aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg499aminoacylenzyme = mg499aminoacyl.createModifier()
+    check(mg499aminoacylenzyme,                       'create reactant')
+    check(mg499aminoacylenzyme.setSpecies('MG_251_DIMER'),      'assign reactant species')
+
     mg499aminoacylprod1 = mg499aminoacyl.createProduct()
     check(mg499aminoacylprod1,                       'create product')
     check(mg499aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1063,6 +1114,10 @@ def create_model():
     check(mg500aminoacylreact3.setSpecies('MG500'),      'assign reactant species')
     check(mg500aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg500aminoacylenzyme = mg500aminoacyl.createModifier()
+    check(mg500aminoacylenzyme,                       'create reactant')
+    check(mg500aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg500aminoacylprod1 = mg500aminoacyl.createProduct()
     check(mg500aminoacylprod1,                       'create product')
     check(mg500aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1109,6 +1164,10 @@ def create_model():
     check(mg501aminoacylreact3,                       'create reactant')
     check(mg501aminoacylreact3.setSpecies('MG501'),      'assign reactant species')
     check(mg501aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg501aminoacylenzyme = mg501aminoacyl.createModifier()
+    check(mg501aminoacylenzyme,                       'create reactant')
+    check(mg501aminoacylenzyme.setSpecies('MG_136_DIMER'),      'assign reactant species')
 
     mg501aminoacylprod1 = mg501aminoacyl.createProduct()
     check(mg501aminoacylprod1,                       'create product')
@@ -1161,6 +1220,10 @@ def create_model():
     check(mg502aminoacylreact3.setSpecies('MG502'),      'assign reactant species')
     check(mg502aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg502aminoacylenzyme = mg502aminoacyl.createModifier()
+    check(mg502aminoacylenzyme,                       'create reactant')
+    check(mg502aminoacylenzyme.setSpecies('MG_295_MONOMER'),      'assign reactant species')
+
     mg502aminoacylprod1 = mg502aminoacyl.createProduct()
     check(mg502aminoacylprod1,                       'create product')
     check(mg502aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1184,6 +1247,7 @@ def create_model():
     check(kinetic_law,                        'create kinetic law')
     check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
 
+    # ---------------------
     # next, model the Glu-tRNA amidotransferase reaction
     mg502amidotrans = model.createReaction()
     check(mg502amidotrans,                                 'create reaction')
@@ -1205,6 +1269,10 @@ def create_model():
     check(mg502amidotransreact3,                       'create reactant')
     check(mg502amidotransreact3.setSpecies('GLN'),      'assign reactant species')
     check(mg502amidotransreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg502amidotransenzyme = mg502amidotrans.createModifier()
+    check(mg502amidotransenzyme,                       'create reactant')
+    check(mg502amidotransenzyme.setSpecies('MG_462_MONOMER'),      'assign reactant species')
 
     mg502amidotransprod1 = mg502amidotrans.createProduct()
     check(mg502amidotransprod1,                       'create product')
@@ -1258,6 +1326,10 @@ def create_model():
     check(mg503aminoacylreact3.setSpecies('MG503'),      'assign reactant species')
     check(mg503aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg503aminoacylenzyme = mg503aminoacyl.createModifier()
+    check(mg503aminoacylenzyme,                       'create reactant')
+    check(mg503aminoacylenzyme.setSpecies('MG_455_DIMER'),      'assign reactant species')
+
     mg503aminoacylprod1 = mg503aminoacyl.createProduct()
     check(mg503aminoacylprod1,                       'create product')
     check(mg503aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1304,6 +1376,10 @@ def create_model():
     check(mg504aminoacylreact3,                       'create reactant')
     check(mg504aminoacylreact3.setSpecies('MG504'),      'assign reactant species')
     check(mg504aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg504aminoacylenzyme = mg504aminoacyl.createModifier()
+    check(mg504aminoacylenzyme,                       'create reactant')
+    check(mg504aminoacylenzyme.setSpecies('MG_126_DIMER'),      'assign reactant species')
 
     mg504aminoacylprod1 = mg504aminoacyl.createProduct()
     check(mg504aminoacylprod1,                       'create product')
@@ -1352,6 +1428,10 @@ def create_model():
     check(mg506aminoacylreact3.setSpecies('MG506'),      'assign reactant species')
     check(mg506aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg506aminoacylenzyme = mg506aminoacyl.createModifier()
+    check(mg506aminoacylenzyme,                       'create reactant')
+    check(mg506aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
+
     mg506aminoacylprod1 = mg506aminoacyl.createProduct()
     check(mg506aminoacylprod1,                       'create product')
     check(mg506aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1398,6 +1478,10 @@ def create_model():
     check(mg507aminoacylreact3,                       'create reactant')
     check(mg507aminoacylreact3.setSpecies('MG507'),      'assign reactant species')
     check(mg507aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg507aminoacylenzyme = mg507aminoacyl.createModifier()
+    check(mg507aminoacylenzyme,                       'create reactant')
+    check(mg507aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg507aminoacylprod1 = mg507aminoacyl.createProduct()
     check(mg507aminoacylprod1,                       'create product')
@@ -1446,6 +1530,10 @@ def create_model():
     check(mg508aminoacylreact3.setSpecies('MG508'),      'assign reactant species')
     check(mg508aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg508aminoacylenzyme = mg508aminoacyl.createModifier()
+    check(mg508aminoacylenzyme,                       'create reactant')
+    check(mg508aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg508aminoacylprod1 = mg508aminoacyl.createProduct()
     check(mg508aminoacylprod1,                       'create product')
     check(mg508aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1492,6 +1580,10 @@ def create_model():
     check(mg509aminoacylreact3,                       'create reactant')
     check(mg509aminoacylreact3.setSpecies('MG509'),      'assign reactant species')
     check(mg509aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg509aminoacylenzyme = mg509aminoacyl.createModifier()
+    check(mg509aminoacylenzyme,                       'create reactant')
+    check(mg509aminoacylenzyme.setSpecies('MG_136_DIMER'),      'assign reactant species')
 
     mg509aminoacylprod1 = mg509aminoacyl.createProduct()
     check(mg509aminoacylprod1,                       'create product')
@@ -1540,6 +1632,10 @@ def create_model():
     check(mg510aminoacylreact3.setSpecies('MG510'),      'assign reactant species')
     check(mg510aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg510aminoacylenzyme = mg510aminoacyl.createModifier()
+    check(mg510aminoacylenzyme,                       'create reactant')
+    check(mg510aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg510aminoacylprod1 = mg510aminoacyl.createProduct()
     check(mg510aminoacylprod1,                       'create product')
     check(mg510aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1586,6 +1682,10 @@ def create_model():
     check(mg511aminoacylreact3,                       'create reactant')
     check(mg511aminoacylreact3.setSpecies('MG511'),      'assign reactant species')
     check(mg511aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg511aminoacylenzyme = mg511aminoacyl.createModifier()
+    check(mg511aminoacylenzyme,                       'create reactant')
+    check(mg511aminoacylenzyme.setSpecies('MG_334_MONOMER'),      'assign reactant species')
 
     mg511aminoacylprod1 = mg511aminoacyl.createProduct()
     check(mg511aminoacylprod1,                       'create product')
@@ -1634,6 +1734,10 @@ def create_model():
     check(mg512aminoacylreact3.setSpecies('MG512'),      'assign reactant species')
     check(mg512aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg512aminoacylenzyme = mg512aminoacyl.createModifier()
+    check(mg512aminoacylenzyme,                       'create reactant')
+    check(mg512aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg512aminoacylprod1 = mg512aminoacyl.createProduct()
     check(mg512aminoacylprod1,                       'create product')
     check(mg512aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1680,6 +1784,10 @@ def create_model():
     check(mg513aminoacylreact3,                       'create reactant')
     check(mg513aminoacylreact3.setSpecies('MG513'),      'assign reactant species')
     check(mg513aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg513aminoacylenzyme = mg513aminoacyl.createModifier()
+    check(mg513aminoacylenzyme,                       'create reactant')
+    check(mg513aminoacylenzyme.setSpecies('MG_462_MONOMER'),      'assign reactant species')
 
     mg513aminoacylprod1 = mg513aminoacyl.createProduct()
     check(mg513aminoacylprod1,                       'create product')
@@ -1728,6 +1836,10 @@ def create_model():
     check(mg514aminoacylreact3.setSpecies('MG514'),      'assign reactant species')
     check(mg514aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg514aminoacylenzyme = mg514aminoacyl.createModifier()
+    check(mg514aminoacylenzyme,                       'create reactant')
+    check(mg514aminoacylenzyme.setSpecies('MG_113_DIMER'),      'assign reactant species')
+
     mg514aminoacylprod1 = mg514aminoacyl.createProduct()
     check(mg514aminoacylprod1,                       'create product')
     check(mg514aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1774,6 +1886,10 @@ def create_model():
     check(mg518aminoacylreact3,                       'create reactant')
     check(mg518aminoacylreact3.setSpecies('MG518'),      'assign reactant species')
     check(mg518aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg518aminoacylenzyme = mg518aminoacyl.createModifier()
+    check(mg518aminoacylenzyme,                       'create reactant')
+    check(mg518aminoacylenzyme.setSpecies('MG_035_DIMER'),      'assign reactant species')
 
     mg518aminoacylprod1 = mg518aminoacyl.createProduct()
     check(mg518aminoacylprod1,                       'create product')
@@ -1822,6 +1938,10 @@ def create_model():
     check(mg519aminoacylreact3.setSpecies('MG519'),      'assign reactant species')
     check(mg519aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg519aminoacylenzyme = mg519aminoacyl.createModifier()
+    check(mg519aminoacylenzyme,                       'create reactant')
+    check(mg519aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg519aminoacylprod1 = mg519aminoacyl.createProduct()
     check(mg519aminoacylprod1,                       'create product')
     check(mg519aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1868,6 +1988,10 @@ def create_model():
     check(mg520aminoacylreact3,                       'create reactant')
     check(mg520aminoacylreact3.setSpecies('MG520'),      'assign reactant species')
     check(mg520aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg520aminoacylenzyme = mg520aminoacyl.createModifier()
+    check(mg520aminoacylenzyme,                       'create reactant')
+    check(mg520aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
 
     mg520aminoacylprod1 = mg520aminoacyl.createProduct()
     check(mg520aminoacylprod1,                       'create product')
@@ -1916,6 +2040,10 @@ def create_model():
     check(mg523aminoacylreact3.setSpecies('MG523'),      'assign reactant species')
     check(mg523aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg523aminoacylenzyme = mg523aminoacyl.createModifier()
+    check(mg523aminoacylenzyme,                       'create reactant')
+    check(mg523aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
+
     mg523aminoacylprod1 = mg523aminoacyl.createProduct()
     check(mg523aminoacylprod1,                       'create product')
     check(mg523aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1939,12 +2067,13 @@ def create_model():
     check(kinetic_law,                        'create kinetic law')
     check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
 
-
+    # write the aminoacylation model to an xml file
+    sbml.writeSBMLToFile(document, 'aminoacylation.xml')
 
     # Now return a text string containing the model in XML format.
-
     return sbml.writeSBMLToString(document)
 
- 
-if __name__ == '__main__':
-    print(create_model())
+# if you are a UNIX hacker then you can enable the following lines and produce the xml files from bash/terminal:
+#       python createAminoAcylation.py > aminoacylation.xml
+# if __name__ == '__main__':
+#     print(create_model())

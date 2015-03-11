@@ -1,0 +1,131 @@
+
+
+WholeCellModelIDs
+	    0199     %IDs, names, and local indices
+	    0200     properties
+	    0201         stimuliWholeCellModelIDs = {}; %whole cell model IDs of stimuli
+	    0202 
+	    0203         substrateWholeCellModelIDs = { %whole cell model IDs of substrates
+	    0204             'ALA'; 'ARG'; 'ASN'; 'ASP'; 'CYS'; 'GLN'; 'GLU'; 'GLY'; 'HIS'; 'ILE';
+	    0205             'LEU'; 'LYS'; 'MET'; 'PHE'; 'PRO'; 'SER'; 'THR'; 'TRP'; 'TYR'; 'VAL'; 'FMET';
+	    0206             'GTP'; 'GDP'; 'PI'; 'H2O'; 'H'};
+	    0207         substrateIndexs_aminoAcids  = (1:20)'; %indices within substrates of amino acids
+	    0208         substrateIndexs_fMet        = 21;      %index within substrates of formylmethionine
+	    0209         substrateIndexs_gtp         = 22;      %index within substrates of GTP
+	    0210         substrateIndexs_gdp         = 23;      %index within substrates of GDP
+	    0211         substrateIndexs_phosphate   = 24;      %index within substrates of phosphate
+	    0212         substrateIndexs_water       = 25;      %index within substrates of water
+	    0213         substrateIndexs_hydrogen    = 26;      %index within substrates of hydrogen
+	    0214 
+	    0215         enzymeWholeCellModelIDs = { %whole cell model ids of enzymes
+	    0216             'MG_173_MONOMER';   %translation initiation factor IF-1
+	    0217             'MG_142_MONOMER';   %translation initiation factor IF-2
+	    0218             'MG_196_MONOMER';   %translation initiation factor IF-3
+	    0219             'MG_089_DIMER';     %translation elongation factor G
+	    0220             'MG_026_MONOMER';   %translation elongation factor P
+	    0221             'MG_451_DIMER';     %translation elongation factor Tu
+	    0222             'MG_433_DIMER';     %translation elongation factor Ts
+	    0223             'MG_258_MONOMER';   %peptide chain release factor 1
+	    0224             'MG_435_MONOMER';   %ribosome recycling factor
+	    0225             'RIBOSOME_30S';     %30S ribosomal subunit
+	    0226             'RIBOSOME_30S_IF3'; %30S ribosomal subunit - translation initiation factor IF-3 complex
+	    0227             'RIBOSOME_50S';     %50S ribosomal subunit
+	    0228             'RIBOSOME_70S';     %70S ribosome
+	    0229             'MG_0004';          %transfer-messenger RNA, tmRNA, MCS6, 10Sa RNA
+	    0230             'MG_059_MONOMER';   %SsrA-binding protein
+	    0231             'MG_083_MONOMER'};  %peptidyl-tRNA hydrolase
+	    0232         enzymeIndexs_translationFactors          = (1:9)';    %indices within enzymes of translation factors
+	    0233         enzymeIndexs_initiationFactors           = (1:3)';    %indices within enzymes of initiation factors
+	    0234         enzymeIndexs_initiationFactor1           = 1;         %index within enzymes of initiation factor 1
+	    0235         enzymeIndexs_initiationFactor2           = 2;         %index within enzymes of initiation factor 2
+	    0236         enzymeIndexs_initiationFactor3           = 3;         %index within enzymes of initiation factor 3
+	    0237         enzymeIndexs_elongationFactors           = (4:7)';    %indices within enzymes of elongation factors
+	    0238         enzymeIndexs_elongationGFactor           = 4;         %index within enzymes of elongation factor G
+	    0239         enzymeIndexs_terminationFactor           = 8;         %index within enzymes of termination factor
+	    0240         enzymeIndexs_recyclingFactor             = 9;         %index within enzymes of recylcing factor
+	    0241         enzymeIndexs_ribosome30S                 = 10;        %index within enzymes of 30S ribosomal particle
+	    0242         enzymeIndexs_ribosome30SIF3              = 11;        %index within enzymes of 30S ribosomal particle-initiation factor 3 complex
+	    0243         enzymeIndexs_ribosome50S                 = 12;        %index within enzymes of 50S ribosomal particle
+	    0244         enzymeIndexs_ribosome70S                 = 13;        %index within enzymes of 70S ribosome
+	    0245         enzymeIndexs_abortiveTranslationEnzymes  = (14:16)';  %indices within enzymes of abortive translation enzymes
+	    0246         enzymeIndexs_tmRNA                       = 14;        %index within enzymes of tmRNA
+	    0247         enzymeIndexs_tmRNABindingProtein         = 15;        %index within enzymes of tmRNA binding protein
+	    0248         enzymeIndexs_peptidylTRNAHydrolase       = 16;        %index within enzymes of peptidyl-tRNA hydrolase
+	    0249 
+	    0250         freeTRNAWholeCellModelIDs          %IDs of free (non-aminoacylated) tRNAs
+	    0251         aminoacylatedTRNAWholeCellModelIDs %IDs of aminoacylated tRNAs
+	    0252         aminoacylatedTMRNAWholeCellModelID %ID of aminoacylated tmRNA
+	    0253         
+	    0254         tmRNAGlobalIndex %index of tmRNA within simulation.matureRNAIndexs
+	    0255     end
+	    0256 
+	    0257     %fixed biological constants
+	    0258     properties
+	    0259         ribosomeElongationRate             %ribosomse elongation rate (amino acids per second per ribosome) [PUB_0564]
+	    0260         tmRNABindingProbability            %probability that tmRNA is recruited to non-elongating, active ribosome
+	    0261     end
+	    0262 
+	    0263     %global state (stored locally for convenience)
+	    0264     properties
+	    0265         monomers                       %numbers of protein monomers
+	    0266         mRNAs                          %numbers of mRNAs
+	    0267         freeTRNAs                      %numbers of free (non-aminoacylated) tRNAs
+	    0268         freeTMRNA                      %numbers of free tmRNA
+	    0269         aminoacylatedTRNAs             %numbers of aminoacylated tRNAs
+	    0270         aminoacylatedTMRNA             %numbers of aminoacylated tmRNA
+	    0271         boundTMRNA                     %numbers of bound tmRNA
+	    0272     end
+====================================================================
+
+
+
+
+
+
+???????Contribution to FBA
+
+
+
+
+	     0369         %Calculate
+	     0370         %- contribution to FBA objective
+	     0371         %- minimum expression consistent with cell cycle length
+	     0372         %
+	     0373         %Contributions, by process, to protein synthesis:
+	     0374         %                            AAs --(translation)----> nascent monomer + water
+	     0375         %          nascent monomer + H2O --(processing)-----> processed protein + AAs
+	     0376         %processed monomer + metabolites --(folding)--------> folded monomer
+	     0377         %   folded monomer + metabolites --(modification)---> mature monomer + metabolites
+	     0378         %              modified monomers --(complexation)---> nascent complexs
+	     0379         % nascent complexs + metabolites --(folding)--------> mature complexes
+	     0380         %          monomer/complex + H2O --(decay)----------> AAs + modified AAs
+	     0381         %        phosphorylated AA + H2O --(catabolism)-----> AA + Pi
+	     0382         %            lipoyl lysine + H2O --(catabolism)-----> lysine + lipoate
+
+
+=============================================================
+
+Energy requirements
+
+	     0405             %energy
+	     0406             translationEnergy = ...
+	     0407                 2 * this.polypeptide.monomerLengths' * states.monomerProductions + ...  %elongation
+	     0408                 3 * sum(states.monomerProductions);                                     %initiation, termination
+	     0409             bmProd(this.substrateIndexs_gtp)       = bmProd(this.substrateIndexs_gtp)       + translationEnergy;
+	     0410             bmProd(this.substrateIndexs_water)     = bmProd(this.substrateIndexs_water)     + translationEnergy;
+	     0411             byProd(this.substrateIndexs_gdp)       = byProd(this.substrateIndexs_gdp)       + translationEnergy;
+	     0412             byProd(this.substrateIndexs_phosphate) = byProd(this.substrateIndexs_phosphate) + translationEnergy;
+	     0413             byProd(this.substrateIndexs_hydrogen)  = byProd(this.substrateIndexs_hydrogen)  + translationEnergy;
+
+=============================================================
+
+Assumptions remarks
+
+	     0438         %Initialize ribosome, bound mRNAs, translation factor states
+	     0439         %Assumptions:
+	     0440         %- Metabolic cost of the transcription of these amino acids is negligible
+	     0441         %- Probability that so many ribosomes bind a given mRNA that they can't
+	     0442         %  pack along the mRNA without steric interactions is negligible. Thus we
+	     0443         %  don't try to handle this case separately.
+
+=============================================================

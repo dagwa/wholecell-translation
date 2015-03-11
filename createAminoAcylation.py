@@ -27,8 +27,8 @@
 
 # Initialization Block
 import sys
-# import libsbml
-from libsbml import *
+import libsbml as sbml
+# from libsbml import *
 
 
 def check(value, message):
@@ -42,12 +42,12 @@ def check(value, message):
     if value == None:
         raise SystemExit('LibSBML returned a null value trying to ' + message + '.')
     elif type(value) is int:
-        if value == LIBSBML_OPERATION_SUCCESS:
+        if value == sbml.LIBSBML_OPERATION_SUCCESS:
             return
         else:
             err_msg = 'Error encountered trying to ' + message + '.' \
                       + 'LibSBML returned error code ' + str(value) + ': "' \
-                      + OperationReturnValue_toString(value).strip() + '"'
+                      + sbml.OperationReturnValue_toString(value).strip() + '"'
             raise SystemExit(err_msg)
     else:
         return
@@ -63,7 +63,7 @@ def create_model():
     # operating system runs out of memory).
 
     try:
-        document = SBMLDocument(3, 1)
+        document = sbml.SBMLDocument(3, 1)
     except ValueError:
         raise SystemExit('Could not create SBMLDocumention object')
 
@@ -89,7 +89,7 @@ def create_model():
     check(per_second.setId('per_second'),     'set unit definition id')
     unit = per_second.createUnit()
     check(unit,                               'create unit on per_second')
-    check(unit.setKind(UNIT_KIND_SECOND),     'set unit kind')
+    check(unit.setKind(sbml.UNIT_KIND_SECOND),     'set unit kind')
     check(unit.setExponent(-1),               'set unit exponent')
     check(unit.setScale(0),                   'set unit scale')
     check(unit.setMultiplier(1),              'set unit multiplier')
@@ -188,7 +188,7 @@ def create_model():
     check(mg471aminoacylprod3.setSpecies('aminoacylated_MG471'),      'assign product species')
     check(mg471aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg471aminoacyl.createKineticLaw()
@@ -235,7 +235,7 @@ def create_model():
     check(mg472aminoacylprod3.setSpecies('aminoacylated_MG472'),      'assign product species')
     check(mg472aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg472aminoacyl.createKineticLaw()
@@ -282,7 +282,7 @@ def create_model():
     check(mg475aminoacylprod3.setSpecies('aminoacylated_MG475'),      'assign product species')
     check(mg475aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg475aminoacyl.createKineticLaw()
@@ -329,7 +329,7 @@ def create_model():
     check(mg479aminoacylprod3.setSpecies('aminoacylated_MG479'),      'assign product species')
     check(mg479aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg479aminoacyl.createKineticLaw()
@@ -376,7 +376,7 @@ def create_model():
     check(mg483aminoacylprod3.setSpecies('aminoacylated_MG483'),      'assign product species')
     check(mg483aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg483aminoacyl.createKineticLaw()
@@ -423,7 +423,7 @@ def create_model():
     check(mg484aminoacylprod3.setSpecies('aminoacylated_MG484'),      'assign product species')
     check(mg484aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg484aminoacyl.createKineticLaw()
@@ -470,7 +470,7 @@ def create_model():
     check(mg485aminoacylprod3.setSpecies('aminoacylated_MG485'),      'assign product species')
     check(mg485aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg485aminoacyl.createKineticLaw()
@@ -517,7 +517,7 @@ def create_model():
     check(mg486aminoacylprod3.setSpecies('aminoacylated_MG486'),      'assign product species')
     check(mg486aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg486aminoacyl.createKineticLaw()
@@ -564,7 +564,7 @@ def create_model():
     check(mg487aminoacylprod3.setSpecies('aminoacylated_MG487'),      'assign product species')
     check(mg487aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg487aminoacyl.createKineticLaw()
@@ -614,7 +614,7 @@ def create_model():
     check(mg488aminoacylprod3.setSpecies('met_aminoacylated_MG488'),      'assign product species')
     check(mg488aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg488aminoacyl.createKineticLaw()
@@ -656,7 +656,7 @@ def create_model():
     check(mg488methtransprod2.setSpecies('aminoacylated_MG488'),      'assign product species')
     check(mg488methtransprod2.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg488methtrans.createKineticLaw()
@@ -703,7 +703,7 @@ def create_model():
     check(mg489aminoacylprod3.setSpecies('aminoacylated_MG489'),      'assign product species')
     check(mg489aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg489aminoacyl.createKineticLaw()
@@ -750,7 +750,7 @@ def create_model():
     check(mg490aminoacylprod3.setSpecies('aminoacylated_MG490'),      'assign product species')
     check(mg490aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg490aminoacyl.createKineticLaw()
@@ -797,7 +797,7 @@ def create_model():
     check(mg492aminoacylprod3.setSpecies('aminoacylated_MG492'),      'assign product species')
     check(mg492aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg492aminoacyl.createKineticLaw()
@@ -844,7 +844,7 @@ def create_model():
     check(mg493aminoacylprod3.setSpecies('aminoacylated_MG493'),      'assign product species')
     check(mg493aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg493aminoacyl.createKineticLaw()
@@ -891,7 +891,7 @@ def create_model():
     check(mg495aminoacylprod3.setSpecies('aminoacylated_MG495'),      'assign product species')
     check(mg495aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg495aminoacyl.createKineticLaw()
@@ -938,7 +938,7 @@ def create_model():
     check(mg496aminoacylprod3.setSpecies('aminoacylated_MG496'),      'assign product species')
     check(mg496aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg496aminoacyl.createKineticLaw()
@@ -985,7 +985,7 @@ def create_model():
     check(mg497aminoacylprod3.setSpecies('aminoacylated_MG497'),      'assign product species')
     check(mg497aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg497aminoacyl.createKineticLaw()
@@ -1032,7 +1032,7 @@ def create_model():
     check(mg499aminoacylprod3.setSpecies('aminoacylated_MG499'),      'assign product species')
     check(mg499aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg499aminoacyl.createKineticLaw()
@@ -1079,7 +1079,7 @@ def create_model():
     check(mg500aminoacylprod3.setSpecies('aminoacylated_MG500'),      'assign product species')
     check(mg500aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg500aminoacyl.createKineticLaw()
@@ -1126,7 +1126,7 @@ def create_model():
     check(mg501aminoacylprod3.setSpecies('aminoacylated_MG501'),      'assign product species')
     check(mg501aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg501aminoacyl.createKineticLaw()
@@ -1177,7 +1177,7 @@ def create_model():
     check(mg502aminoacylprod3.setSpecies('GLU_aminoacylated_MG502'),      'assign product species')
     check(mg502aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg502aminoacyl.createKineticLaw()
@@ -1227,7 +1227,7 @@ def create_model():
     check(mg502amidotransprod4.setSpecies('aminoacylated_MG502'),      'assign product species')
     check(mg502amidotransprod4.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg502amidotrans.createKineticLaw()
@@ -1274,7 +1274,7 @@ def create_model():
     check(mg503aminoacylprod3.setSpecies('aminoacylated_MG503'),      'assign product species')
     check(mg503aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg503aminoacyl.createKineticLaw()
@@ -1321,7 +1321,7 @@ def create_model():
     check(mg504aminoacylprod3.setSpecies('aminoacylated_MG504'),      'assign product species')
     check(mg504aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg504aminoacyl.createKineticLaw()
@@ -1368,7 +1368,7 @@ def create_model():
     check(mg506aminoacylprod3.setSpecies('aminoacylated_MG506'),      'assign product species')
     check(mg506aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg506aminoacyl.createKineticLaw()
@@ -1415,7 +1415,7 @@ def create_model():
     check(mg507aminoacylprod3.setSpecies('aminoacylated_MG507'),      'assign product species')
     check(mg507aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg507aminoacyl.createKineticLaw()
@@ -1462,7 +1462,7 @@ def create_model():
     check(mg508aminoacylprod3.setSpecies('aminoacylated_MG508'),      'assign product species')
     check(mg508aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg508aminoacyl.createKineticLaw()
@@ -1509,7 +1509,7 @@ def create_model():
     check(mg509aminoacylprod3.setSpecies('aminoacylated_MG509'),      'assign product species')
     check(mg509aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg509aminoacyl.createKineticLaw()
@@ -1556,7 +1556,7 @@ def create_model():
     check(mg510aminoacylprod3.setSpecies('aminoacylated_MG510'),      'assign product species')
     check(mg510aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg510aminoacyl.createKineticLaw()
@@ -1603,7 +1603,7 @@ def create_model():
     check(mg511aminoacylprod3.setSpecies('aminoacylated_MG511'),      'assign product species')
     check(mg511aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg511aminoacyl.createKineticLaw()
@@ -1650,7 +1650,7 @@ def create_model():
     check(mg512aminoacylprod3.setSpecies('aminoacylated_MG512'),      'assign product species')
     check(mg512aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg512aminoacyl.createKineticLaw()
@@ -1697,7 +1697,7 @@ def create_model():
     check(mg513aminoacylprod3.setSpecies('aminoacylated_MG513'),      'assign product species')
     check(mg513aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg513aminoacyl.createKineticLaw()
@@ -1744,7 +1744,7 @@ def create_model():
     check(mg514aminoacylprod3.setSpecies('aminoacylated_MG514'),      'assign product species')
     check(mg514aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg514aminoacyl.createKineticLaw()
@@ -1791,7 +1791,7 @@ def create_model():
     check(mg518aminoacylprod3.setSpecies('aminoacylated_MG518'),      'assign product species')
     check(mg518aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg518aminoacyl.createKineticLaw()
@@ -1838,7 +1838,7 @@ def create_model():
     check(mg519aminoacylprod3.setSpecies('aminoacylated_MG519'),      'assign product species')
     check(mg519aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg519aminoacyl.createKineticLaw()
@@ -1885,7 +1885,7 @@ def create_model():
     check(mg520aminoacylprod3.setSpecies('aminoacylated_MG520'),      'assign product species')
     check(mg520aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg520aminoacyl.createKineticLaw()
@@ -1932,7 +1932,7 @@ def create_model():
     check(mg523aminoacylprod3.setSpecies('aminoacylated_MG523'),      'assign product species')
     check(mg523aminoacylprod3.setConstant(False),     'set "constant" on species ref 2')
 
-    math_ast = parseL3Formula('k * s1 * c1')
+    math_ast = sbml.parseL3Formula('k * s1 * c1')
     check(math_ast,                           'create AST for rate expression')
 
     kinetic_law = mg523aminoacyl.createKineticLaw()
@@ -1943,7 +1943,7 @@ def create_model():
 
     # Now return a text string containing the model in XML format.
 
-    return writeSBMLToString(document)
+    return sbml.writeSBMLToString(document)
 
  
 if __name__ == '__main__':

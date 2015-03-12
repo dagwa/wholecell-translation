@@ -20,7 +20,7 @@ your_list = list(reader)
 for i in range(1,len(your_list)): #skip the first one
     prot_names = prot_names+[your_list[i][0]]
     prot_len   = prot_len+[your_list[i][1]]
-    sequence   = sequence+[your_list[i][2]]
+    sequence   = sequence+['Z'+(your_list[i][2])[1:]]
 
 f.close()
 
@@ -46,7 +46,7 @@ SingleAA = {
   'S': ['MG475', 'MG487' ,'MG506', 'MG507'],
   'T': ['MG479', 'MG510', 'MG512'] ,
   'W': ['MG496', 'MG504'   ],
-  'Fmet': ['MG488']     
+  'Z': ['MG488']     
 }
 
 
@@ -105,8 +105,7 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
  
 
   
-    #STUFF THAT ACTUALLY CHANGES FROM REACTION TO REACTION 
-
+  #STUFF THAT ACTUALLY CHANGES FROM REACTION TO REACTION 
 
   #Add the current Ribosome position
   species_ref1 = r1.createReactant()
@@ -118,8 +117,6 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(species_ref6,                       'create product')
   check(species_ref6.setSpecies(startingPos[:-1]+str(int(startingPos[-1])+1)),      'assign product species')
   check(species_ref6.setConstant(False),     'set "constant" on species ref 2')
-
-
   #Add the amino-acylated tRNA
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
@@ -132,13 +129,13 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(wtf.setConstant(False),     'set "constant" on species ref 2') 
 
 
-
   #STUFF THAT IS THE SAME FOR ALL REACTIONS
   #Add the GTP
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
   check(species_ref2.setSpecies('GTP'),      'assign product species')
   check(species_ref2.setConstant(False),     'set "constant" on species ref 2')
+  check(species_ref2.setStoichiometry(2),     'set "coefficient" on species ref 2')
   #Add the EFG
   species_ref3 = r1.createReactant()
   check(species_ref3,                       'create product')
@@ -154,18 +151,20 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(species_ref5,                       'create product')
   check(species_ref5.setSpecies('H2O'),      'assign product species')
   check(species_ref5.setConstant(False),     'set "constant" on species ref 2')
-  
-  
+  check(species_ref5.setStoichiometry(2),     'set "coefficient" on species ref 5')
   #Produce the GDP
   species_ref8 = r1.createProduct()
   check(species_ref8,                       'create product')
   check(species_ref8.setSpecies('GDP'),      'assign product species')
   check(species_ref8.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref8.setStoichiometry(2),     'set "coefficient" on species ref 8')
+
   #Produce the Pi
   species_ref9 = r1.createProduct()
   check(species_ref9,                       'create product')
   check(species_ref9.setSpecies('PI'),      'assign product species')
   check(species_ref9.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref9.setStoichiometry(2),     'set "coefficient" on species ref 2')
   #Produce the EFG
   species_ref10 = r1.createProduct()
   check(species_ref10,                       'create product')
@@ -176,8 +175,15 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(species_ref11,                       'create product')
   check(species_ref11.setSpecies('MG_451_MONOMER'),      'assign product species')
   check(species_ref11.setConstant(True),     'set "constant" on species ref 2')
-  
-  math_ast = parseL3Formula('k * GTP * GTP * MG_089_MONOMER * MG_451_MONOMER * H2O')
+  #Produce the H
+  species_ref12 = r1.createProduct()
+  check(species_ref12,                       'create product')
+  check(species_ref12.setSpecies('H'),      'assign product species')
+  check(species_ref12.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref12.setStoichiometry(2),     'set "coefficient" on species ref 2')
+
+
+  math_ast = parseL3Formula('k * GTP * GTP * MG_089_MONOMER * MG_451_MONOMER * '+ startingPos)
   check(math_ast,                           'create AST for rate expression')
  
   kinetic_law = r1.createKineticLaw()

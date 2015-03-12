@@ -180,7 +180,7 @@ def create_model():
     check(water.setId('H2O'),                     'set species s1 id')
     check(water.setCompartment('c'),            'set species s1 compartment')
     check(water.setConstant(False),              'set "constant" attribute on s1')
-    check(water.setInitialAmount(10),             'set initial amount for s1')
+    check(water.setInitialAmount(1000),             'set initial amount for s1')
     check(water.setSubstanceUnits('item'),       'set substance units for s1')
     check(water.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
     check(water.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')

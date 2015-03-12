@@ -112,24 +112,24 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   species_ref1 = r1.createReactant()
   check(species_ref1,                       'create reactant')
   check(species_ref1.setSpecies(startingPos),      'assign reactant species')
-  check(species_ref1.setConstant(True),     'set "constant" on species ref 1')
+  check(species_ref1.setConstant(False),     'set "constant" on species ref 1')
   #Produce the Next Position
   species_ref6 = r1.createProduct()
   check(species_ref6,                       'create product')
   check(species_ref6.setSpecies(startingPos[:-1]+str(int(startingPos[-1])+1)),      'assign product species')
-  check(species_ref6.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref6.setConstant(False),     'set "constant" on species ref 2')
 
 
   #Add the amino-acylated tRNA
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
   check(species_ref2.setSpecies('aminoacylated_'+ tRNA_needed),      'assign product species')
-  check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref2.setConstant(False),     'set "constant" on species ref 2')
   #Produce the Unloaded tRNA
   wtf = r1.createProduct()
   check(wtf,                       'create product')
   check(wtf.setSpecies(tRNA_needed),      'assign product species')
-  check(wtf.setConstant(True),     'set "constant" on species ref 2') 
+  check(wtf.setConstant(False),     'set "constant" on species ref 2') 
 
 
 
@@ -138,22 +138,22 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
   check(species_ref2.setSpecies('GTP'),      'assign product species')
-  check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref2.setConstant(False),     'set "constant" on species ref 2')
   #Add the EFG
   species_ref3 = r1.createReactant()
   check(species_ref3,                       'create product')
   check(species_ref3.setSpecies('MG_089_MONOMER'),      'assign product species')
-  check(species_ref3.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref3.setConstant(False),     'set "constant" on species ref 2')
   #Add the EFTU
   species_ref4 = r1.createReactant()
   check(species_ref4,                       'create product')
   check(species_ref4.setSpecies('MG_451_MONOMER'),      'assign product species')
-  check(species_ref4.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref4.setConstant(False),     'set "constant" on species ref 2')
   #Add the H2O
   species_ref5 = r1.createReactant()
   check(species_ref5,                       'create product')
   check(species_ref5.setSpecies('H2O'),      'assign product species')
-  check(species_ref5.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref5.setConstant(False),     'set "constant" on species ref 2')
   
   
   #Produce the GDP

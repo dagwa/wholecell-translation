@@ -4,11 +4,10 @@
 #################################
 
 
-# Get the Protein sequences
 import sys
 import csv
 
-
+# Get the Protein sequences
 prot_names=list()
 prot_len=list()
 sequence=list()
@@ -25,7 +24,30 @@ for i in range(1,len(your_list)): #skip the first one
 
 f.close()
 
-
+# Get the AA to trna associations
+SingleAA = {
+  'A':'MG471',
+  'N':'MG514',
+  'D':'MG489',
+  'C':'MG483',
+  'E':'MG513',
+  'Q':'MG502',
+  'H':'MG518',
+  'M':'MG485',
+  'F':'MG490',
+  'P':'MG484',
+  'Y':'MG503',
+  'V':'MG511',
+  'R':['MG492',  'MG495', 'MG497', 'MG523'],
+  'G': ['MG493', 'MG499'   ],
+  'I': ['MG472', 'MG486'   ],
+  'L': ['MG500', 'MG508', 'MG519', 'MG520'],
+  'K': ['MG501', 'MG509'   ],
+  'S': ['MG475', 'MG487' ,'MG506', 'MG507'],
+  'T': ['MG479', 'MG510', 'MG512'] ,
+  'W': ['MG496', 'MG504'   ],
+  'Fmet': ['MG488']     
+}
 
 
 #  List of ribosome-bound mRNAs
@@ -62,33 +84,100 @@ def create_species(model, var_name):
   check(s1.setCompartment('c'),            'set species s1 compartment')
   check(s1.setConstant(False),              'set "constant" attribute on s1')
   check(s1.setInitialAmount(0),             'set initial amount for s1')
-  check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
+  check(s1.setSubstanceUnits('item'),       'set substance units for s1')
   check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
-  check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
-def riboPos_Elongation(model):
+  check(s1.setHasOnlySubstanceUnits(True), 'set "hasOnlySubstanceUnits" on s1')
+
+def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   # Create a reaction inside this model, set the reactants and products,
   # and set the reaction rate expression (the SBML "kinetic law").  We
   # set the minimum required attributes for all of these objects.  The
   # units of the reaction rate are determined from the 'timeUnits' and
   # 'extentUnits' attributes on the Model object.
 
+
   r1 = model.createReaction()
   check(r1,                                 'create reaction')
-  check(r1.setId('r1'),                     'set reaction id')
+  check(r1.setName(startingPos+'_plus_'+AAadded+str(iterator)),                     'set reaction name')
+  check(r1.setId(startingPos+'_plus_'+AAadded+str(iterator)),                     'set reaction id')
   check(r1.setReversible(False),            'set reaction reversibility flag')
   check(r1.setFast(False),                  'set reaction "fast" attribute')
  
+
+  
+    #STUFF THAT ACTUALLY CHANGES FROM REACTION TO REACTION 
+
+
+  #Add the current Ribosome position
   species_ref1 = r1.createReactant()
   check(species_ref1,                       'create reactant')
-  check(species_ref1.setSpecies('s1'),      'assign reactant species')
+  check(species_ref1.setSpecies(startingPos),      'assign reactant species')
   check(species_ref1.setConstant(True),     'set "constant" on species ref 1')
- 
-  species_ref2 = r1.createProduct()
+  #Produce the Next Position
+  species_ref6 = r1.createProduct()
+  check(species_ref6,                       'create product')
+  check(species_ref6.setSpecies(startingPos[:-1]+str(int(startingPos[-1])+1)),      'assign product species')
+  check(species_ref6.setConstant(True),     'set "constant" on species ref 2')
+
+
+  #Add the amino-acylated tRNA
+  species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
-  check(species_ref2.setSpecies('s2'),      'assign product species')
+  check(species_ref2.setSpecies('aminoacylated_'+ tRNA_needed),      'assign product species')
   check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
- 
-  math_ast = parseL3Formula('k * s1 * c1')
+  #Produce the Unloaded tRNA
+  wtf = r1.createProduct()
+  check(wtf,                       'create product')
+  check(wtf.setSpecies(tRNA_needed),      'assign product species')
+  check(wtf.setConstant(True),     'set "constant" on species ref 2') 
+
+
+
+  #STUFF THAT IS THE SAME FOR ALL REACTIONS
+  #Add the GTP
+  species_ref2 = r1.createReactant()
+  check(species_ref2,                       'create product')
+  check(species_ref2.setSpecies('GTP'),      'assign product species')
+  check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
+  #Add the EFG
+  species_ref3 = r1.createReactant()
+  check(species_ref3,                       'create product')
+  check(species_ref3.setSpecies('MG_089_MONOMER'),      'assign product species')
+  check(species_ref3.setConstant(True),     'set "constant" on species ref 2')
+  #Add the EFTU
+  species_ref4 = r1.createReactant()
+  check(species_ref4,                       'create product')
+  check(species_ref4.setSpecies('MG_451_MONOMER'),      'assign product species')
+  check(species_ref4.setConstant(True),     'set "constant" on species ref 2')
+  #Add the H2O
+  species_ref5 = r1.createReactant()
+  check(species_ref5,                       'create product')
+  check(species_ref5.setSpecies('H2O'),      'assign product species')
+  check(species_ref5.setConstant(True),     'set "constant" on species ref 2')
+  
+  
+  #Produce the GDP
+  species_ref8 = r1.createProduct()
+  check(species_ref8,                       'create product')
+  check(species_ref8.setSpecies('GDP'),      'assign product species')
+  check(species_ref8.setConstant(True),     'set "constant" on species ref 2')
+  #Produce the Pi
+  species_ref9 = r1.createProduct()
+  check(species_ref9,                       'create product')
+  check(species_ref9.setSpecies('PI'),      'assign product species')
+  check(species_ref9.setConstant(True),     'set "constant" on species ref 2')
+  #Produce the EFG
+  species_ref10 = r1.createProduct()
+  check(species_ref10,                       'create product')
+  check(species_ref10.setSpecies('MG_089_MONOMER'),      'assign product species')
+  check(species_ref10.setConstant(True),     'set "constant" on species ref 2')
+  #Produce the EFTU
+  species_ref11 = r1.createProduct()
+  check(species_ref11,                       'create product')
+  check(species_ref11.setSpecies('MG_451_MONOMER'),      'assign product species')
+  check(species_ref11.setConstant(True),     'set "constant" on species ref 2')
+  
+  math_ast = parseL3Formula('k * GTP * GTP * MG_089_MONOMER * MG_451_MONOMER * H2O')
   check(math_ast,                           'create AST for rate expression')
  
   kinetic_law = r1.createKineticLaw()
@@ -169,7 +258,7 @@ def create_model(names,lengthsofseq,sequenceAAs):
   check(c1.setUnits('litre'),               'set compartment size units')
 
   #############################################
-  # Create ribosome position species 
+  # Create ribosome position species (one for each position plus a final one)
   #############################################
 
   for n in range(len(names)): 
@@ -179,7 +268,7 @@ def create_model(names,lengthsofseq,sequenceAAs):
       create_species(model, names[n] + '_p' + str(p))
 
     #create the final position
-    create_species(model, names[n] + '_pF'
+    create_species(model, names[n] + '_pF')
 
 
   
@@ -197,12 +286,27 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
 
   #############################################
-  # Create ribosome position species 
+  # Create ribosome position reactions 
   #############################################
+  # Initiation 
 
-  riboPos_Elongation(model)
+  # Elongation
+  for n in range(len(names)): 
+
+    #create the #AA positions
+    for p in range(int(lengthsofseq[n])):
+
+      if isinstance(SingleAA[sequence[n][p]],basestring):
+          riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],SingleAA[sequence[n][p]],1)
+      else:
+          i=1
+          for id in SingleAA[sequence[n][p]]:
+          #riboPos_Elongation(model,startingPos             ,AAadded       ,tRNA_needed,iterator):
+            riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],id         ,i)
+            i=i+1
 
 
+  # Termination
  
   # And we're done creating the basic model.
   # Now return a text string containing the model in XML format.
@@ -211,4 +315,4 @@ def create_model(names,lengthsofseq,sequenceAAs):
  
  
 if __name__ == '__main__':
-  print(create_model(prot_names[0:2], ['1', '3'], sequence)) # prot_len[0:2]
+  print(create_model(prot_names[0:2], ['3','1'], sequence[0:2])) # prot_len[0:2]

@@ -98,8 +98,8 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
 
   r1 = model.createReaction()
   check(r1,                                 'create reaction')
-  check(r1.setName(startingPos+'_plus_'+AAadded),                     'set reaction name')
-  check(r1.setId(startingPos+'_plus_'+AAadded),                     'set reaction id')
+  check(r1.setName(startingPos+'_plus_'+AAadded+str(iterator)),                     'set reaction name')
+  check(r1.setId(startingPos+'_plus_'+AAadded+str(iterator)),                     'set reaction id')
   check(r1.setReversible(False),            'set reaction reversibility flag')
   check(r1.setFast(False),                  'set reaction "fast" attribute')
  
@@ -126,10 +126,10 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(species_ref2.setSpecies('aminoacylated_'+ tRNA_needed),      'assign product species')
   check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
   #Produce the Unloaded tRNA
-  species_ref7 = r1.createProduct()
-  check(species_ref7,                       'create product')
-  check(species_ref7.setSpecies(tRNA_needed),      'assign product species')
-  check(species_ref7.setConstant(True),     'set "constant" on species ref 2') 
+  wtf = r1.createProduct()
+  check(wtf,                       'create product')
+  check(wtf.setSpecies(tRNA_needed),      'assign product species')
+  check(wtf.setConstant(True),     'set "constant" on species ref 2') 
 
 
 
@@ -177,7 +177,7 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(species_ref11.setSpecies('MG_451_MONOMER'),      'assign product species')
   check(species_ref11.setConstant(True),     'set "constant" on species ref 2')
   
-  math_ast = parseL3Formula('k * s1 ')
+  math_ast = parseL3Formula('k * GTP * GTP * MG_089_MONOMER * MG_451_MONOMER * H2O')
   check(math_ast,                           'create AST for rate expression')
  
   kinetic_law = r1.createKineticLaw()
@@ -295,12 +295,15 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
     #create the #AA positions
     for p in range(int(lengthsofseq[n])):
-      tRNAs_for_this_AA=SingleAA[sequence[n][p]]
-      i=1
-      for id in tRNAs_for_this_AA:
-        #riboPos_Elongation(model,startingPos             ,AAadded       ,tRNA_needed,iterator):
-        riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],id         ,i)
-        i=i+1
+
+      if isinstance(SingleAA[sequence[n][p]],basestring):
+          riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],SingleAA[sequence[n][p]],1)
+      else:
+          i=1
+          for id in SingleAA[sequence[n][p]]:
+          #riboPos_Elongation(model,startingPos             ,AAadded       ,tRNA_needed,iterator):
+            riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],id         ,i)
+            i=i+1
 
 
   # Termination
@@ -312,4 +315,4 @@ def create_model(names,lengthsofseq,sequenceAAs):
  
  
 if __name__ == '__main__':
-  print(create_model(prot_names[0:2], ['1', '3'], sequence[0:2])) # prot_len[0:2]
+  print(create_model(prot_names[0:2], ['3','1'], sequence[0:2])) # prot_len[0:2]

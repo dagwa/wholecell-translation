@@ -19,13 +19,13 @@
     <listOfSpecies>
       <species id="ADP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="AMP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ATP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP" compartment="c" initialAmount="1000" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="FTHF10" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="H" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="PI" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="PPI" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="THF" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="H2O" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H2O" compartment="c" initialAmount="1000" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ALA" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ARG" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ASN" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -93,7 +93,7 @@
       <species id="aminoacylated_MG485" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="met_aminoacylated_MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG488" compartment="c" initialAmount="1" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG490" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG490" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG484" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>

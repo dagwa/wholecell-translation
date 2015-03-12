@@ -198,4 +198,4 @@ def create_model(names,lengthsofseq,sequenceAAs):
  
  
 if __name__ == '__main__':
-  print(create_model(prot_names, prot_len, sequence))
+  print(create_model(prot_names[0:2], prot_len[0:2], sequence))

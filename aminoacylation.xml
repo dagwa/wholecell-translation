@@ -17,130 +17,132 @@
       <compartment id="c" spatialDimensions="3" size="0.01" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="ATP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="AMP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="FTHF10" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PPI" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="THF" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="H2O" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ALA" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ARG" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ASN" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ASP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="CYS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="GLU" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="GLN" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="GLY" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="HIS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ILE" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="LEU" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="LYS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MET" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PHE" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PRO" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="SER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="THR" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="TRP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="TYR" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VAL" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG471" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG471" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG492" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG492" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG495" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG495" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG497" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG497" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG523" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG523" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG514" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG514" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG489" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG489" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG483" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG483" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="GLU_aminoacylated_MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG513" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG513" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG493" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG493" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG499" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG499" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG518" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG518" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG472" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG472" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG486" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG486" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG500" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG500" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG508" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG508" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG519" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG519" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG520" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG520" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG501" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG501" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG509" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG509" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG485" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG485" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG488" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="met_aminoacylated_MG488" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG488" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG490" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG490" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG484" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG484" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG475" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG475" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG487" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG487" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG506" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG506" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG507" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG507" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG510" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG510" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG512" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG512" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG496" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG496" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG511" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG511" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_0004" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG_0004" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_292_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_378_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_113_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_036_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_253_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_462_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_295_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_251_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_035_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_345_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_266_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_136_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_021_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_365_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_194_195_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_283_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_005_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_375_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_126_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_455_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_334_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG_292_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ADP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="AMP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="FTHF10" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PI" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PPI" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="THF" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H2O" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ALA" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ARG" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ASN" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ASP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CYS" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLU" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLN" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLY" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="HIS" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ILE" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LEU" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LYS" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MET" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PHE" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PRO" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="SER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="THR" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="TRP" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="TYR" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="VAL" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG471" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG471" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG492" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG492" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG495" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG495" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG497" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG497" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG523" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG523" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG514" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG514" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG489" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG489" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG483" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG483" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG502" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLU_aminoacylated_MG502" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG502" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG513" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG513" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG493" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG493" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG499" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG499" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG518" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG518" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG472" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG472" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG486" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG486" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG500" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG500" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG508" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG508" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG519" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG519" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG520" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG520" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG501" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG501" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG509" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG509" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG485" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG485" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="met_aminoacylated_MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG488" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG490" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG490" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG484" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG484" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG475" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG475" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG487" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG487" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG506" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG506" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG507" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG507" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG479" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG479" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG510" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG510" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG512" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG512" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG496" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG496" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG504" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG504" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG503" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG503" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG511" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG511" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_0004" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG_0004" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_292_TETRAMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_378_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_113_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_036_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_253_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_098_099_100_TRIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_462_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_251_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_035_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_345_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_266_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_136_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_021_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_365_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_194_195_TETRAMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_283_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_005_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_375_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_126_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_455_DIMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_334_MONOMER" compartment="c" initialAmount="10" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="k_mg471_aminoacylation" value="456" units="per_minute" constant="true"/>
@@ -203,6 +205,8 @@
             <apply>
               <times/>
               <ci> k_mg471_aminoacylation </ci>
+              <ci> MG_292_TETRAMER </ci>
+              <ci> MG471 </ci>
               <ci> ALA </ci>
               <ci> ATP </ci>
             </apply>
@@ -228,6 +232,8 @@
             <apply>
               <times/>
               <ci> k_mg472_aminoacylation </ci>
+              <ci> MG_345_MONOMER </ci>
+              <ci> MG472 </ci>
               <ci> ILE </ci>
               <ci> ATP </ci>
             </apply>
@@ -253,6 +259,8 @@
             <apply>
               <times/>
               <ci> k_mg475_aminoacylation </ci>
+              <ci> MG_005_DIMER </ci>
+              <ci> MG475 </ci>
               <ci> SER </ci>
               <ci> ATP </ci>
             </apply>
@@ -278,6 +286,8 @@
             <apply>
               <times/>
               <ci> k_mg479_aminoacylation </ci>
+              <ci> MG_375_DIMER </ci>
+              <ci> MG479 </ci>
               <ci> THR </ci>
               <ci> ATP </ci>
             </apply>
@@ -303,6 +313,7 @@
             <apply>
               <times/>
               <ci> k_mg483_aminoacylation </ci>
+              <ci> MG_253_MONOMER </ci>
               <ci> MG483 </ci>
               <ci> CYS </ci>
               <ci> ATP </ci>
@@ -329,6 +340,7 @@
             <apply>
               <times/>
               <ci> k_mg484_aminoacylation </ci>
+              <ci> MG_283_DIMER </ci>
               <ci> MG484 </ci>
               <ci> PRO </ci>
               <ci> ATP </ci>
@@ -355,6 +367,7 @@
             <apply>
               <times/>
               <ci> k_mg485_aminoacylation </ci>
+              <ci> MG_021_DIMER </ci>
               <ci> MG485 </ci>
               <ci> MET </ci>
               <ci> ATP </ci>
@@ -381,6 +394,7 @@
             <apply>
               <times/>
               <ci> k_mg486_aminoacylation </ci>
+              <ci> MG_345_MONOMER </ci>
               <ci> MG486 </ci>
               <ci> ILE </ci>
               <ci> ATP </ci>
@@ -407,6 +421,7 @@
             <apply>
               <times/>
               <ci> k_mg487_aminoacylation </ci>
+              <ci> MG_005_DIMER </ci>
               <ci> MG487 </ci>
               <ci> SER </ci>
               <ci> ATP </ci>
@@ -433,6 +448,7 @@
             <apply>
               <times/>
               <ci> k_mg488_aminoacylation </ci>
+              <ci> MG_021_DIMER </ci>
               <ci> MG488 </ci>
               <ci> MET </ci>
               <ci> ATP </ci>
@@ -458,6 +474,7 @@
             <apply>
               <times/>
               <ci> k_mg488_formyltransferase </ci>
+              <ci> MG_365_MONOMER </ci>
               <ci> met_aminoacylated_MG488 </ci>
               <ci> H2O </ci>
               <ci> FTHF10 </ci>
@@ -484,6 +501,7 @@
             <apply>
               <times/>
               <ci> k_mg489_aminoacylation </ci>
+              <ci> MG_036_DIMER </ci>
               <ci> MG489 </ci>
               <ci> ASP </ci>
               <ci> ATP </ci>
@@ -510,6 +528,7 @@
             <apply>
               <times/>
               <ci> k_mg490_aminoacylation </ci>
+              <ci> MG_194_195_TETRAMER </ci>
               <ci> MG490 </ci>
               <ci> PHE </ci>
               <ci> ATP </ci>
@@ -536,6 +555,7 @@
             <apply>
               <times/>
               <ci> k_mg492_aminoacylation </ci>
+              <ci> MG_378_MONOMER </ci>
               <ci> MG492 </ci>
               <ci> ARG </ci>
               <ci> ATP </ci>
@@ -562,6 +582,7 @@
             <apply>
               <times/>
               <ci> k_mg493_aminoacylation </ci>
+              <ci> MG_251_DIMER </ci>
               <ci> MG493 </ci>
               <ci> GLY </ci>
               <ci> ATP </ci>
@@ -588,6 +609,7 @@
             <apply>
               <times/>
               <ci> k_mg495_aminoacylation </ci>
+              <ci> MG_378_MONOMER </ci>
               <ci> MG495 </ci>
               <ci> ARG </ci>
               <ci> ATP </ci>
@@ -614,6 +636,7 @@
             <apply>
               <times/>
               <ci> k_mg496_aminoacylation </ci>
+              <ci> MG_126_DIMER </ci>
               <ci> MG496 </ci>
               <ci> TRP </ci>
               <ci> ATP </ci>
@@ -640,6 +663,7 @@
             <apply>
               <times/>
               <ci> k_mg497_aminoacylation </ci>
+              <ci> MG_378_MONOMER </ci>
               <ci> MG497 </ci>
               <ci> ARG </ci>
               <ci> ATP </ci>
@@ -666,6 +690,7 @@
             <apply>
               <times/>
               <ci> k_mg499_aminoacylation </ci>
+              <ci> MG_251_DIMER </ci>
               <ci> MG499 </ci>
               <ci> GLY </ci>
               <ci> ATP </ci>
@@ -692,6 +717,7 @@
             <apply>
               <times/>
               <ci> k_mg500_aminoacylation </ci>
+              <ci> MG_266_MONOMER </ci>
               <ci> MG500 </ci>
               <ci> LEU </ci>
               <ci> ATP </ci>
@@ -718,6 +744,7 @@
             <apply>
               <times/>
               <ci> k_mg501_aminoacylation </ci>
+              <ci> MG_136_DIMER </ci>
               <ci> MG501 </ci>
               <ci> LYS </ci>
               <ci> ATP </ci>
@@ -737,13 +764,14 @@
           <speciesReference species="GLU_aminoacylated_MG502" constant="false"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="MG_295_MONOMER"/>
+          <modifierSpeciesReference species="MG_462_MONOMER"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k_mg502_aminoacylation </ci>
+              <ci> MG_462_MONOMER </ci>
               <ci> MG502 </ci>
               <ci> GLU </ci>
               <ci> ATP </ci>
@@ -756,24 +784,28 @@
           <speciesReference species="GLU_aminoacylated_MG502" constant="false"/>
           <speciesReference species="ATP" constant="false"/>
           <speciesReference species="GLN" constant="false"/>
+          <speciesReference species="H2O" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="ADP" constant="false"/>
           <speciesReference species="PI" constant="false"/>
           <speciesReference species="GLU" constant="false"/>
+          <speciesReference species="H" constant="false"/>
           <speciesReference species="aminoacylated_MG502" constant="false"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="MG_462_MONOMER"/>
+          <modifierSpeciesReference species="MG_098_099_100_TRIMER"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k_mg502_amidotransferase </ci>
+              <ci> MG_098_099_100_TRIMER </ci>
               <ci> GLU_aminoacylated_MG502 </ci>
               <ci> GLN </ci>
               <ci> ATP </ci>
+              <ci> H2O </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -797,6 +829,7 @@
             <apply>
               <times/>
               <ci> k_mg503_aminoacylation </ci>
+              <ci> MG_455_DIMER </ci>
               <ci> MG503 </ci>
               <ci> TYR </ci>
               <ci> ATP </ci>
@@ -823,6 +856,7 @@
             <apply>
               <times/>
               <ci> k_mg504_aminoacylation </ci>
+              <ci> MG_126_DIMER </ci>
               <ci> MG504 </ci>
               <ci> TRP </ci>
               <ci> ATP </ci>
@@ -849,6 +883,7 @@
             <apply>
               <times/>
               <ci> k_mg506_aminoacylation </ci>
+              <ci> MG_005_DIMER </ci>
               <ci> MG506 </ci>
               <ci> SER </ci>
               <ci> ATP </ci>
@@ -875,6 +910,7 @@
             <apply>
               <times/>
               <ci> k_mg507_aminoacylation </ci>
+              <ci> MG_005_DIMER </ci>
               <ci> MG507 </ci>
               <ci> SER </ci>
               <ci> ATP </ci>
@@ -901,6 +937,7 @@
             <apply>
               <times/>
               <ci> k_mg508_aminoacylation </ci>
+              <ci> MG_266_MONOMER </ci>
               <ci> MG508 </ci>
               <ci> LEU </ci>
               <ci> ATP </ci>
@@ -927,6 +964,7 @@
             <apply>
               <times/>
               <ci> k_mg509_aminoacylation </ci>
+              <ci> MG_136_DIMER </ci>
               <ci> MG509 </ci>
               <ci> LYS </ci>
               <ci> ATP </ci>
@@ -953,6 +991,7 @@
             <apply>
               <times/>
               <ci> k_mg510_aminoacylation </ci>
+              <ci> MG_375_DIMER </ci>
               <ci> MG510 </ci>
               <ci> THR </ci>
               <ci> ATP </ci>
@@ -979,6 +1018,7 @@
             <apply>
               <times/>
               <ci> k_mg511_aminoacylation </ci>
+              <ci> MG_334_MONOMER </ci>
               <ci> MG511 </ci>
               <ci> VAL </ci>
               <ci> ATP </ci>
@@ -1005,6 +1045,7 @@
             <apply>
               <times/>
               <ci> k_mg512_aminoacylation </ci>
+              <ci> MG_375_DIMER </ci>
               <ci> MG512 </ci>
               <ci> THR </ci>
               <ci> ATP </ci>
@@ -1031,6 +1072,7 @@
             <apply>
               <times/>
               <ci> k_mg513_aminoacylation </ci>
+              <ci> MG_462_MONOMER </ci>
               <ci> MG513 </ci>
               <ci> GLU </ci>
               <ci> ATP </ci>
@@ -1057,6 +1099,7 @@
             <apply>
               <times/>
               <ci> k_mg514_aminoacylation </ci>
+              <ci> MG_113_DIMER </ci>
               <ci> MG514 </ci>
               <ci> ASN </ci>
               <ci> ATP </ci>
@@ -1083,6 +1126,7 @@
             <apply>
               <times/>
               <ci> k_mg518_aminoacylation </ci>
+              <ci> MG_035_DIMER </ci>
               <ci> MG518 </ci>
               <ci> HIS </ci>
               <ci> ATP </ci>
@@ -1109,6 +1153,7 @@
             <apply>
               <times/>
               <ci> k_mg519_aminoacylation </ci>
+              <ci> MG_266_MONOMER </ci>
               <ci> MG519 </ci>
               <ci> LEU </ci>
               <ci> ATP </ci>
@@ -1135,6 +1180,7 @@
             <apply>
               <times/>
               <ci> k_mg520_aminoacylation </ci>
+              <ci> MG_266_MONOMER </ci>
               <ci> MG520 </ci>
               <ci> LEU </ci>
               <ci> ATP </ci>
@@ -1161,6 +1207,7 @@
             <apply>
               <times/>
               <ci> k_mg523_aminoacylation </ci>
+              <ci> MG_378_MONOMER </ci>
               <ci> MG523 </ci>
               <ci> ARG </ci>
               <ci> ATP </ci>
@@ -1187,6 +1234,7 @@
             <apply>
               <times/>
               <ci> k_mg_0004_aminoacylation </ci>
+              <ci> MG_292_TETRAMER </ci>
               <ci> MG_0004 </ci>
               <ci> ALA </ci>
               <ci> ATP </ci>

@@ -7,6 +7,11 @@
           <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
         </listOfUnits>
       </unitDefinition>
+      <unitDefinition id="per_minute">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="c" spatialDimensions="3" size="0.01" units="litre" constant="true"/>
@@ -20,31 +25,67 @@
       <species id="H2O" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ALA" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ARG" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ASN" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ASP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="CYS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLU" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLN" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="GLY" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="HIS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ILE" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LEU" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LYS" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MET" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="PHE" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="PRO" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="SER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="THR" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="TRP" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="TYR" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="VAL" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG471" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG471" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG492" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG492" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG495" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG495" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG497" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG497" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG523" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG523" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG514" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG514" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG489" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG489" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG483" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG483" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GLU_aminoacylated_MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG502" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG513" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG513" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG493" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG493" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG499" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG499" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG518" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG518" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG472" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG472" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG486" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG486" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG500" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG500" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG508" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG508" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG519" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG519" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG520" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG520" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG501" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG501" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG509" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG509" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG485" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG485" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG488" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -56,27 +97,91 @@
       <species id="aminoacylated_MG484" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG475" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG475" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="aminoacylated_MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG487" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG487" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG506" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG506" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG507" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG507" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG479" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG510" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG510" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG512" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG512" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG496" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="aminoacylated_MG496" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG504" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG511" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG511" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_0004" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="aminoacylated_MG_0004" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_292_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_378_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_113_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_036_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_253_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_462_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_295_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_251_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_035_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_345_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_266_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_136_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_021_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_365_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_194_195_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_283_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_005_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="MG_375_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_126_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_455_DIMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_334_MONOMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MG_292_TETRAMER" compartment="c" initialAmount="0" substanceUnits="item" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="k" value="1" units="per_second" constant="true"/>
+      <parameter id="k_mg471_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg472_aminoacylation" value="255.762" units="per_minute" constant="true"/>
+      <parameter id="k_mg475_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg479_aminoacylation" value="5400" units="per_minute" constant="true"/>
+      <parameter id="k_mg483_aminoacylation" value="8514" units="per_minute" constant="true"/>
+      <parameter id="k_mg484_aminoacylation" value="840" units="per_minute" constant="true"/>
+      <parameter id="k_mg485_aminoacylation" value="192" units="per_minute" constant="true"/>
+      <parameter id="k_mg486_aminoacylation" value="255.762" units="per_minute" constant="true"/>
+      <parameter id="k_mg487_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg488_aminoacylation" value="192" units="per_minute" constant="true"/>
+      <parameter id="k_mg488_formyltransferase" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg489_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg490_aminoacylation" value="324" units="per_minute" constant="true"/>
+      <parameter id="k_mg492_aminoacylation" value="168" units="per_minute" constant="true"/>
+      <parameter id="k_mg493_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg495_aminoacylation" value="168" units="per_minute" constant="true"/>
+      <parameter id="k_mg496_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg497_aminoacylation" value="168" units="per_minute" constant="true"/>
+      <parameter id="k_mg499_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg500_aminoacylation" value="306" units="per_minute" constant="true"/>
+      <parameter id="k_mg501_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg502_aminoacylation" value="264" units="per_minute" constant="true"/>
+      <parameter id="k_mg502_amidotransferase" value="57.6" units="per_minute" constant="true"/>
+      <parameter id="k_mg503_aminoacylation" value="44.4" units="per_minute" constant="true"/>
+      <parameter id="k_mg504_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg506_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg507_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg508_aminoacylation" value="306" units="per_minute" constant="true"/>
+      <parameter id="k_mg509_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg510_aminoacylation" value="5400" units="per_minute" constant="true"/>
+      <parameter id="k_mg511_aminoacylation" value="456" units="per_minute" constant="true"/>
+      <parameter id="k_mg512_aminoacylation" value="5400" units="per_minute" constant="true"/>
+      <parameter id="k_mg513_aminoacylation" value="264" units="per_minute" constant="true"/>
+      <parameter id="k_mg514_aminoacylation" value="1620" units="per_minute" constant="true"/>
+      <parameter id="k_mg518_aminoacylation" value="8520" units="per_minute" constant="true"/>
+      <parameter id="k_mg519_aminoacylation" value="306" units="per_minute" constant="true"/>
+      <parameter id="k_mg520_aminoacylation" value="306" units="per_minute" constant="true"/>
+      <parameter id="k_mg523_aminoacylation" value="168" units="per_minute" constant="true"/>
+      <parameter id="k_mg_0004_aminoacylation" value="456" units="per_minute" constant="true"/>
     </listOfParameters>
     <listOfReactions>
       <reaction id="MG471_Aminoacylation" reversible="false" fast="false">
@@ -97,9 +202,9 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg471_aminoacylation </ci>
+              <ci> ALA </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -122,9 +227,9 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg472_aminoacylation </ci>
+              <ci> ILE </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -147,16 +252,16 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg475_aminoacylation </ci>
+              <ci> SER </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
       </reaction>
       <reaction id="MG479_Aminoacylation" reversible="false" fast="false">
         <listOfReactants>
-          <speciesReference species="SER" constant="false"/>
+          <speciesReference species="THR" constant="false"/>
           <speciesReference species="ATP" constant="false"/>
           <speciesReference species="MG479" constant="false"/>
         </listOfReactants>
@@ -172,9 +277,9 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg479_aminoacylation </ci>
+              <ci> THR </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -197,9 +302,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg483_aminoacylation </ci>
+              <ci> MG483 </ci>
+              <ci> CYS </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -222,9 +328,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg484_aminoacylation </ci>
+              <ci> MG484 </ci>
+              <ci> PRO </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -247,9 +354,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg485_aminoacylation </ci>
+              <ci> MG485 </ci>
+              <ci> MET </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -272,9 +380,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg486_aminoacylation </ci>
+              <ci> MG486 </ci>
+              <ci> ILE </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -297,9 +406,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg487_aminoacylation </ci>
+              <ci> MG487 </ci>
+              <ci> SER </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -322,9 +432,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg488_aminoacylation </ci>
+              <ci> MG488 </ci>
+              <ci> MET </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -346,9 +457,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg488_formyltransferase </ci>
+              <ci> met_aminoacylated_MG488 </ci>
+              <ci> H2O </ci>
+              <ci> FTHF10 </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -371,9 +483,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg489_aminoacylation </ci>
+              <ci> MG489 </ci>
+              <ci> ASP </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -396,9 +509,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg490_aminoacylation </ci>
+              <ci> MG490 </ci>
+              <ci> PHE </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -421,9 +535,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg492_aminoacylation </ci>
+              <ci> MG492 </ci>
+              <ci> ARG </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -446,9 +561,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg493_aminoacylation </ci>
+              <ci> MG493 </ci>
+              <ci> GLY </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -471,9 +587,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg495_aminoacylation </ci>
+              <ci> MG495 </ci>
+              <ci> ARG </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -496,9 +613,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg496_aminoacylation </ci>
+              <ci> MG496 </ci>
+              <ci> TRP </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -521,9 +639,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg497_aminoacylation </ci>
+              <ci> MG497 </ci>
+              <ci> ARG </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -546,9 +665,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg499_aminoacylation </ci>
+              <ci> MG499 </ci>
+              <ci> GLY </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -571,9 +691,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg500_aminoacylation </ci>
+              <ci> MG500 </ci>
+              <ci> LEU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -596,9 +717,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg501_aminoacylation </ci>
+              <ci> MG501 </ci>
+              <ci> LYS </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -621,9 +743,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg502_aminoacylation </ci>
+              <ci> MG502 </ci>
+              <ci> GLU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -647,9 +770,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg502_amidotransferase </ci>
+              <ci> GLU_aminoacylated_MG502 </ci>
+              <ci> GLN </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -672,9 +796,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg503_aminoacylation </ci>
+              <ci> MG503 </ci>
+              <ci> TYR </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -697,9 +822,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg504_aminoacylation </ci>
+              <ci> MG504 </ci>
+              <ci> TRP </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -722,9 +848,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg506_aminoacylation </ci>
+              <ci> MG506 </ci>
+              <ci> SER </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -747,9 +874,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg507_aminoacylation </ci>
+              <ci> MG507 </ci>
+              <ci> SER </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -772,9 +900,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg508_aminoacylation </ci>
+              <ci> MG508 </ci>
+              <ci> LEU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -797,9 +926,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg509_aminoacylation </ci>
+              <ci> MG509 </ci>
+              <ci> LYS </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -822,9 +952,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg510_aminoacylation </ci>
+              <ci> MG510 </ci>
+              <ci> THR </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -847,9 +978,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg511_aminoacylation </ci>
+              <ci> MG511 </ci>
+              <ci> VAL </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -872,9 +1004,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg512_aminoacylation </ci>
+              <ci> MG512 </ci>
+              <ci> THR </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -897,9 +1030,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg513_aminoacylation </ci>
+              <ci> MG513 </ci>
+              <ci> GLU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -922,9 +1056,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg514_aminoacylation </ci>
+              <ci> MG514 </ci>
+              <ci> ASN </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -947,9 +1082,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg518_aminoacylation </ci>
+              <ci> MG518 </ci>
+              <ci> HIS </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -972,9 +1108,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg519_aminoacylation </ci>
+              <ci> MG519 </ci>
+              <ci> LEU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -997,9 +1134,10 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg520_aminoacylation </ci>
+              <ci> MG520 </ci>
+              <ci> LEU </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -1022,9 +1160,36 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <ci> k </ci>
-              <ci> s1 </ci>
-              <ci> c1 </ci>
+              <ci> k_mg523_aminoacylation </ci>
+              <ci> MG523 </ci>
+              <ci> ARG </ci>
+              <ci> ATP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="MG_0004_Aminoacylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="ALA" constant="false"/>
+          <speciesReference species="ATP" constant="false"/>
+          <speciesReference species="MG_0004" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" constant="false"/>
+          <speciesReference species="PPI" constant="false"/>
+          <speciesReference species="aminoacylated_MG_0004" constant="false"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="MG_292_TETRAMER"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_mg_0004_aminoacylation </ci>
+              <ci> MG_0004 </ci>
+              <ci> ALA </ci>
+              <ci> ATP </ci>
             </apply>
           </math>
         </kineticLaw>

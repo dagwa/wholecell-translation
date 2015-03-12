@@ -1,34 +1,10 @@
 # misc data to integrate in to the code
 
-# Enzymes/Complexes Composition Gene Name(s)
-# Alanyl-tRNA synthetase (4) MG292 alaS
-# Arginyl-tRNA synthetase (1) MG378 argS
-# Aspartyl-tRNA synthetase (2) MG036 aspS
-# Asparaginyl-tRNA synthetase (2) MG113 asnS
-# Cysteinyl-tRNA synthetase (1) MG253 cysS
-# Glutamyl-tRNA synthetase (1) MG462 gltX
-# Glycyl-tRNA synthetase (2) MG251 glyS
-# Histidyl-tRNA synthetase (2) MG035 hisS
-# Isoleucyl-tRNA synthetase (1) MG345 ileS
-# Leucyl-tRNA synthetase (1) MG266 leuS
-# Lysyl-tRNA synthetase (2) MG136 lysS
-# Methionyl-tRNA synthetase (2) MG021 metG
-# Phenylalanyl-tRNA synthetase (2) MG194, (2) MG195 pheS, -
-# Prolyl-tRNA synthetase (2) MG283 proS
-# Seryl-tRNA synthetase (2) MG005 serS
-# Threonyl-tRNA synthetase (2) MG375 thrS
-# Tryptophanyl-tRNA synthetase (2) MG126 trpS
-# Tyrosyl-tRNA synthetase (2) MG455 tyrS
-# Valyl-tRNA synthetase (1) MG334 valS
-# Glutamyl-tRNA(Gln) amidotransferase (1) MG098, (1) MG099, (1) MG100 -, -, gatB
-# Methionyl-tRNA formyltransferase (1) MG365
-
 # MG_0004_Aminoacylation
 
 # Initialization Block
-import sys
+import os
 import libsbml as sbml
-# from libsbml import *
 
 
 def check(value, message):
@@ -97,39 +73,648 @@ def create_model():
     # Create a compartment inside this model, and set the required
     # attributes for an SBML compartment in SBML Level 3.
 
-    c1 = model.createCompartment()
-    check(c1,                                 'create compartment')
-    check(c1.setId('c1'),                     'set compartment id')
-    check(c1.setConstant(True),               'set compartment "constant"')
-    check(c1.setSize(0.01),                   'set compartment "size"')
-    check(c1.setSpatialDimensions(3),         'set compartment dimensions')
-    check(c1.setUnits('litre'),               'set compartment size units')
+    cytocompartment = model.createCompartment()
+    check(cytocompartment,                                 'create compartment')
+    check(cytocompartment.setId('c'),                     'set compartment id')
+    check(cytocompartment.setConstant(True),               'set compartment "constant"')
+    check(cytocompartment.setSize(0.01),                   'set compartment "size"')
+    check(cytocompartment.setSpatialDimensions(3),         'set compartment dimensions')
+    check(cytocompartment.setUnits('litre'),               'set compartment size units')
 
-    # Create two species inside this model, set the required attributes
+    # Create species for the model, set the required attributes
     # for each species in SBML Level 3 (which are the 'id', 'compartment',
     # 'constant', 'hasOnlySubstanceUnits', and 'boundaryCondition'
     # attributes), and initialize the amount of the species along with the
     # units of the amount.
 
-    s1 = model.createSpecies()
-    check(s1,                                 'create species s1')
-    check(s1.setId('s1'),                     'set species s1 id')
-    check(s1.setCompartment('c1'),            'set species s1 compartment')
-    check(s1.setConstant(False),              'set "constant" attribute on s1')
-    check(s1.setInitialAmount(5),             'set initial amount for s1')
-    check(s1.setSubstanceUnits('mole'),       'set substance units for s1')
-    check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
-    check(s1.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    # Metabolites
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    atp = model.createSpecies()
+    check(atp,                                 'create species s1')
+    check(atp.setId('ATP'),                     'set species s1 id')
+    check(atp.setCompartment('c'),            'set species s1 compartment')
+    check(atp.setConstant(False),              'set "constant" attribute on s1')
+    check(atp.setInitialAmount(0),             'set initial amount for s1')
+    check(atp.setSubstanceUnits('item'),       'set substance units for s1')
+    check(atp.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(atp.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
 
-    s2 = model.createSpecies()
-    check(s2,                                 'create species s2')
-    check(s2.setId('s2'),                     'set species s2 id')
-    check(s2.setCompartment('c1'),            'set species s2 compartment')
-    check(s2.setConstant(False),              'set "constant" attribute on s2')
-    check(s2.setInitialAmount(0),             'set initial amount for s2')
-    check(s2.setSubstanceUnits('mole'),       'set substance units for s2')
-    check(s2.setBoundaryCondition(False),     'set "boundaryCondition" on s2')
-    check(s2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s2')
+    amp = model.createSpecies()
+    check(amp,                                 'create species s1')
+    check(amp.setId('AMP'),                     'set species s1 id')
+    check(amp.setCompartment('c'),            'set species s1 compartment')
+    check(amp.setConstant(False),              'set "constant" attribute on s1')
+    check(amp.setInitialAmount(0),             'set initial amount for s1')
+    check(amp.setSubstanceUnits('item'),       'set substance units for s1')
+    check(amp.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(amp.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    fthf10 = model.createSpecies()
+    check(fthf10,                                 'create species s1')
+    check(fthf10.setId('FTHF10'),                     'set species s1 id')
+    check(fthf10.setCompartment('c'),            'set species s1 compartment')
+    check(fthf10.setConstant(False),              'set "constant" attribute on s1')
+    check(fthf10.setInitialAmount(0),             'set initial amount for s1')
+    check(fthf10.setSubstanceUnits('item'),       'set substance units for s1')
+    check(fthf10.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(fthf10.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    ppi = model.createSpecies()
+    check(ppi,                                 'create species s1')
+    check(ppi.setId('PPI'),                     'set species s1 id')
+    check(ppi.setCompartment('c'),            'set species s1 compartment')
+    check(ppi.setConstant(False),              'set "constant" attribute on s1')
+    check(ppi.setInitialAmount(0),             'set initial amount for s1')
+    check(ppi.setSubstanceUnits('item'),       'set substance units for s1')
+    check(ppi.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(ppi.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    thf = model.createSpecies()
+    check(thf,                                 'create species s1')
+    check(thf.setId('THF'),                     'set species s1 id')
+    check(thf.setCompartment('c'),            'set species s1 compartment')
+    check(thf.setConstant(False),              'set "constant" attribute on s1')
+    check(thf.setInitialAmount(0),             'set initial amount for s1')
+    check(thf.setSubstanceUnits('item'),       'set substance units for s1')
+    check(thf.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(thf.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    water = model.createSpecies()
+    check(water,                                 'create species s1')
+    check(water.setId('H2O'),                     'set species s1 id')
+    check(water.setCompartment('c'),            'set species s1 compartment')
+    check(water.setConstant(False),              'set "constant" attribute on s1')
+    check(water.setInitialAmount(0),             'set initial amount for s1')
+    check(water.setSubstanceUnits('item'),       'set substance units for s1')
+    check(water.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(water.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    alanine = model.createSpecies()
+    check(alanine,                                 'create species s1')
+    check(alanine.setId('ALA'),                     'set species s1 id')
+    check(alanine.setCompartment('c'),            'set species s1 compartment')
+    check(alanine.setConstant(False),              'set "constant" attribute on s1')
+    check(alanine.setInitialAmount(0),             'set initial amount for s1')
+    check(alanine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(alanine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(alanine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    arginine = model.createSpecies()
+    check(arginine,                                 'create species s1')
+    check(arginine.setId('ARG'),                     'set species s1 id')
+    check(arginine.setCompartment('c'),            'set species s1 compartment')
+    check(arginine.setConstant(False),              'set "constant" attribute on s1')
+    check(arginine.setInitialAmount(0),             'set initial amount for s1')
+    check(arginine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(arginine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(arginine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    aspartate = model.createSpecies()
+    check(aspartate,                                 'create species s1')
+    check(aspartate.setId('ASP'),                     'set species s1 id')
+    check(aspartate.setCompartment('c'),            'set species s1 compartment')
+    check(aspartate.setConstant(False),              'set "constant" attribute on s1')
+    check(aspartate.setInitialAmount(0),             'set initial amount for s1')
+    check(aspartate.setSubstanceUnits('item'),       'set substance units for s1')
+    check(aspartate.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(aspartate.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    cysteine = model.createSpecies()
+    check(cysteine,                                 'create species s1')
+    check(cysteine.setId('CYS'),                     'set species s1 id')
+    check(cysteine.setCompartment('c'),            'set species s1 compartment')
+    check(cysteine.setConstant(False),              'set "constant" attribute on s1')
+    check(cysteine.setInitialAmount(0),             'set initial amount for s1')
+    check(cysteine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(cysteine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(cysteine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    glycine = model.createSpecies()
+    check(glycine,                                 'create species s1')
+    check(glycine.setId('GLY'),                     'set species s1 id')
+    check(glycine.setCompartment('c'),            'set species s1 compartment')
+    check(glycine.setConstant(False),              'set "constant" attribute on s1')
+    check(glycine.setInitialAmount(0),             'set initial amount for s1')
+    check(glycine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(glycine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(glycine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    isoleucine = model.createSpecies()
+    check(isoleucine,                                 'create species s1')
+    check(isoleucine.setId('ILE'),                     'set species s1 id')
+    check(isoleucine.setCompartment('c'),            'set species s1 compartment')
+    check(isoleucine.setConstant(False),              'set "constant" attribute on s1')
+    check(isoleucine.setInitialAmount(0),             'set initial amount for s1')
+    check(isoleucine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(isoleucine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(isoleucine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    methionine = model.createSpecies()
+    check(methionine,                                 'create species s1')
+    check(methionine.setId('MET'),                     'set species s1 id')
+    check(methionine.setCompartment('c'),            'set species s1 compartment')
+    check(methionine.setConstant(False),              'set "constant" attribute on s1')
+    check(methionine.setInitialAmount(0),             'set initial amount for s1')
+    check(methionine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(methionine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(methionine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    phenylalanine = model.createSpecies()
+    check(phenylalanine,                                 'create species s1')
+    check(phenylalanine.setId('PHE'),                     'set species s1 id')
+    check(phenylalanine.setCompartment('c'),            'set species s1 compartment')
+    check(phenylalanine.setConstant(False),              'set "constant" attribute on s1')
+    check(phenylalanine.setInitialAmount(0),             'set initial amount for s1')
+    check(phenylalanine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(phenylalanine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(phenylalanine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    proline = model.createSpecies()
+    check(proline,                                 'create species s1')
+    check(proline.setId('PRO'),                     'set species s1 id')
+    check(proline.setCompartment('c'),            'set species s1 compartment')
+    check(proline.setConstant(False),              'set "constant" attribute on s1')
+    check(proline.setInitialAmount(0),             'set initial amount for s1')
+    check(proline.setSubstanceUnits('item'),       'set substance units for s1')
+    check(proline.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(proline.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    serine = model.createSpecies()
+    check(serine,                                 'create species s1')
+    check(serine.setId('SER'),                     'set species s1 id')
+    check(serine.setCompartment('c'),            'set species s1 compartment')
+    check(serine.setConstant(False),              'set "constant" attribute on s1')
+    check(serine.setInitialAmount(0),             'set initial amount for s1')
+    check(serine.setSubstanceUnits('item'),       'set substance units for s1')
+    check(serine.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(serine.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    tryptophan = model.createSpecies()
+    check(tryptophan,                                 'create species s1')
+    check(tryptophan.setId('TRP'),                     'set species s1 id')
+    check(tryptophan.setCompartment('c'),            'set species s1 compartment')
+    check(tryptophan.setConstant(False),              'set "constant" attribute on s1')
+    check(tryptophan.setInitialAmount(0),             'set initial amount for s1')
+    check(tryptophan.setSubstanceUnits('item'),       'set substance units for s1')
+    check(tryptophan.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(tryptophan.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    # tRNAs: unloaded and loaded
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    alatrna = model.createSpecies()
+    check(alatrna,                                 'create species s1')
+    check(alatrna.setId('MG471'),                     'set species s1 id')
+    check(alatrna.setCompartment('c'),            'set species s1 compartment')
+    check(alatrna.setConstant(False),              'set "constant" attribute on s1')
+    check(alatrna.setInitialAmount(0),             'set initial amount for s1')
+    check(alatrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(alatrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(alatrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    alatrnaloaded = model.createSpecies()
+    check(alatrnaloaded,                                 'create species s1')
+    check(alatrnaloaded.setId('aminoacylated_MG471'),                     'set species s1 id')
+    check(alatrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(alatrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(alatrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(alatrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(alatrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(alatrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    argtrna = model.createSpecies()
+    check(argtrna,                                 'create species s1')
+    check(argtrna.setId('MG492'),                     'set species s1 id')
+    check(argtrna.setCompartment('c'),            'set species s1 compartment')
+    check(argtrna.setConstant(False),              'set "constant" attribute on s1')
+    check(argtrna.setInitialAmount(0),             'set initial amount for s1')
+    check(argtrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(argtrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(argtrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    argtrnaloaded = model.createSpecies()
+    check(argtrnaloaded,                                 'create species s1')
+    check(argtrnaloaded.setId('aminoacylated_MG492'),                     'set species s1 id')
+    check(argtrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(argtrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(argtrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(argtrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(argtrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(argtrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    argtrna2 = model.createSpecies()
+    check(argtrna2,                                 'create species s1')
+    check(argtrna2.setId('MG495'),                     'set species s1 id')
+    check(argtrna2.setCompartment('c'),            'set species s1 compartment')
+    check(argtrna2.setConstant(False),              'set "constant" attribute on s1')
+    check(argtrna2.setInitialAmount(0),             'set initial amount for s1')
+    check(argtrna2.setSubstanceUnits('item'),       'set substance units for s1')
+    check(argtrna2.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(argtrna2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    argtrna2loaded = model.createSpecies()
+    check(argtrna2loaded,                                 'create species s1')
+    check(argtrna2loaded.setId('aminoacylated_MG495'),                     'set species s1 id')
+    check(argtrna2loaded.setCompartment('c'),            'set species s1 compartment')
+    check(argtrna2loaded.setConstant(False),              'set "constant" attribute on s1')
+    check(argtrna2loaded.setInitialAmount(0),             'set initial amount for s1')
+    check(argtrna2loaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(argtrna2loaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(argtrna2loaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    asptrna = model.createSpecies()
+    check(asptrna,                                 'create species s1')
+    check(asptrna.setId('MG489'),                     'set species s1 id')
+    check(asptrna.setCompartment('c'),            'set species s1 compartment')
+    check(asptrna.setConstant(False),              'set "constant" attribute on s1')
+    check(asptrna.setInitialAmount(0),             'set initial amount for s1')
+    check(asptrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(asptrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(asptrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    asptrnaloaded = model.createSpecies()
+    check(asptrnaloaded,                                 'create species s1')
+    check(asptrnaloaded.setId('aminoacylated_MG489'),                     'set species s1 id')
+    check(asptrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(asptrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(asptrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(asptrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(asptrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(asptrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    cystrna = model.createSpecies()
+    check(cystrna,                                 'create species s1')
+    check(cystrna.setId('MG483'),                     'set species s1 id')
+    check(cystrna.setCompartment('c'),            'set species s1 compartment')
+    check(cystrna.setConstant(False),              'set "constant" attribute on s1')
+    check(cystrna.setInitialAmount(0),             'set initial amount for s1')
+    check(cystrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(cystrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(cystrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    cystrnaloaded = model.createSpecies()
+    check(cystrnaloaded,                                 'create species s1')
+    check(cystrnaloaded.setId('aminoacylated_MG483'),                     'set species s1 id')
+    check(cystrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(cystrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(cystrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(cystrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(cystrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(cystrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    glytrna = model.createSpecies()
+    check(glytrna,                                 'create species s1')
+    check(glytrna.setId('MG493'),                     'set species s1 id')
+    check(glytrna.setCompartment('c'),            'set species s1 compartment')
+    check(glytrna.setConstant(False),              'set "constant" attribute on s1')
+    check(glytrna.setInitialAmount(0),             'set initial amount for s1')
+    check(glytrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(glytrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(glytrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    glytrnaloaded = model.createSpecies()
+    check(glytrnaloaded,                                 'create species s1')
+    check(glytrnaloaded.setId('aminoacylated_MG493'),                     'set species s1 id')
+    check(glytrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(glytrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(glytrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(glytrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(glytrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(glytrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    iletrna = model.createSpecies()
+    check(iletrna,                                 'create species s1')
+    check(iletrna.setId('MG472'),                     'set species s1 id')
+    check(iletrna.setCompartment('c'),            'set species s1 compartment')
+    check(iletrna.setConstant(False),              'set "constant" attribute on s1')
+    check(iletrna.setInitialAmount(0),             'set initial amount for s1')
+    check(iletrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(iletrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(iletrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    iletrnaloaded = model.createSpecies()
+    check(iletrnaloaded,                                 'create species s1')
+    check(iletrnaloaded.setId('aminoacylated_MG472'),                     'set species s1 id')
+    check(iletrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(iletrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(iletrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(iletrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(iletrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(iletrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    iletrna2 = model.createSpecies()
+    check(iletrna2,                                 'create species s1')
+    check(iletrna2.setId('MG486'),                     'set species s1 id')
+    check(iletrna2.setCompartment('c'),            'set species s1 compartment')
+    check(iletrna2.setConstant(False),              'set "constant" attribute on s1')
+    check(iletrna2.setInitialAmount(0),             'set initial amount for s1')
+    check(iletrna2.setSubstanceUnits('item'),       'set substance units for s1')
+    check(iletrna2.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(iletrna2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    iletrna2loaded = model.createSpecies()
+    check(iletrna2loaded,                                 'create species s1')
+    check(iletrna2loaded.setId('aminoacylated_MG486'),                     'set species s1 id')
+    check(iletrna2loaded.setCompartment('c'),            'set species s1 compartment')
+    check(iletrna2loaded.setConstant(False),              'set "constant" attribute on s1')
+    check(iletrna2loaded.setInitialAmount(0),             'set initial amount for s1')
+    check(iletrna2loaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(iletrna2loaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(iletrna2loaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    mettrna = model.createSpecies()
+    check(mettrna,                                 'create species s1')
+    check(mettrna.setId('MG485'),                     'set species s1 id')
+    check(mettrna.setCompartment('c'),            'set species s1 compartment')
+    check(mettrna.setConstant(False),              'set "constant" attribute on s1')
+    check(mettrna.setInitialAmount(0),             'set initial amount for s1')
+    check(mettrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(mettrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(mettrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    mettrnaloaded = model.createSpecies()
+    check(mettrnaloaded,                                 'create species s1')
+    check(mettrnaloaded.setId('aminoacylated_MG485'),                     'set species s1 id')
+    check(mettrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(mettrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(mettrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(mettrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(mettrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(mettrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    fmettrna = model.createSpecies()
+    check(fmettrna,                                 'create species s1')
+    check(fmettrna.setId('MG488'),                     'set species s1 id')
+    check(fmettrna.setCompartment('c'),            'set species s1 compartment')
+    check(fmettrna.setConstant(False),              'set "constant" attribute on s1')
+    check(fmettrna.setInitialAmount(0),             'set initial amount for s1')
+    check(fmettrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(fmettrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(fmettrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    fmettrnametloaded = model.createSpecies()
+    check(fmettrnametloaded,                                 'create species s1')
+    check(fmettrnametloaded.setId('met_aminoacylated_MG488'),                     'set species s1 id')
+    check(fmettrnametloaded.setCompartment('c'),            'set species s1 compartment')
+    check(fmettrnametloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(fmettrnametloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(fmettrnametloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(fmettrnametloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(fmettrnametloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    fmettrnaloaded = model.createSpecies()
+    check(fmettrnaloaded,                                 'create species s1')
+    check(fmettrnaloaded.setId('aminoacylated_MG488'),                     'set species s1 id')
+    check(fmettrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(fmettrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(fmettrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(fmettrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(fmettrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(fmettrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    phetrna = model.createSpecies()
+    check(phetrna,                                 'create species s1')
+    check(phetrna.setId('MG490'),                     'set species s1 id')
+    check(phetrna.setCompartment('c'),            'set species s1 compartment')
+    check(phetrna.setConstant(False),              'set "constant" attribute on s1')
+    check(phetrna.setInitialAmount(0),             'set initial amount for s1')
+    check(phetrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(phetrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(phetrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    phetrnaloaded = model.createSpecies()
+    check(phetrnaloaded,                                 'create species s1')
+    check(phetrnaloaded.setId('aminoacylated_MG490'),                     'set species s1 id')
+    check(phetrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(phetrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(phetrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(phetrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(phetrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(phetrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    protrna = model.createSpecies()
+    check(protrna,                                 'create species s1')
+    check(protrna.setId('MG484'),                     'set species s1 id')
+    check(protrna.setCompartment('c'),            'set species s1 compartment')
+    check(protrna.setConstant(False),              'set "constant" attribute on s1')
+    check(protrna.setInitialAmount(0),             'set initial amount for s1')
+    check(protrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(protrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(protrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    protrnaloaded = model.createSpecies()
+    check(protrnaloaded,                                 'create species s1')
+    check(protrnaloaded.setId('aminoacylated_MG484'),                     'set species s1 id')
+    check(protrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(protrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(protrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(protrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(protrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(protrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrna = model.createSpecies()
+    check(sertrna,                                 'create species s1')
+    check(sertrna.setId('MG475'),                     'set species s1 id')
+    check(sertrna.setCompartment('c'),            'set species s1 compartment')
+    check(sertrna.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrna.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrnaloaded = model.createSpecies()
+    check(sertrnaloaded,                                 'create species s1')
+    check(sertrnaloaded.setId('aminoacylated_MG475'),                     'set species s1 id')
+    check(sertrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(sertrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrna2 = model.createSpecies()
+    check(sertrna2,                                 'create species s1')
+    check(sertrna2.setId('MG479'),                     'set species s1 id')
+    check(sertrna2.setCompartment('c'),            'set species s1 compartment')
+    check(sertrna2.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrna2.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrna2.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrna2.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrna2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrna2loaded = model.createSpecies()
+    check(sertrna2loaded,                                 'create species s1')
+    check(sertrna2loaded.setId('aminoacylated_MG479'),                     'set species s1 id')
+    check(sertrna2loaded.setCompartment('c'),            'set species s1 compartment')
+    check(sertrna2loaded.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrna2loaded.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrna2loaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrna2loaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrna2loaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrna3 = model.createSpecies()
+    check(sertrna3,                                 'create species s1')
+    check(sertrna3.setId('MG487'),                     'set species s1 id')
+    check(sertrna3.setCompartment('c'),            'set species s1 compartment')
+    check(sertrna3.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrna3.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrna3.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrna3.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrna3.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrna3loaded = model.createSpecies()
+    check(sertrna3loaded,                                 'create species s1')
+    check(sertrna3loaded.setId('aminoacylated_MG487'),                     'set species s1 id')
+    check(sertrna3loaded.setCompartment('c'),            'set species s1 compartment')
+    check(sertrna3loaded.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrna3loaded.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrna3loaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrna3loaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrna3loaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    trptrna = model.createSpecies()
+    check(trptrna,                                 'create species s1')
+    check(trptrna.setId('MG496'),                     'set species s1 id')
+    check(trptrna.setCompartment('c'),            'set species s1 compartment')
+    check(trptrna.setConstant(False),              'set "constant" attribute on s1')
+    check(trptrna.setInitialAmount(0),             'set initial amount for s1')
+    check(trptrna.setSubstanceUnits('item'),       'set substance units for s1')
+    check(trptrna.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(trptrna.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    trptrnaloaded = model.createSpecies()
+    check(trptrnaloaded,                                 'create species s1')
+    check(trptrnaloaded.setId('aminoacylated_MG496'),                     'set species s1 id')
+    check(trptrnaloaded.setCompartment('c'),            'set species s1 compartment')
+    check(trptrnaloaded.setConstant(False),              'set "constant" attribute on s1')
+    check(trptrnaloaded.setInitialAmount(0),             'set initial amount for s1')
+    check(trptrnaloaded.setSubstanceUnits('item'),       'set substance units for s1')
+    check(trptrnaloaded.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(trptrnaloaded.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    # Enzymes
+    #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+    alatrnaligase = model.createSpecies()
+    check(alatrnaligase,                                 'create species s1')
+    check(alatrnaligase.setId('MG_292_TETRAMER'),                     'set species s1 id')
+    check(alatrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(alatrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(alatrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(alatrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(alatrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(alatrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    argtrnaligase = model.createSpecies()
+    check(argtrnaligase,                                 'create species s1')
+    check(argtrnaligase.setId('MG_378_MONOMER'),                     'set species s1 id')
+    check(argtrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(argtrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(argtrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(argtrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(argtrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(argtrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    asptrnaligase = model.createSpecies()
+    check(asptrnaligase,                                 'create species s1')
+    check(asptrnaligase.setId('MG_036_DIMER'),                     'set species s1 id')
+    check(asptrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(asptrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(asptrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(asptrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(asptrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(asptrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    cystrnaligase = model.createSpecies()
+    check(cystrnaligase,                                 'create species s1')
+    check(cystrnaligase.setId('MG_253_MONOMER'),                     'set species s1 id')
+    check(cystrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(cystrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(cystrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(cystrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(cystrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(cystrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    glytrnaligase = model.createSpecies()
+    check(glytrnaligase,                                 'create species s1')
+    check(glytrnaligase.setId('MG_251_DIMER'),                     'set species s1 id')
+    check(glytrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(glytrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(glytrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(glytrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(glytrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(glytrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    iletrnaligase = model.createSpecies()
+    check(iletrnaligase,                                 'create species s1')
+    check(iletrnaligase.setId('MG_345_MONOMER'),                     'set species s1 id')
+    check(iletrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(iletrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(iletrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(iletrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(iletrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(iletrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    mettrnaligase = model.createSpecies()
+    check(mettrnaligase,                                 'create species s1')
+    check(mettrnaligase.setId('MG_021_DIMER'),                     'set species s1 id')
+    check(mettrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(mettrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(mettrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(mettrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(mettrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(mettrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    mettrnaformyltrans = model.createSpecies()
+    check(mettrnaformyltrans,                                 'create species s1')
+    check(mettrnaformyltrans.setId('MG_365_MONOMER'),                     'set species s1 id')
+    check(mettrnaformyltrans.setCompartment('c'),            'set species s1 compartment')
+    check(mettrnaformyltrans.setConstant(False),              'set "constant" attribute on s1')
+    check(mettrnaformyltrans.setInitialAmount(0),             'set initial amount for s1')
+    check(mettrnaformyltrans.setSubstanceUnits('item'),       'set substance units for s1')
+    check(mettrnaformyltrans.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(mettrnaformyltrans.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    phetrnaligase = model.createSpecies()
+    check(phetrnaligase,                                 'create species s1')
+    check(phetrnaligase.setId('MG_194_195_TETRAMER'),                     'set species s1 id')
+    check(phetrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(phetrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(phetrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(phetrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(phetrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(phetrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    protrnaligase = model.createSpecies()
+    check(protrnaligase,                                 'create species s1')
+    check(protrnaligase.setId('MG_283_DIMER'),                     'set species s1 id')
+    check(protrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(protrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(protrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(protrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(protrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(protrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrnaligase = model.createSpecies()
+    check(sertrnaligase,                                 'create species s1')
+    check(sertrnaligase.setId('MG_005_DIMER'),                     'set species s1 id')
+    check(sertrnaligase.setCompartment('c'),            'set species s1 compartment')
+    check(sertrnaligase.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrnaligase.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrnaligase.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrnaligase.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrnaligase.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
+
+    sertrnaligase2 = model.createSpecies()
+    check(sertrnaligase2,                                 'create species s1')
+    check(sertrnaligase2.setId('MG_375_DIMER'),                     'set species s1 id')
+    check(sertrnaligase2.setCompartment('c'),            'set species s1 compartment')
+    check(sertrnaligase2.setConstant(False),              'set "constant" attribute on s1')
+    check(sertrnaligase2.setInitialAmount(0),             'set initial amount for s1')
+    check(sertrnaligase2.setSubstanceUnits('item'),       'set substance units for s1')
+    check(sertrnaligase2.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
+    check(sertrnaligase2.setHasOnlySubstanceUnits(False), 'set "hasOnlySubstanceUnits" on s1')
 
     # Create a parameter object inside this model, set the required
     # attributes 'id' and 'constant' for a parameter in SBML Level 3, and
@@ -171,6 +756,10 @@ def create_model():
     check(mg471aminoacylreact3,                       'create reactant')
     check(mg471aminoacylreact3.setSpecies('MG471'),      'assign reactant species')
     check(mg471aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg471aminoacylenzyme = mg471aminoacyl.createModifier()
+    check(mg471aminoacylenzyme,                       'create reactant')
+    check(mg471aminoacylenzyme.setSpecies('MG_292_TETRAMER'),      'assign reactant species')
 
     mg471aminoacylprod1 = mg471aminoacyl.createProduct()
     check(mg471aminoacylprod1,                       'create product')
@@ -219,6 +808,10 @@ def create_model():
     check(mg472aminoacylreact3.setSpecies('MG472'),      'assign reactant species')
     check(mg472aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg472aminoacylenzyme = mg472aminoacyl.createModifier()
+    check(mg472aminoacylenzyme,                       'create reactant')
+    check(mg472aminoacylenzyme.setSpecies('MG_345_MONOMER'),      'assign reactant species')
+
     mg472aminoacylprod1 = mg472aminoacyl.createProduct()
     check(mg472aminoacylprod1,                       'create product')
     check(mg472aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -265,6 +858,10 @@ def create_model():
     check(mg475aminoacylreact3,                       'create reactant')
     check(mg475aminoacylreact3.setSpecies('MG475'),      'assign reactant species')
     check(mg475aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg475aminoacylenzyme = mg475aminoacyl.createModifier()
+    check(mg475aminoacylenzyme,                       'create reactant')
+    check(mg475aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg475aminoacylprod1 = mg475aminoacyl.createProduct()
     check(mg475aminoacylprod1,                       'create product')
@@ -313,6 +910,10 @@ def create_model():
     check(mg479aminoacylreact3.setSpecies('MG479'),      'assign reactant species')
     check(mg479aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg479aminoacylenzyme = mg479aminoacyl.createModifier()
+    check(mg479aminoacylenzyme,                       'create reactant')
+    check(mg479aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg479aminoacylprod1 = mg479aminoacyl.createProduct()
     check(mg479aminoacylprod1,                       'create product')
     check(mg479aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -359,6 +960,10 @@ def create_model():
     check(mg483aminoacylreact3,                       'create reactant')
     check(mg483aminoacylreact3.setSpecies('MG483'),      'assign reactant species')
     check(mg483aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg483aminoacylenzyme = mg483aminoacyl.createModifier()
+    check(mg483aminoacylenzyme,                       'create reactant')
+    check(mg483aminoacylenzyme.setSpecies('MG_253_MONOMER'),      'assign reactant species')
 
     mg483aminoacylprod1 = mg483aminoacyl.createProduct()
     check(mg483aminoacylprod1,                       'create product')
@@ -407,6 +1012,10 @@ def create_model():
     check(mg484aminoacylreact3.setSpecies('MG484'),      'assign reactant species')
     check(mg484aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg484aminoacylenzyme = mg484aminoacyl.createModifier()
+    check(mg484aminoacylenzyme,                       'create reactant')
+    check(mg484aminoacylenzyme.setSpecies('MG_283_DIMER'),      'assign reactant species')
+
     mg484aminoacylprod1 = mg484aminoacyl.createProduct()
     check(mg484aminoacylprod1,                       'create product')
     check(mg484aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -453,6 +1062,10 @@ def create_model():
     check(mg485aminoacylreact3,                       'create reactant')
     check(mg485aminoacylreact3.setSpecies('MG485'),      'assign reactant species')
     check(mg485aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg485aminoacylenzyme = mg485aminoacyl.createModifier()
+    check(mg485aminoacylenzyme,                       'create reactant')
+    check(mg485aminoacylenzyme.setSpecies('MG_021_DIMER'),      'assign reactant species')
 
     mg485aminoacylprod1 = mg485aminoacyl.createProduct()
     check(mg485aminoacylprod1,                       'create product')
@@ -501,6 +1114,10 @@ def create_model():
     check(mg486aminoacylreact3.setSpecies('MG486'),      'assign reactant species')
     check(mg486aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg486aminoenzyme = mg486aminoacyl.createModifier()
+    check(mg486aminoenzyme,                       'create reactant')
+    check(mg486aminoenzyme.setSpecies('MG_345_MONOMER'),      'assign reactant species')
+
     mg486aminoacylprod1 = mg486aminoacyl.createProduct()
     check(mg486aminoacylprod1,                       'create product')
     check(mg486aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -547,6 +1164,10 @@ def create_model():
     check(mg487aminoacylreact3,                       'create reactant')
     check(mg487aminoacylreact3.setSpecies('MG487'),      'assign reactant species')
     check(mg487aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg487aminoacylenzyme = mg487aminoacyl.createModifier()
+    check(mg487aminoacylenzyme,                       'create reactant')
+    check(mg487aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg487aminoacylprod1 = mg487aminoacyl.createProduct()
     check(mg487aminoacylprod1,                       'create product')
@@ -598,6 +1219,10 @@ def create_model():
     check(mg488aminoacylreact3.setSpecies('MG488'),      'assign reactant species')
     check(mg488aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg488aminoacylenzyme = mg488aminoacyl.createModifier()
+    check(mg488aminoacylenzyme,                       'create reactant')
+    check(mg488aminoacylenzyme.setSpecies('MG_021_DIMER'),      'assign reactant species')
+
     mg488aminoacylprod1 = mg488aminoacyl.createProduct()
     check(mg488aminoacylprod1,                       'create product')
     check(mg488aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -643,12 +1268,14 @@ def create_model():
     check(mg488methtransreact3.setSpecies('H2O'),      'assign reactant species')
     check(mg488methtransreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg488methtransenzyme = mg488methtrans.createModifier()
+    check(mg488methtransenzyme,                       'create reactant')
+    check(mg488methtransenzyme.setSpecies('MG_365_MONOMER'),      'assign reactant species')
+
     mg488methtransprod1 = mg488methtrans.createProduct()
     check(mg488methtransprod1,                       'create product')
     check(mg488methtransprod1.setSpecies('THF'),      'assign product species')
     check(mg488methtransprod1.setConstant(False),     'set "constant" on species ref 2')
-
-    # FIX: why is there no proton flying off here?
 
     # FIX FROM HERE
     mg488methtransprod2 = mg488methtrans.createProduct()
@@ -686,6 +1313,10 @@ def create_model():
     check(mg489aminoacylreact3,                       'create reactant')
     check(mg489aminoacylreact3.setSpecies('MG489'),      'assign reactant species')
     check(mg489aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg489aminoacylenzyme = mg489aminoacyl.createModifier()
+    check(mg489aminoacylenzyme,                       'create reactant')
+    check(mg489aminoacylenzyme.setSpecies('MG_036_DIMER'),      'assign reactant species')
 
     mg489aminoacylprod1 = mg489aminoacyl.createProduct()
     check(mg489aminoacylprod1,                       'create product')
@@ -734,6 +1365,10 @@ def create_model():
     check(mg490aminoacylreact3.setSpecies('MG490'),      'assign reactant species')
     check(mg490aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg490aminoacylenzyme = mg490aminoacyl.createModifier()
+    check(mg490aminoacylenzyme,                       'create reactant')
+    check(mg490aminoacylenzyme.setSpecies('MG_194_195_TETRAMER'),      'assign reactant species')
+
     mg490aminoacylprod1 = mg490aminoacyl.createProduct()
     check(mg490aminoacylprod1,                       'create product')
     check(mg490aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -780,6 +1415,10 @@ def create_model():
     check(mg492aminoacylreact3,                       'create reactant')
     check(mg492aminoacylreact3.setSpecies('MG492'),      'assign reactant species')
     check(mg492aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg492aminoacylenzyme = mg492aminoacyl.createModifier()
+    check(mg492aminoacylenzyme,                       'create reactant')
+    check(mg492aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg492aminoacylprod1 = mg492aminoacyl.createProduct()
     check(mg492aminoacylprod1,                       'create product')
@@ -828,6 +1467,10 @@ def create_model():
     check(mg493aminoacylreact3.setSpecies('MG493'),      'assign reactant species')
     check(mg493aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg493aminoacylenzyme = mg493aminoacyl.createModifier()
+    check(mg493aminoacylenzyme,                       'create reactant')
+    check(mg493aminoacylenzyme.setSpecies('MG_251_DIMER'),      'assign reactant species')
+
     mg493aminoacylprod1 = mg493aminoacyl.createProduct()
     check(mg493aminoacylprod1,                       'create product')
     check(mg493aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -874,6 +1517,10 @@ def create_model():
     check(mg495aminoacylreact3,                       'create reactant')
     check(mg495aminoacylreact3.setSpecies('MG495'),      'assign reactant species')
     check(mg495aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg495aminoacylenzyme = mg495aminoacyl.createModifier()
+    check(mg495aminoacylenzyme,                       'create reactant')
+    check(mg495aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg495aminoacylprod1 = mg495aminoacyl.createProduct()
     check(mg495aminoacylprod1,                       'create product')
@@ -922,6 +1569,10 @@ def create_model():
     check(mg496aminoacylreact3.setSpecies('MG496'),      'assign reactant species')
     check(mg496aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg496aminoacylenzyme = mg496aminoacyl.createModifier()
+    check(mg496aminoacylenzyme,                       'create reactant')
+    check(mg496aminoacylenzyme.setSpecies('MG_126_DIMER'),      'assign reactant species')
+
     mg496aminoacylprod1 = mg496aminoacyl.createProduct()
     check(mg496aminoacylprod1,                       'create product')
     check(mg496aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -968,6 +1619,10 @@ def create_model():
     check(mg497aminoacylreact3,                       'create reactant')
     check(mg497aminoacylreact3.setSpecies('MG497'),      'assign reactant species')
     check(mg497aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg497aminoacylenzyme = mg497aminoacyl.createModifier()
+    check(mg497aminoacylenzyme,                       'create reactant')
+    check(mg497aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
 
     mg497aminoacylprod1 = mg497aminoacyl.createProduct()
     check(mg497aminoacylprod1,                       'create product')
@@ -1016,6 +1671,10 @@ def create_model():
     check(mg499aminoacylreact3.setSpecies('MG499'),      'assign reactant species')
     check(mg499aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg499aminoacylenzyme = mg499aminoacyl.createModifier()
+    check(mg499aminoacylenzyme,                       'create reactant')
+    check(mg499aminoacylenzyme.setSpecies('MG_251_DIMER'),      'assign reactant species')
+
     mg499aminoacylprod1 = mg499aminoacyl.createProduct()
     check(mg499aminoacylprod1,                       'create product')
     check(mg499aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1063,6 +1722,10 @@ def create_model():
     check(mg500aminoacylreact3.setSpecies('MG500'),      'assign reactant species')
     check(mg500aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg500aminoacylenzyme = mg500aminoacyl.createModifier()
+    check(mg500aminoacylenzyme,                       'create reactant')
+    check(mg500aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg500aminoacylprod1 = mg500aminoacyl.createProduct()
     check(mg500aminoacylprod1,                       'create product')
     check(mg500aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1109,6 +1772,10 @@ def create_model():
     check(mg501aminoacylreact3,                       'create reactant')
     check(mg501aminoacylreact3.setSpecies('MG501'),      'assign reactant species')
     check(mg501aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg501aminoacylenzyme = mg501aminoacyl.createModifier()
+    check(mg501aminoacylenzyme,                       'create reactant')
+    check(mg501aminoacylenzyme.setSpecies('MG_136_DIMER'),      'assign reactant species')
 
     mg501aminoacylprod1 = mg501aminoacyl.createProduct()
     check(mg501aminoacylprod1,                       'create product')
@@ -1161,6 +1828,10 @@ def create_model():
     check(mg502aminoacylreact3.setSpecies('MG502'),      'assign reactant species')
     check(mg502aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg502aminoacylenzyme = mg502aminoacyl.createModifier()
+    check(mg502aminoacylenzyme,                       'create reactant')
+    check(mg502aminoacylenzyme.setSpecies('MG_295_MONOMER'),      'assign reactant species')
+
     mg502aminoacylprod1 = mg502aminoacyl.createProduct()
     check(mg502aminoacylprod1,                       'create product')
     check(mg502aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1184,6 +1855,7 @@ def create_model():
     check(kinetic_law,                        'create kinetic law')
     check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
 
+    # ---------------------
     # next, model the Glu-tRNA amidotransferase reaction
     mg502amidotrans = model.createReaction()
     check(mg502amidotrans,                                 'create reaction')
@@ -1205,6 +1877,10 @@ def create_model():
     check(mg502amidotransreact3,                       'create reactant')
     check(mg502amidotransreact3.setSpecies('GLN'),      'assign reactant species')
     check(mg502amidotransreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg502amidotransenzyme = mg502amidotrans.createModifier()
+    check(mg502amidotransenzyme,                       'create reactant')
+    check(mg502amidotransenzyme.setSpecies('MG_462_MONOMER'),      'assign reactant species')
 
     mg502amidotransprod1 = mg502amidotrans.createProduct()
     check(mg502amidotransprod1,                       'create product')
@@ -1258,6 +1934,10 @@ def create_model():
     check(mg503aminoacylreact3.setSpecies('MG503'),      'assign reactant species')
     check(mg503aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg503aminoacylenzyme = mg503aminoacyl.createModifier()
+    check(mg503aminoacylenzyme,                       'create reactant')
+    check(mg503aminoacylenzyme.setSpecies('MG_455_DIMER'),      'assign reactant species')
+
     mg503aminoacylprod1 = mg503aminoacyl.createProduct()
     check(mg503aminoacylprod1,                       'create product')
     check(mg503aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1304,6 +1984,10 @@ def create_model():
     check(mg504aminoacylreact3,                       'create reactant')
     check(mg504aminoacylreact3.setSpecies('MG504'),      'assign reactant species')
     check(mg504aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg504aminoacylenzyme = mg504aminoacyl.createModifier()
+    check(mg504aminoacylenzyme,                       'create reactant')
+    check(mg504aminoacylenzyme.setSpecies('MG_126_DIMER'),      'assign reactant species')
 
     mg504aminoacylprod1 = mg504aminoacyl.createProduct()
     check(mg504aminoacylprod1,                       'create product')
@@ -1352,6 +2036,10 @@ def create_model():
     check(mg506aminoacylreact3.setSpecies('MG506'),      'assign reactant species')
     check(mg506aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg506aminoacylenzyme = mg506aminoacyl.createModifier()
+    check(mg506aminoacylenzyme,                       'create reactant')
+    check(mg506aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
+
     mg506aminoacylprod1 = mg506aminoacyl.createProduct()
     check(mg506aminoacylprod1,                       'create product')
     check(mg506aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1398,6 +2086,10 @@ def create_model():
     check(mg507aminoacylreact3,                       'create reactant')
     check(mg507aminoacylreact3.setSpecies('MG507'),      'assign reactant species')
     check(mg507aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg507aminoacylenzyme = mg507aminoacyl.createModifier()
+    check(mg507aminoacylenzyme,                       'create reactant')
+    check(mg507aminoacylenzyme.setSpecies('MG_005_DIMER'),      'assign reactant species')
 
     mg507aminoacylprod1 = mg507aminoacyl.createProduct()
     check(mg507aminoacylprod1,                       'create product')
@@ -1446,6 +2138,10 @@ def create_model():
     check(mg508aminoacylreact3.setSpecies('MG508'),      'assign reactant species')
     check(mg508aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg508aminoacylenzyme = mg508aminoacyl.createModifier()
+    check(mg508aminoacylenzyme,                       'create reactant')
+    check(mg508aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg508aminoacylprod1 = mg508aminoacyl.createProduct()
     check(mg508aminoacylprod1,                       'create product')
     check(mg508aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1492,6 +2188,10 @@ def create_model():
     check(mg509aminoacylreact3,                       'create reactant')
     check(mg509aminoacylreact3.setSpecies('MG509'),      'assign reactant species')
     check(mg509aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg509aminoacylenzyme = mg509aminoacyl.createModifier()
+    check(mg509aminoacylenzyme,                       'create reactant')
+    check(mg509aminoacylenzyme.setSpecies('MG_136_DIMER'),      'assign reactant species')
 
     mg509aminoacylprod1 = mg509aminoacyl.createProduct()
     check(mg509aminoacylprod1,                       'create product')
@@ -1540,6 +2240,10 @@ def create_model():
     check(mg510aminoacylreact3.setSpecies('MG510'),      'assign reactant species')
     check(mg510aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg510aminoacylenzyme = mg510aminoacyl.createModifier()
+    check(mg510aminoacylenzyme,                       'create reactant')
+    check(mg510aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg510aminoacylprod1 = mg510aminoacyl.createProduct()
     check(mg510aminoacylprod1,                       'create product')
     check(mg510aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1586,6 +2290,10 @@ def create_model():
     check(mg511aminoacylreact3,                       'create reactant')
     check(mg511aminoacylreact3.setSpecies('MG511'),      'assign reactant species')
     check(mg511aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg511aminoacylenzyme = mg511aminoacyl.createModifier()
+    check(mg511aminoacylenzyme,                       'create reactant')
+    check(mg511aminoacylenzyme.setSpecies('MG_334_MONOMER'),      'assign reactant species')
 
     mg511aminoacylprod1 = mg511aminoacyl.createProduct()
     check(mg511aminoacylprod1,                       'create product')
@@ -1634,6 +2342,10 @@ def create_model():
     check(mg512aminoacylreact3.setSpecies('MG512'),      'assign reactant species')
     check(mg512aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg512aminoacylenzyme = mg512aminoacyl.createModifier()
+    check(mg512aminoacylenzyme,                       'create reactant')
+    check(mg512aminoacylenzyme.setSpecies('MG_375_DIMER'),      'assign reactant species')
+
     mg512aminoacylprod1 = mg512aminoacyl.createProduct()
     check(mg512aminoacylprod1,                       'create product')
     check(mg512aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1680,6 +2392,10 @@ def create_model():
     check(mg513aminoacylreact3,                       'create reactant')
     check(mg513aminoacylreact3.setSpecies('MG513'),      'assign reactant species')
     check(mg513aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg513aminoacylenzyme = mg513aminoacyl.createModifier()
+    check(mg513aminoacylenzyme,                       'create reactant')
+    check(mg513aminoacylenzyme.setSpecies('MG_462_MONOMER'),      'assign reactant species')
 
     mg513aminoacylprod1 = mg513aminoacyl.createProduct()
     check(mg513aminoacylprod1,                       'create product')
@@ -1728,6 +2444,10 @@ def create_model():
     check(mg514aminoacylreact3.setSpecies('MG514'),      'assign reactant species')
     check(mg514aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg514aminoacylenzyme = mg514aminoacyl.createModifier()
+    check(mg514aminoacylenzyme,                       'create reactant')
+    check(mg514aminoacylenzyme.setSpecies('MG_113_DIMER'),      'assign reactant species')
+
     mg514aminoacylprod1 = mg514aminoacyl.createProduct()
     check(mg514aminoacylprod1,                       'create product')
     check(mg514aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1774,6 +2494,10 @@ def create_model():
     check(mg518aminoacylreact3,                       'create reactant')
     check(mg518aminoacylreact3.setSpecies('MG518'),      'assign reactant species')
     check(mg518aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg518aminoacylenzyme = mg518aminoacyl.createModifier()
+    check(mg518aminoacylenzyme,                       'create reactant')
+    check(mg518aminoacylenzyme.setSpecies('MG_035_DIMER'),      'assign reactant species')
 
     mg518aminoacylprod1 = mg518aminoacyl.createProduct()
     check(mg518aminoacylprod1,                       'create product')
@@ -1822,6 +2546,10 @@ def create_model():
     check(mg519aminoacylreact3.setSpecies('MG519'),      'assign reactant species')
     check(mg519aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg519aminoacylenzyme = mg519aminoacyl.createModifier()
+    check(mg519aminoacylenzyme,                       'create reactant')
+    check(mg519aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
+
     mg519aminoacylprod1 = mg519aminoacyl.createProduct()
     check(mg519aminoacylprod1,                       'create product')
     check(mg519aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1868,6 +2596,10 @@ def create_model():
     check(mg520aminoacylreact3,                       'create reactant')
     check(mg520aminoacylreact3.setSpecies('MG520'),      'assign reactant species')
     check(mg520aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
+
+    mg520aminoacylenzyme = mg520aminoacyl.createModifier()
+    check(mg520aminoacylenzyme,                       'create reactant')
+    check(mg520aminoacylenzyme.setSpecies('MG_266_MONOMER'),      'assign reactant species')
 
     mg520aminoacylprod1 = mg520aminoacyl.createProduct()
     check(mg520aminoacylprod1,                       'create product')
@@ -1916,6 +2648,10 @@ def create_model():
     check(mg523aminoacylreact3.setSpecies('MG523'),      'assign reactant species')
     check(mg523aminoacylreact3.setConstant(False),     'set "constant" on species ref 1')
 
+    mg523aminoacylenzyme = mg523aminoacyl.createModifier()
+    check(mg523aminoacylenzyme,                       'create reactant')
+    check(mg523aminoacylenzyme.setSpecies('MG_378_MONOMER'),      'assign reactant species')
+
     mg523aminoacylprod1 = mg523aminoacyl.createProduct()
     check(mg523aminoacylprod1,                       'create product')
     check(mg523aminoacylprod1.setSpecies('AMP'),      'assign product species')
@@ -1939,12 +2675,13 @@ def create_model():
     check(kinetic_law,                        'create kinetic law')
     check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
 
+    # write the aminoacylation model to an xml file
+    sbml.writeSBMLToFile(document, os.path.join('C:\\wc\\2014_VW_modelling_workshop\\wholecell-translation', 'aminoacylation.xml'))
 
-
-    # Now return a text string containing the model in XML format.
-
+    # return a text string containing the model in XML format.
     return sbml.writeSBMLToString(document)
 
- 
+# if you are a UNIX hacker then you can produce the xml files from bash/terminal:
+#       python createAminoAcylation.py > aminoacylation.xml
 if __name__ == '__main__':
     print(create_model())

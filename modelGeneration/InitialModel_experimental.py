@@ -4,11 +4,10 @@
 #################################
 
 
-# Get the Protein sequences
 import sys
 import csv
 
-
+# Get the Protein sequences
 prot_names=list()
 prot_len=list()
 sequence=list()
@@ -25,7 +24,30 @@ for i in range(1,len(your_list)): #skip the first one
 
 f.close()
 
-
+# Get the AA to trna associations
+SingleAA = {
+  'A':'MG471',
+  'N':'MG514',
+  'D':'MG489',
+  'C':'MG483',
+  'E':'MG513',
+  'Q':'MG502',
+  'H':'MG518',
+  'M':'MG485',
+  'F':'MG490',
+  'P':'MG484',
+  'Y':'MG503',
+  'V':'MG511',
+  'R':['MG492',  'MG495', 'MG497', 'MG523'],
+  'G': ['MG493', 'MG499'   ],
+  'I': ['MG472', 'MG486'   ],
+  'L': ['MG500', 'MG508', 'MG519', 'MG520'],
+  'K': ['MG501', 'MG509'   ],
+  'S': ['MG475', 'MG487' ,'MG506', 'MG507'],
+  'T': ['MG479', 'MG510', 'MG512'] ,
+  'W': ['MG496', 'MG504'   ],
+  'Fmet': ['MG488']     
+}
 
 
 #  List of ribosome-bound mRNAs
@@ -66,12 +88,13 @@ def create_species(model, var_name):
   check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
   check(s1.setHasOnlySubstanceUnits(True), 'set "hasOnlySubstanceUnits" on s1')
 
-def riboPos_Elongation(model,startingPos,AAadded):
+def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   # Create a reaction inside this model, set the reactants and products,
   # and set the reaction rate expression (the SBML "kinetic law").  We
   # set the minimum required attributes for all of these objects.  The
   # units of the reaction rate are determined from the 'timeUnits' and
   # 'extentUnits' attributes on the Model object.
+
 
   r1 = model.createReaction()
   check(r1,                                 'create reaction')
@@ -80,16 +103,37 @@ def riboPos_Elongation(model,startingPos,AAadded):
   check(r1.setReversible(False),            'set reaction reversibility flag')
   check(r1.setFast(False),                  'set reaction "fast" attribute')
  
+
+  
+    #STUFF THAT ACTUALLY CHANGES FROM REACTION TO REACTION 
+
+
   #Add the current Ribosome position
   species_ref1 = r1.createReactant()
   check(species_ref1,                       'create reactant')
   check(species_ref1.setSpecies(startingPos),      'assign reactant species')
   check(species_ref1.setConstant(True),     'set "constant" on species ref 1')
+  #Produce the Next Position
+  species_ref6 = r1.createProduct()
+  check(species_ref6,                       'create product')
+  check(species_ref6.setSpecies(startingPos[:-1]+str(int(startingPos[-1])+1)),      'assign product species')
+  check(species_ref6.setConstant(True),     'set "constant" on species ref 2')
+
+
   #Add the amino-acylated tRNA
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
-  check(species_ref2.setSpecies('AA_tRNA_needed'),      'assign product species')
+  check(species_ref2.setSpecies('aminoacylated_'+ tRNA_needed),      'assign product species')
   check(species_ref2.setConstant(True),     'set "constant" on species ref 2')
+  #Produce the Unloaded tRNA
+  species_ref7 = r1.createProduct()
+  check(species_ref7,                       'create product')
+  check(species_ref7.setSpecies(tRNA_needed),      'assign product species')
+  check(species_ref7.setConstant(True),     'set "constant" on species ref 2') 
+
+
+
+  #STUFF THAT IS THE SAME FOR ALL REACTIONS
   #Add the GTP
   species_ref2 = r1.createReactant()
   check(species_ref2,                       'create product')
@@ -111,16 +155,7 @@ def riboPos_Elongation(model,startingPos,AAadded):
   check(species_ref5.setSpecies('H2O'),      'assign product species')
   check(species_ref5.setConstant(True),     'set "constant" on species ref 2')
   
-  #Produce the Next Position
-  species_ref6 = r1.createProduct()
-  check(species_ref6,                       'create product')
-  check(species_ref6.setSpecies('startingPos'),      'assign product species')
-  check(species_ref6.setConstant(True),     'set "constant" on species ref 2')
-  #Produce the Unloaded tRNA
-  species_ref7 = r1.createProduct()
-  check(species_ref7,                       'create product')
-  check(species_ref7.setSpecies('Unloaded_tRNA'),      'assign product species')
-  check(species_ref7.setConstant(True),     'set "constant" on species ref 2') 
+  
   #Produce the GDP
   species_ref8 = r1.createProduct()
   check(species_ref8,                       'create product')
@@ -260,7 +295,13 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
     #create the #AA positions
     for p in range(int(lengthsofseq[n])):
-      riboPos_Elongation(model,names[n] + '_p' + str(p),sequence[n][p])
+      tRNAs_for_this_AA=SingleAA[sequence[n][p]]
+      i=1
+      for id in tRNAs_for_this_AA:
+        #riboPos_Elongation(model,startingPos             ,AAadded       ,tRNA_needed,iterator):
+        riboPos_Elongation(model ,names[n] + '_p' + str(p),sequence[n][p],id         ,i)
+        i=i+1
+
 
   # Termination
  

@@ -1,3 +1,6 @@
+--------------------------------------------------------------------------------------
+---------------------------------- MODEL AUTHORSHIP ----------------------------------
+--------------------------------------------------------------------------------------
 tRNA Aminoacylation model: Script written by Joe Cursons, 11-13/03/2015
 Protein translation model: Scripts written by Dan (translation elongation and termination) and Denis (translation initiation), 11-13/03/2015
 
@@ -5,23 +8,37 @@ tRNA Aminoacylation SBGN representation: Created by Joe Cursons, 12-13/03/2015
 Protein translation SBGN representation: Created by Joe Cursons and Hojjat Naderi, 10-13/03/2015
 
 
-
+-----------------------------------------------------------------------------------------------
+---------------------------------- FURTHER MODEL DEVELOPMENT ----------------------------------
+-----------------------------------------------------------------------------------------------
 Continuation: 	Dan, Denis and Joe may be able to contribute a few days (and are relatively keen), 
 			but it would be relatively low priority so may not be able to turn things around quickly.
+		We are unsure of Hojjat's commitment, but given that he did not contribute to SBML model
+			creation this may not matter.
 
 		It probably doesn't make sense to continue with the current implementation of the translation model, because the model 
 			file is larger than 1GB, and it would be infeasible to run.
 
 
+-----------------------------------------------------------------------------------------
+---------------------------------- RESOURCE ALLOCATION ----------------------------------
+-----------------------------------------------------------------------------------------
 Resource allocation for tRNA aminoacylation (to be implemented):
 Sum over all tRNAs/amino acids; min{tRNA & corresponding amino acid} :: one ATP each (but forms an AMP) & corresponding amino acids/tRNAs
 	+ min{Met_MG488, FTHF10, H2O}
 	+ min{Gln, ATP, H2O} for Glu amidotransferase reaction
 
+
+Resource allocation for translation (to be implemented):
+Sum over ribosomes which become assembled: min{IF-1, IF-2, IF-3, ATP, RIBSOME_50S, RIBOSOME_30S, fMET, H2O} :: one GTP each
+Sum over ribosomes which are already assembled: min{EF-G, EF-Ts, EF-Tu} :: two GTP each
+Sum over ribosomes which become disassembled (i.e. at the end of the protein):
+	min{release factor 1, ribosome recycling factor 1} :: two GTP each
+
 	
-
-
-
+-----------------------------------------------------------------------------------------
+---------------------------------- MISCELLANEOUS NOTES ----------------------------------
+-----------------------------------------------------------------------------------------
 Notes on the current implementation of protein translation:
 1) To avoid the definition of events/conditional statements, we have constructed reactions describing the per-amino acid elongation of 
 	polypeptides. For every protein of length L, there are L+2 species (position 0 -> position L, and a position 'F' [for final] which
@@ -38,6 +55,13 @@ Alternatives for the implementation of protein translation:
 	variables which track the position of a ribosome upon a specific mRNA. Unfortunately, it is difficult/impossible to know in 
 	advance how many ribosomes are currently active, thus it would require functionality within SBML to dynamically define variables
 	(or dynamically expand/contract a vector which lists this information).
+2) **Will be very coarse grained, and potentially difficult to integrate over time with other modules and implement features such as
+	ribosome stalling ** - a single reaction could be defined for the elongation/translation of each protein, with the 
+	rate constants adjusted to match the "16 amino acids/second" limit of ribosome progression. There will also be issues with
+	resource allocation when resources are limited.
+3) **Will be coarse grained, but maybe a suitable middle-ground** - specify the 'step-size' of elongation as a function of the elongation
+	rate; e.g. for 1 second steps (as currently implemented), group together blocks of "16" reactions. This will still face problems
+	with resource allocation under conditions of limited resources.
 
 
 Problems with the current implementation of tRNA aminoacylation:

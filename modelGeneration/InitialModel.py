@@ -24,7 +24,7 @@ for i in range(1,len(your_list)): #skip the first one
 
 f.close()
 
-# Get the AA to trna associations
+# Get the AA to trna associations NOTE Z DENOTES THE FIRST AA WHICH IS FORMYL-MET!!!!
 SingleAA = {
   'A':'MG471',
   'N':'MG514',
@@ -190,6 +190,140 @@ def riboPos_Elongation(model,startingPos,AAadded,tRNA_needed,iterator):
   check(kinetic_law,                        'create kinetic law')
   check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
 
+def riboPos_Termination(model,protSeq):
+  # Create a reaction inside this model, set the reactants and products,
+  # and set the reaction rate expression (the SBML "kinetic law").  We
+  # set the minimum required attributes for all of these objects.  The
+  # units of the reaction rate are determined from the 'timeUnits' and
+  # 'extentUnits' attributes on the Model object.
+
+
+  r1 = model.createReaction()
+  check(r1,                                 'create reaction')
+  check(r1.setName(protSeq+'_termination'),                     'set reaction name')
+  check(r1.setId(protSeq+'_termination'),                     'set reaction id')
+  check(r1.setReversible(False),            'set reaction reversibility flag')
+  check(r1.setFast(False),                  'set reaction "fast" attribute')
+ 
+
+  
+  #STUFF THAT ACTUALLY CHANGES FROM REACTION TO REACTION 
+
+  #Add the current Ribosome position
+  species_ref1 = r1.createReactant()
+  check(species_ref1,                       'create reactant')
+  check(species_ref1.setSpecies(protSeq+'_pF'),      'assign reactant species')
+  check(species_ref1.setConstant(False),     'set "constant" on species ref 1')
+  #Produce the Protein!!!!!
+  species_ref6 = r1.createProduct()
+  check(species_ref6,                       'create product')
+  check(species_ref6.setSpecies(protSeq),      'assign product species')
+  check(species_ref6.setConstant(False),     'set "constant" on species ref 2')
+  
+
+
+  #STUFF THAT IS THE SAME FOR ALL REACTIONS
+  #Add the GTP
+  species_ref2 = r1.createReactant()
+  check(species_ref2,                       'create product')
+  check(species_ref2.setSpecies('GTP'),      'assign product species')
+  check(species_ref2.setConstant(False),     'set "constant" on species ref 2')
+  check(species_ref2.setStoichiometry(2),     'set "coefficient" on species ref 2')
+  #Add the RF1
+  species_ref3 = r1.createReactant()
+  check(species_ref3,                       'create product')
+  check(species_ref3.setSpecies('MG_258_MONOMER'),      'assign product species')
+  check(species_ref3.setConstant(False),     'set "constant" on species ref 2')
+  #Add the H2O
+  species_ref5 = r1.createReactant()
+  check(species_ref5,                       'create product')
+  check(species_ref5.setSpecies('H2O'),      'assign product species')
+  check(species_ref5.setConstant(False),     'set "constant" on species ref 2')
+  check(species_ref5.setStoichiometry(2),     'set "coefficient" on species ref 5')
+  
+
+  #Produce the GDP
+  species_ref8 = r1.createProduct()
+  check(species_ref8,                       'create product')
+  check(species_ref8.setSpecies('GDP'),      'assign product species')
+  check(species_ref8.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref8.setStoichiometry(2),     'set "coefficient" on species ref 8')
+  #Produce the Pi
+  species_ref9 = r1.createProduct()
+  check(species_ref9,                       'create product')
+  check(species_ref9.setSpecies('PI'),      'assign product species')
+  check(species_ref9.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref9.setStoichiometry(2),     'set "coefficient" on species ref 2')
+  #Produce the RF1_30S_50S
+  species_ref10 = r1.createProduct()
+  check(species_ref10,                       'create product')
+  check(species_ref10.setSpecies('RF1_30S_50S'),      'assign product species')
+  check(species_ref10.setConstant(True),     'set "constant" on species ref 2')
+  #Produce the H
+  species_ref12 = r1.createProduct()
+  check(species_ref12,                       'create product')
+  check(species_ref12.setSpecies('H'),      'assign product species')
+  check(species_ref12.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref12.setStoichiometry(2),     'set "coefficient" on species ref 2')
+
+
+  math_ast = parseL3Formula('k * GTP * GTP *   MG_258_MONOMER * '+ protSeq+'_pF')
+  check(math_ast,                           'create AST for rate expression')
+ 
+  kinetic_law = r1.createKineticLaw()
+  check(kinetic_law,                        'create kinetic law')
+  check(kinetic_law.setMath(math_ast),      'set math on kinetic law')
+
+def riboPos_Termination2(model):
+  # Create a reaction inside this model, set the reactants and products,
+  # and set the reaction rate expression (the SBML "kinetic law").  We
+  # set the minimum required attributes for all of these objects.  The
+  # units of the reaction rate are determined from the 'timeUnits' and
+  # 'extentUnits' attributes on the Model object.
+
+
+  r1 = model.createReaction()
+  check(r1,                                 'create reaction')
+  check(r1.setName('release'),                     'set reaction name')
+  check(r1.setId('release'),                     'set reaction id')
+  check(r1.setReversible(False),            'set reaction reversibility flag')
+  check(r1.setFast(False),                  'set reaction "fast" attribute')  
+
+
+  #STUFF THAT IS THE SAME FOR ALL REACTIONS
+  #Add the RF1 complex
+  species_ref2 = r1.createReactant()
+  check(species_ref2,                       'create product')
+  check(species_ref2.setSpecies('RF1_30S_50S'),      'assign product species')
+  check(species_ref2.setConstant(False),     'set "constant" on species ref 2')
+  check(species_ref2.setStoichiometry(2),     'set "coefficient" on species ref 2')
+  #Produce the 30S
+  species_ref8 = r1.createProduct()
+  check(species_ref8,                       'create product')
+  check(species_ref8.setSpecies('RIBOSOME_30S'),      'assign product species')
+  check(species_ref8.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref8.setStoichiometry(2),     'set "coefficient" on species ref 8')
+  #Produce the 50S
+  species_ref9 = r1.createProduct()
+  check(species_ref9,                       'create product')
+  check(species_ref9.setSpecies('RIBOSOME_50S'),      'assign product species')
+  check(species_ref9.setConstant(True),     'set "constant" on species ref 2')
+  check(species_ref9.setStoichiometry(2),     'set "coefficient" on species ref 2')
+  #Produce the RF1
+  species_ref10 = r1.createProduct()
+  check(species_ref10,                       'create product')
+  check(species_ref10.setSpecies('MG_258_MONOMER'),      'assign product species')
+  check(species_ref10.setConstant(True),     'set "constant" on species ref 2')
+
+
+
+  math_ast = parseL3Formula('k * RF1_30S_50S')
+  check(math_ast,                           'create AST for rate expression')
+ 
+  kinetic_law = r1.createKineticLaw()
+  check(kinetic_law,                        'create kinetic law')
+  check(kinetic_law.setMath(math_ast),      'set math on kinetic law')  
+
 def check(value, message):
   """If 'value' is None, prints an error message constructed using
   'message' and then exits with status code 1.  If 'value' is an integer,
@@ -313,7 +447,14 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
 
   # Termination
- 
+  create_species(model, 'RF1_50S_30S')
+  create_species(model, 'RIBOSOME_30S')
+  create_species(model, 'RIBOSOME_50S')
+
+  for n in range(len(names)):
+    riboPos_Termination(model ,names[n])
+  riboPos_Termination2(model)
+
   # And we're done creating the basic model.
   # Now return a text string containing the model in XML format.
  
@@ -321,4 +462,4 @@ def create_model(names,lengthsofseq,sequenceAAs):
  
  
 if __name__ == '__main__':
-  print(create_model(prot_names[0:2], ['3','1'], sequence[0:2])) # prot_len[0:2]
+  print(create_model(prot_names[0:3], prot_len[0:3], sequence[0:3]))#prot_names[0:2], prot_len[0:2], sequence[0:2])) # prot_len[0:2]

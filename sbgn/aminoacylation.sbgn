@@ -1,1645 +1,2559 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <sbgn xmlns="http://sbgn.org/libsbgn/0.2">
     <map language="process description">
-        <glyph id="glyph25" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="72.5" x="406.0" h="60.0" w="108.0"/>
+        <glyph id="glyph67" class="macromolecule">
+            <label text="alanyl-tRNA ligase&#xA;(MG_292_TETRAMER)"/>
+            <clone/>
+            <bbox y="22.5" x="180.0" h="80.0" w="140.0"/>
         </glyph>
-        <glyph id="glyph30" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="432.5" x="406.0" h="60.0" w="108.0"/>
+        <glyph id="glyph123" class="nucleic acid feature">
+            <label text="tRNA:Ala&#xA;(MG471)"/>
+            <bbox y="160.0" x="26.0" h="60.0" w="108.0"/>
         </glyph>
-        <glyph id="glyph52" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="772.5" x="386.0" h="60.0" w="108.0"/>
+        <glyph id="glyph178" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="260.0" x="360.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph26" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1112.5" x="366.0" h="60.0" w="108.0"/>
+        <glyph id="glyph11" class="macromolecule">
+            <label text="L-alanyl-tRNAAla&#xA;(aminoacylated_MG471)"/>
+            <bbox y="150.0" x="360.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph43" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1472.5" x="366.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph58" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="62.5" x="1186.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph50" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="422.5" x="1186.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph33" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="762.5" x="1166.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph55" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1102.5" x="1146.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph40" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1462.5" x="1146.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph51" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="72.5" x="1976.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph49" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="432.5" x="1976.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph41" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="772.5" x="1956.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph39" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1112.5" x="1936.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph35" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1472.5" x="1936.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph31" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="72.5" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph34" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="432.5" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph46" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="772.5" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph47" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1112.5" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph56" class="macromolecule">
-            <label text="aaRS"/>
-            <bbox y="1472.5" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph113" class="simple chemical">
+        <glyph id="glyph201" class="simple chemical">
             <label text="L-Alanine"/>
-            <bbox y="200.10527" x="135.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="70.0" x="80.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph134" class="simple chemical">
+        <glyph id="glyph181" class="simple chemical">
             <label text="ATP"/>
-            <bbox y="304.375" x="135.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="250.0" x="80.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph110" class="simple chemical">
+        <glyph id="glyph293" class="process">
+            <bbox y="178.0" x="238.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="226.0" id="glyph293.1"/>
+            <port y="190.0" x="274.0" id="glyph293.2"/>
+        </glyph>
+        <glyph id="glyph250" class="simple chemical">
             <label text="PPi"/>
-            <bbox y="304.375" x="360.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="60.0" x="360.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph91" class="nucleic acid feature">
-            <label text="tRNA(Ala)"/>
-            <bbox y="304.375" x="486.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph95" class="simple chemical">
+        <glyph id="glyph228" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="304.375" x="670.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="610.0" x="360.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph17" class="macromolecule">
-            <label text="L-alanyl-tRNAAla"/>
-            <bbox y="200.10527" x="716.0" h="60.0" w="120.0"/>
+        <glyph id="glyph8" class="macromolecule">
+            <label text="L-arginyl-tRNA:Arg&#xA;(aminoacylated_MG492)"/>
+            <bbox y="500.0" x="360.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph192" class="process">
-            <bbox y="218.10527" x="578.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="566.0" id="glyph192.1"/>
-            <port y="230.10527" x="614.0" id="glyph192.2"/>
+        <glyph id="glyph222" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="410.0" x="360.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph178" class="process">
-            <bbox y="218.10527" x="308.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="296.0" id="glyph178.1"/>
-            <port y="230.10527" x="344.0" id="glyph178.2"/>
-        </glyph>
-        <glyph id="glyph38" class="macromolecule">
-            <label text="L-alanyl-AMP"/>
-            <bbox y="200.10527" x="406.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph63" class="simple chemical">
+        <glyph id="glyph183" class="simple chemical">
             <label text="L-Arginine"/>
-            <bbox y="548.1" x="125.0" h="80.0" w="80.0"/>
+            <clone/>
+            <bbox y="420.0" x="80.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph94" class="simple chemical">
+        <glyph id="glyph205" class="simple chemical">
             <label text="ATP"/>
-            <bbox y="664.375" x="135.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="600.0" x="80.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph80" class="nucleic acid feature">
-            <label text="tRNA(Arg)"/>
-            <bbox y="664.375" x="486.0" h="60.0" w="108.0"/>
+        <glyph id="glyph148" class="nucleic acid feature">
+            <label text="tRNA:Arg&#xA;(MG492)"/>
+            <bbox y="510.0" x="26.0" h="60.0" w="108.0"/>
         </glyph>
-        <glyph id="glyph14" class="macromolecule">
-            <label text="L-arginyl-tRNAArg"/>
-            <bbox y="558.1" x="706.0" h="60.0" w="140.0"/>
+        <glyph id="glyph69" class="macromolecule">
+            <label text="arginyl-tRNA ligase&#xA;(MG_378_MONOMER)"/>
+            <clone/>
+            <bbox y="372.5" x="180.0" h="80.0" w="140.0"/>
         </glyph>
-        <glyph id="glyph196" class="process">
-            <bbox y="576.1" x="578.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="566.0" id="glyph196.1"/>
-            <port y="588.1" x="614.0" id="glyph196.2"/>
+        <glyph id="glyph304" class="process">
+            <bbox y="528.0" x="238.0" h="24.0" w="24.0"/>
+            <port y="540.0" x="274.0" id="glyph304.2"/>
+            <port y="540.0" x="226.0" id="glyph304.1"/>
         </glyph>
-        <glyph id="glyph125" class="simple chemical">
+        <glyph id="glyph189" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="664.375" x="670.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph98" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="664.375" x="360.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph186" class="process">
-            <bbox y="576.1" x="308.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="296.0" id="glyph186.1"/>
-            <port y="588.1" x="344.0" id="glyph186.2"/>
-        </glyph>
-        <glyph id="glyph42" class="macromolecule">
-            <label text="L-arginyl-AMP"/>
-            <bbox y="558.1" x="396.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph66" class="simple chemical">
-            <label text="L-Asparagine"/>
-            <bbox y="887.6" x="125.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph119" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1004.375" x="135.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph93" class="nucleic acid feature">
-            <label text="tRNA(Asn)"/>
-            <bbox y="1004.375" x="466.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph0" class="macromolecule">
-            <label text="L-asparaginyl-tRNAAsn"/>
-            <bbox y="897.6" x="686.0" h="60.0" w="180.0"/>
-        </glyph>
-        <glyph id="glyph172" class="process">
-            <bbox y="915.6" x="558.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="546.0" id="glyph172.1"/>
-            <port y="927.6" x="594.0" id="glyph172.2"/>
-        </glyph>
-        <glyph id="glyph109" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1004.375" x="650.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph10" class="macromolecule">
-            <label text="L-asparaginyl-AMP"/>
-            <bbox y="897.6" x="370.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph188" class="process">
-            <bbox y="915.6" x="288.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="276.0" id="glyph188.1"/>
-            <port y="927.6" x="324.0" id="glyph188.2"/>
-        </glyph>
-        <glyph id="glyph118" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1004.375" x="340.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph70" class="simple chemical">
-            <label text="L-Aspartic&#xA;acid"/>
-            <bbox y="1229.1" x="125.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph133" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1344.375" x="135.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph86" class="nucleic acid feature">
-            <label text="tRNA(Asp)"/>
-            <bbox y="1344.375" x="446.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph68" class="simple chemical">
-            <label text="L-Cysteine"/>
-            <bbox y="1587.1" x="125.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph120" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1704.375" x="135.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph81" class="nucleic acid feature">
-            <label text="tRNA(Cys)"/>
-            <bbox y="1704.375" x="446.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph67" class="simple chemical">
-            <label text="L-Isoleucine"/>
-            <bbox y="1577.1" x="910.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph96" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1694.375" x="910.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph79" class="nucleic acid feature">
-            <label text="tRNA(ILE)"/>
-            <bbox y="1694.375" x="1226.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph78" class="nucleic acid feature">
-            <label text="tRNA(His)"/>
-            <bbox y="1334.375" x="1226.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph71" class="simple chemical">
-            <label text="L-Histidine"/>
-            <bbox y="1219.1" x="910.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph105" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1334.375" x="910.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph117" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="994.375" x="930.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph138" class="simple chemical">
-            <label text="L-Glycine"/>
-            <bbox y="887.6" x="940.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph89" class="nucleic acid feature">
-            <label text="tRNA(Gly)"/>
-            <bbox y="994.375" x="1246.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph85" class="nucleic acid feature">
-            <label text="tRNA(Glu)"/>
-            <bbox y="654.375" x="1266.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph121" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="654.375" x="950.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph65" class="simple chemical">
-            <label text="L-Glutamic&#xA;acid"/>
-            <bbox y="538.1" x="950.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph87" class="nucleic acid feature">
-            <label text="tRNA(Gln)"/>
-            <bbox y="294.375" x="1266.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph135" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="294.375" x="950.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph62" class="simple chemical">
-            <label text="L-Glutamine"/>
-            <bbox y="180.10527" x="950.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph141" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="304.375" x="1740.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph64" class="simple chemical">
-            <label text="L-Leucine"/>
-            <bbox y="190.10527" x="1740.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph82" class="nucleic acid feature">
-            <label text="tRNA(Leu)"/>
-            <bbox y="304.375" x="2056.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph76" class="nucleic acid feature">
-            <label text="tRNA(Lys)"/>
-            <bbox y="664.375" x="2056.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph112" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="664.375" x="1740.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph150" class="simple chemical">
-            <label text="L-Lysine"/>
-            <bbox y="558.1" x="1750.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph83" class="nucleic acid feature">
-            <label text="tRNA(Met)"/>
-            <bbox y="1004.375" x="2036.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph99" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1004.375" x="1720.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph72" class="simple chemical">
-            <label text="L-Methionine"/>
-            <bbox y="887.6" x="1720.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph128" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1344.375" x="1700.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph2" class="simple chemical">
-            <label text="L-Phenylalanine"/>
-            <bbox y="1219.1" x="1690.0" h="100.0" w="100.0"/>
-        </glyph>
-        <glyph id="glyph84" class="nucleic acid feature">
-            <label text="tRNA(Phe)"/>
-            <bbox y="1344.375" x="2016.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph126" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1704.375" x="1700.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph144" class="simple chemical">
-            <label text="L-Proline"/>
-            <bbox y="1597.1" x="1710.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph90" class="nucleic acid feature">
-            <label text="tRNA(Pro)"/>
-            <bbox y="1704.375" x="2016.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph74" class="nucleic acid feature">
-            <label text="tRNA(Val)"/>
-            <bbox y="1704.375" x="2896.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph103" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1704.375" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph102" class="simple chemical">
-            <label text="L-Valine"/>
-            <bbox y="1597.1" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph137" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1344.375" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph69" class="simple chemical">
-            <label text="L-Tyrosine"/>
-            <bbox y="1229.1" x="2555.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph88" class="nucleic acid feature">
-            <label text="tRNA(Tyr)"/>
-            <bbox y="1344.375" x="2896.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph77" class="nucleic acid feature">
-            <label text="tRNA(Trp)"/>
-            <bbox y="1004.375" x="2896.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph154" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="1004.375" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph73" class="simple chemical">
-            <label text="L-Tryptophan"/>
-            <bbox y="887.6" x="2555.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph159" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="664.375" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph61" class="simple chemical">
-            <label text="L-Threonine"/>
-            <bbox y="548.1" x="2555.0" h="80.0" w="80.0"/>
-        </glyph>
-        <glyph id="glyph75" class="nucleic acid feature">
-            <label text="tRNA(Thr)"/>
-            <bbox y="664.375" x="2896.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph114" class="simple chemical">
-            <label text="ATP"/>
-            <bbox y="304.375" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph130" class="simple chemical">
-            <label text="L-Serine"/>
-            <bbox y="200.10527" x="2565.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph92" class="nucleic acid feature">
-            <label text="tRNA(Ser)"/>
-            <bbox y="304.375" x="2896.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph37" class="macromolecule">
-            <label text="L-aspartyl-AMP"/>
-            <bbox y="1239.1" x="356.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph198" class="process">
-            <bbox y="1257.1" x="268.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="256.0" id="glyph198.1"/>
-            <port y="1269.1" x="304.0" id="glyph198.2"/>
-        </glyph>
-        <glyph id="glyph142" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1344.375" x="320.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph7" class="macromolecule">
-            <label text="L-aspartyl-tRNAAsp"/>
-            <bbox y="1239.1" x="706.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph167" class="process">
-            <bbox y="1257.1" x="538.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="526.0" id="glyph167.1"/>
-            <port y="1269.1" x="574.0" id="glyph167.2"/>
-        </glyph>
-        <glyph id="glyph146" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1344.375" x="630.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph143" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1704.375" x="320.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph176" class="process">
-            <bbox y="1615.1" x="268.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="256.0" id="glyph176.1"/>
-            <port y="1627.1" x="304.0" id="glyph176.2"/>
-        </glyph>
-        <glyph id="glyph44" class="macromolecule">
-            <label text="L-cysteinyl-AMP"/>
-            <bbox y="1597.1" x="356.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph13" class="macromolecule">
-            <label text="L-cysteinyl-tRNACys"/>
-            <bbox y="1597.1" x="706.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph193" class="process">
-            <bbox y="1615.1" x="538.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="526.0" id="glyph193.1"/>
-            <port y="1627.1" x="574.0" id="glyph193.2"/>
-        </glyph>
-        <glyph id="glyph108" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1704.375" x="630.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph20" class="macromolecule">
-            <label text="L-isoleucyl-AMP"/>
-            <bbox y="1587.1" x="1130.0" h="60.0" w="120.0"/>
-        </glyph>
-        <glyph id="glyph170" class="process">
-            <bbox y="1605.1" x="1048.0" h="24.0" w="24.0"/>
-            <port y="1617.1" x="1036.0" id="glyph170.1"/>
-            <port y="1617.1" x="1084.0" id="glyph170.2"/>
-        </glyph>
-        <glyph id="glyph124" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1694.375" x="1120.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph12" class="macromolecule">
-            <label text="L-isoleucyl-tRNAIle"/>
-            <bbox y="1587.1" x="1454.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph199" class="process">
-            <bbox y="1605.1" x="1318.0" h="24.0" w="24.0"/>
-            <port y="1617.1" x="1306.0" id="glyph199.1"/>
-            <port y="1617.1" x="1354.0" id="glyph199.2"/>
-        </glyph>
-        <glyph id="glyph149" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1694.375" x="1410.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph36" class="macromolecule">
-            <label text="L-histidyl-tRNAHis"/>
-            <bbox y="1229.1" x="1470.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph168" class="process">
-            <bbox y="1247.1" x="1318.0" h="24.0" w="24.0"/>
-            <port y="1259.1" x="1306.0" id="glyph168.1"/>
-            <port y="1259.1" x="1354.0" id="glyph168.2"/>
-        </glyph>
-        <glyph id="glyph106" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1334.375" x="1410.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph53" class="macromolecule">
-            <label text="L-glycyl-AMP"/>
-            <bbox y="887.6" x="1156.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph161" class="process">
-            <bbox y="905.6" x="1068.0" h="24.0" w="24.0"/>
-            <port y="917.6" x="1056.0" id="glyph161.1"/>
-            <port y="917.6" x="1104.0" id="glyph161.2"/>
-        </glyph>
-        <glyph id="glyph127" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="994.375" x="1120.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="950.0" x="370.0" h="60.0" w="60.0"/>
         </glyph>
         <glyph id="glyph18" class="macromolecule">
-            <label text="L-glycyl-tRNAGly"/>
-            <bbox y="887.6" x="1464.0" h="60.0" w="120.0"/>
+            <label text="L-arginyl-tRNA:Arg&#xA;(aminoacylated_MG495)"/>
+            <bbox y="840.0" x="370.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph182" class="process">
-            <bbox y="905.6" x="1338.0" h="24.0" w="24.0"/>
-            <port y="917.6" x="1326.0" id="glyph182.1"/>
-            <port y="917.6" x="1374.0" id="glyph182.2"/>
+        <glyph id="glyph233" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="750.0" x="370.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph227" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="940.0" x="90.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph156" class="simple chemical">
+            <label text="L-Arginine"/>
+            <clone/>
+            <bbox y="760.0" x="90.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph115" class="nucleic acid feature">
+            <label text="tRNA:Arg&#xA;(MG495)"/>
+            <bbox y="850.0" x="36.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph72" class="macromolecule">
+            <label text="arginyl-tRNA ligase&#xA;(MG_378_MONOMER)"/>
+            <clone/>
+            <bbox y="712.5" x="190.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph310" class="process">
+            <bbox y="868.0" x="248.0" h="24.0" w="24.0"/>
+            <port y="880.0" x="284.0" id="glyph310.2"/>
+            <port y="880.0" x="236.0" id="glyph310.1"/>
+        </glyph>
+        <glyph id="glyph218" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1270.0" x="370.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph40" class="macromolecule">
+            <label text="L-arginyl-tRNA:Arg&#xA;(aminoacylated_MG497)"/>
+            <bbox y="1160.0" x="370.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph211" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1070.0" x="370.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph271" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1260.0" x="90.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph172" class="simple chemical">
+            <label text="L-Arginine"/>
+            <clone/>
+            <bbox y="1080.0" x="90.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph120" class="nucleic acid feature">
+            <label text="tRNA:Arg&#xA;(MG497)"/>
+            <bbox y="1170.0" x="36.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph55" class="macromolecule">
+            <label text="arginyl-tRNA ligase&#xA;(MG_378_MONOMER)"/>
+            <clone/>
+            <bbox y="1032.5" x="190.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph307" class="process">
+            <bbox y="1188.0" x="248.0" h="24.0" w="24.0"/>
+            <port y="1200.0" x="284.0" id="glyph307.2"/>
+            <port y="1200.0" x="236.0" id="glyph307.1"/>
+        </glyph>
+        <glyph id="glyph268" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1600.0" x="350.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph36" class="macromolecule">
+            <label text="L-arginyl-tRNA:Arg&#xA;(aminoacylated_MG523)"/>
+            <bbox y="1490.0" x="350.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph208" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1400.0" x="350.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph186" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1590.0" x="70.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph238" class="simple chemical">
+            <label text="L-Arginine"/>
+            <clone/>
+            <bbox y="1410.0" x="70.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph142" class="nucleic acid feature">
+            <label text="tRNA:Arg&#xA;(MG523)"/>
+            <bbox y="1500.0" x="16.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph63" class="macromolecule">
+            <label text="arginyl-tRNA ligase&#xA;(MG_378_MONOMER)"/>
+            <clone/>
+            <bbox y="1362.5" x="170.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph296" class="process">
+            <bbox y="1518.0" x="228.0" h="24.0" w="24.0"/>
+            <port y="1530.0" x="264.0" id="glyph296.2"/>
+            <port y="1530.0" x="216.0" id="glyph296.1"/>
+        </glyph>
+        <glyph id="glyph260" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="260.0" x="990.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph12" class="macromolecule">
+            <label text="L-asparaginyl-tRNA:Asn&#xA;(aminoacylated_MG514)"/>
+            <bbox y="150.0" x="990.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph206" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="60.0" x="990.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph89" class="simple chemical">
+            <label text="L-Asparagine"/>
+            <bbox y="60.0" x="700.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph165" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="250.0" x="710.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph118" class="nucleic acid feature">
+            <label text="tRNA:Asn&#xA;(MG514)"/>
+            <bbox y="160.0" x="656.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph59" class="macromolecule">
+            <label text="asparaginyl-tRNA ligase&#xA;(MG_113_DIMER)"/>
+            <bbox y="22.5" x="810.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph287" class="process">
+            <bbox y="178.0" x="868.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="904.0" id="glyph287.2"/>
+            <port y="190.0" x="856.0" id="glyph287.1"/>
+        </glyph>
+        <glyph id="glyph216" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="610.0" x="1000.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph34" class="macromolecule">
+            <label text="L-aspartyl-tRNA:Asp&#xA;(aminoacylated_MG489)"/>
+            <bbox y="500.0" x="1000.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph232" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="410.0" x="1000.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph101" class="simple chemical">
+            <label text="L-Aspartate"/>
+            <bbox y="410.0" x="710.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph237" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="600.0" x="720.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph133" class="nucleic acid feature">
+            <label text="tRNA:Asp&#xA;(MG489)"/>
+            <bbox y="510.0" x="666.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph64" class="macromolecule">
+            <label text="aspartyl-tRNA ligase&#xA;(MG_036_DIMER)"/>
+            <bbox y="372.5" x="820.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph295" class="process">
+            <bbox y="528.0" x="878.0" h="24.0" w="24.0"/>
+            <port y="540.0" x="914.0" id="glyph295.2"/>
+            <port y="540.0" x="866.0" id="glyph295.1"/>
+        </glyph>
+        <glyph id="glyph253" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="940.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph5" class="macromolecule">
+            <label text="L-cysteinyl-tRNA:Asp&#xA;(aminoacylated_MG483)"/>
+            <bbox y="830.0" x="1010.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph224" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="740.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph193" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="930.0" x="730.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph129" class="nucleic acid feature">
+            <label text="tRNA:Cys&#xA;(MG483)"/>
+            <bbox y="840.0" x="676.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph81" class="simple chemical">
+            <label text="L-Cysteine"/>
+            <bbox y="740.0" x="720.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph68" class="macromolecule">
+            <label text="cysteinyl-tRNA ligase&#xA;(MG_253_MONOMER)"/>
+            <bbox y="702.5" x="830.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph286" class="process">
+            <bbox y="858.0" x="888.0" h="24.0" w="24.0"/>
+            <port y="870.0" x="924.0" id="glyph286.2"/>
+            <port y="870.0" x="876.0" id="glyph286.1"/>
+        </glyph>
+        <glyph id="glyph269" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1270.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph15" class="macromolecule">
+            <label text="L-glutamyl-tRNA:Glu&#xA;(aminoacylated_MG513)"/>
+            <bbox y="1160.0" x="1010.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph162" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1070.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph207" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1260.0" x="730.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph128" class="nucleic acid feature">
+            <label text="tRNA:Glu&#xA;(MG513)"/>
+            <bbox y="1170.0" x="676.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph83" class="simple chemical">
+            <label text="L-Glutamate"/>
+            <clone/>
+            <bbox y="1070.0" x="720.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph70" class="macromolecule">
+            <label text="glutamyl-tRNA ligase&#xA;(MG_462_MONOMER)"/>
+            <clone/>
+            <bbox y="1032.5" x="830.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph308" class="process">
+            <bbox y="1188.0" x="888.0" h="24.0" w="24.0"/>
+            <port y="1200.0" x="924.0" id="glyph308.2"/>
+            <port y="1200.0" x="876.0" id="glyph308.1"/>
+        </glyph>
+        <glyph id="glyph184" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1600.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph2" class="macromolecule">
+            <label text="L-glycyl-tRNA:Gly&#xA;(aminoacylated_MG493)"/>
+            <bbox y="1490.0" x="1010.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph235" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1400.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph212" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1930.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph30" class="macromolecule">
+            <label text="L-glycyl-tRNA:Glu&#xA;(aminoacylated_MG499)"/>
+            <bbox y="1820.0" x="1010.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph185" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1730.0" x="1010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph160" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1920.0" x="730.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph265" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1590.0" x="730.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph132" class="nucleic acid feature">
+            <label text="tRNA:Gly&#xA;(MG499)"/>
+            <bbox y="1830.0" x="676.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph145" class="nucleic acid feature">
+            <label text="tRNA:Gly&#xA;(MG493)"/>
+            <bbox y="1500.0" x="676.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph84" class="simple chemical">
+            <label text="L-Glycine"/>
+            <clone/>
+            <bbox y="1400.0" x="720.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph88" class="simple chemical">
+            <label text="L-Glycine"/>
+            <clone/>
+            <bbox y="1730.0" x="720.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph66" class="macromolecule">
+            <label text="glycyl-tRNA ligase&#xA;(MG_251_DIMER)"/>
+            <clone/>
+            <bbox y="1692.5" x="830.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph282" class="process">
+            <bbox y="1848.0" x="888.0" h="24.0" w="24.0"/>
+            <port y="1860.0" x="924.0" id="glyph282.2"/>
+            <port y="1860.0" x="876.0" id="glyph282.1"/>
+        </glyph>
+        <glyph id="glyph62" class="macromolecule">
+            <label text="glycyl-tRNA ligase&#xA;(MG_251_DIMER)"/>
+            <clone/>
+            <bbox y="1362.5" x="830.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph284" class="process">
+            <bbox y="1518.0" x="888.0" h="24.0" w="24.0"/>
+            <port y="1530.0" x="924.0" id="glyph284.2"/>
+            <port y="1530.0" x="876.0" id="glyph284.1"/>
+        </glyph>
+        <glyph id="glyph200" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="260.0" x="1620.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph22" class="macromolecule">
+            <label text="L-histidyl-tRNA:His&#xA;(aminoacylated_MG518)"/>
+            <bbox y="150.0" x="1620.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph180" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="60.0" x="1620.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph155" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="250.0" x="1340.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph113" class="nucleic acid feature">
+            <label text="tRNA:His&#xA;(MG518)"/>
+            <bbox y="160.0" x="1286.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph110" class="simple chemical">
+            <label text="L-Histidine"/>
+            <bbox y="60.0" x="1330.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph75" class="macromolecule">
+            <label text="histidyl-tRNA ligase&#xA;(MG_035_DIMER)"/>
+            <bbox y="22.5" x="1440.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph305" class="process">
+            <bbox y="178.0" x="1498.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="1534.0" id="glyph305.2"/>
+            <port y="190.0" x="1486.0" id="glyph305.1"/>
+        </glyph>
+        <glyph id="glyph264" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="610.0" x="1630.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph9" class="macromolecule">
+            <label text="L-isoleucyl-tRNA:Ile&#xA;(aminoacylated_MG472)"/>
+            <bbox y="500.0" x="1630.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph174" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="410.0" x="1630.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph194" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="600.0" x="1350.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph147" class="nucleic acid feature">
+            <label text="tRNA:Ile&#xA;(MG472)"/>
+            <bbox y="510.0" x="1296.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph109" class="simple chemical">
+            <label text="L-Isoleucine"/>
+            <clone/>
+            <bbox y="410.0" x="1340.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph60" class="macromolecule">
+            <label text="isoleucyl-tRNA ligase&#xA;(MG_345_MONOMER)"/>
+            <clone/>
+            <bbox y="370.0" x="1450.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph297" class="process">
+            <bbox y="528.0" x="1508.0" h="24.0" w="24.0"/>
+            <port y="540.0" x="1544.0" id="glyph297.2"/>
+            <port y="540.0" x="1496.0" id="glyph297.1"/>
+        </glyph>
+        <glyph id="glyph251" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="940.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph14" class="macromolecule">
+            <label text="L-isoleucyl-tRNA:Ile&#xA;(aminoacylated_MG486)"/>
+            <bbox y="830.0" x="1640.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph199" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="740.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph259" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="930.0" x="1360.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph143" class="nucleic acid feature">
+            <label text="tRNA:Ile&#xA;(MG486)"/>
+            <bbox y="840.0" x="1306.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph103" class="simple chemical">
+            <label text="L-Isoleucine"/>
+            <clone/>
+            <bbox y="740.0" x="1350.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph73" class="macromolecule">
+            <label text="isoleucyl-tRNA ligase&#xA;(MG_345_MONOMER)"/>
+            <clone/>
+            <bbox y="702.5" x="1460.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph276" class="process">
+            <bbox y="858.0" x="1518.0" h="24.0" w="24.0"/>
+            <port y="870.0" x="1554.0" id="glyph276.2"/>
+            <port y="870.0" x="1506.0" id="glyph276.1"/>
+        </glyph>
+        <glyph id="glyph175" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1270.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph7" class="macromolecule">
+            <label text="L-leucyl-tRNA:Leu&#xA;(aminoacylated_MG500)"/>
+            <bbox y="1160.0" x="1640.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph159" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1070.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph236" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1260.0" x="1360.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph137" class="nucleic acid feature">
+            <label text="tRNA:Leu&#xA;(MG500)"/>
+            <bbox y="1170.0" x="1306.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph111" class="simple chemical">
+            <label text="L-Leucine"/>
+            <clone/>
+            <bbox y="1070.0" x="1350.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph65" class="macromolecule">
+            <label text="leucyl-tRNA ligase&#xA;(MG_266_MONOMER)"/>
+            <clone/>
+            <bbox y="1032.5" x="1460.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph279" class="process">
+            <bbox y="1188.0" x="1518.0" h="24.0" w="24.0"/>
+            <port y="1200.0" x="1554.0" id="glyph279.2"/>
+            <port y="1200.0" x="1506.0" id="glyph279.1"/>
+        </glyph>
+        <glyph id="glyph167" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1600.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph3" class="macromolecule">
+            <label text="L-leucyl-tRNA:Leu&#xA;(aminoacylated_MG508)"/>
+            <bbox y="1490.0" x="1640.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph187" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1400.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph221" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1590.0" x="1360.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph141" class="nucleic acid feature">
+            <label text="tRNA:Leu&#xA;(MG508)"/>
+            <bbox y="1500.0" x="1306.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph96" class="simple chemical">
+            <label text="L-Leucine"/>
+            <clone/>
+            <bbox y="1400.0" x="1350.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph61" class="macromolecule">
+            <label text="leucyl-tRNA ligase&#xA;(MG_266_MONOMER)"/>
+            <clone/>
+            <bbox y="1362.5" x="1460.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph306" class="process">
+            <bbox y="1518.0" x="1518.0" h="24.0" w="24.0"/>
+            <port y="1530.0" x="1554.0" id="glyph306.2"/>
+            <port y="1530.0" x="1506.0" id="glyph306.1"/>
+        </glyph>
+        <glyph id="glyph173" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1930.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph16" class="macromolecule">
+            <label text="L-leucyl-tRNA:Leu&#xA;(aminoacylated_MG519)"/>
+            <bbox y="1820.0" x="1640.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph252" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1730.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph182" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1920.0" x="1360.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph114" class="nucleic acid feature">
+            <label text="tRNA:Leu&#xA;(MG519)"/>
+            <bbox y="1830.0" x="1306.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph85" class="simple chemical">
+            <label text="L-Leucine"/>
+            <clone/>
+            <bbox y="1730.0" x="1350.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph77" class="macromolecule">
+            <label text="leucyl-tRNA ligase&#xA;(MG_266_MONOMER)"/>
+            <clone/>
+            <bbox y="1692.5" x="1460.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph275" class="process">
+            <bbox y="1848.0" x="1518.0" h="24.0" w="24.0"/>
+            <port y="1860.0" x="1554.0" id="glyph275.2"/>
+            <port y="1860.0" x="1506.0" id="glyph275.1"/>
+        </glyph>
+        <glyph id="glyph152" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="2250.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph35" class="macromolecule">
+            <label text="L-leucyl-tRNA:Leu&#xA;(aminoacylated_MG520)"/>
+            <bbox y="2140.0" x="1640.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph230" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="2050.0" x="1640.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph245" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="2240.0" x="1360.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph146" class="nucleic acid feature">
+            <label text="tRNA:Leu&#xA;(MG520)"/>
+            <bbox y="2150.0" x="1306.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph106" class="simple chemical">
+            <label text="L-Leucine"/>
+            <clone/>
+            <bbox y="2050.0" x="1350.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph58" class="macromolecule">
+            <label text="leucyl-tRNA ligase&#xA;(MG_266_MONOMER)"/>
+            <clone/>
+            <bbox y="2012.5" x="1460.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph285" class="process">
+            <bbox y="2168.0" x="1518.0" h="24.0" w="24.0"/>
+            <port y="2180.0" x="1554.0" id="glyph285.2"/>
+            <port y="2180.0" x="1506.0" id="glyph285.1"/>
+        </glyph>
+        <glyph id="glyph163" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="260.0" x="2260.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph13" class="macromolecule">
+            <label text="L-lysyl-tRNA:Lys&#xA;(aminoacylated_MG501)"/>
+            <bbox y="150.0" x="2260.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph223" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="60.0" x="2260.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph204" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="250.0" x="1980.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph124" class="nucleic acid feature">
+            <label text="tRNA:Lys&#xA;(MG501)"/>
+            <bbox y="160.0" x="1926.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph90" class="simple chemical">
+            <label text="L-Lysine"/>
+            <clone/>
+            <bbox y="60.0" x="1970.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph56" class="macromolecule">
+            <label text="lysyl-tRNA ligase&#xA;(MG_136_DIMER)"/>
+            <clone/>
+            <bbox y="22.5" x="2080.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph302" class="process">
+            <bbox y="178.0" x="2138.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="2174.0" id="glyph302.2"/>
+            <port y="190.0" x="2126.0" id="glyph302.1"/>
+        </glyph>
+        <glyph id="glyph255" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="610.0" x="2260.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph37" class="macromolecule">
+            <label text="L-lysyl-tRNA:Lys&#xA;(aminoacylated_MG509)"/>
+            <bbox y="500.0" x="2260.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph226" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="410.0" x="2260.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph239" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="600.0" x="1980.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph135" class="nucleic acid feature">
+            <label text="tRNA:Lys&#xA;(MG509)"/>
+            <bbox y="510.0" x="1926.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph108" class="simple chemical">
+            <label text="L-Lysine"/>
+            <clone/>
+            <bbox y="410.0" x="1970.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph76" class="macromolecule">
+            <label text="lysyl-tRNA ligase&#xA;(MG_136_DIMER)"/>
+            <clone/>
+            <bbox y="372.5" x="2080.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph300" class="process">
+            <bbox y="528.0" x="2138.0" h="24.0" w="24.0"/>
+            <port y="540.0" x="2174.0" id="glyph300.2"/>
+            <port y="540.0" x="2126.0" id="glyph300.1"/>
+        </glyph>
+        <glyph id="glyph170" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="2680.0" x="2310.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph166" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="2480.0" x="2310.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph151" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="2670.0" x="2030.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph127" class="nucleic acid feature">
+            <label text="tRNA:fMet&#xA;(MG488)"/>
+            <bbox y="2580.0" x="1976.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph87" class="simple chemical">
+            <label text="L-Methionine"/>
+            <clone/>
+            <bbox y="2480.0" x="2020.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph74" class="macromolecule">
+            <label text="methionyl-tRNA ligase&#xA;(MG_021_DIMER)"/>
+            <clone/>
+            <bbox y="2442.5" x="2130.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph290" class="process">
+            <bbox y="2598.0" x="2188.0" h="24.0" w="24.0"/>
+            <port y="2610.0" x="2224.0" id="glyph290.2"/>
+            <port y="2610.0" x="2176.0" id="glyph290.1"/>
+        </glyph>
+        <glyph id="glyph213" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1270.0" x="2280.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph20" class="macromolecule">
+            <label text="L-phenylalanyl-tRNA:Phe&#xA;(aminoacylated_MG490)"/>
+            <bbox y="1160.0" x="2280.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph262" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1070.0" x="2280.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph158" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1260.0" x="2000.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph144" class="nucleic acid feature">
+            <label text="tRNA:Phe&#xA;(MG490)"/>
+            <bbox y="1170.0" x="1946.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph78" class="simple chemical">
+            <label text="L-Phenylalanine"/>
+            <bbox y="1060.0" x="1980.0" h="100.0" w="100.0"/>
+        </glyph>
+        <glyph id="glyph47" class="macromolecule">
+            <label text="phenylalanyl-tRNA ligase&#xA;(MG_194_195_TETRAMER)"/>
+            <bbox y="1032.5" x="2090.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph272" class="process">
+            <bbox y="1188.0" x="2158.0" h="24.0" w="24.0"/>
+            <port y="1200.0" x="2194.0" id="glyph272.2"/>
+            <port y="1200.0" x="2146.0" id="glyph272.1"/>
+        </glyph>
+        <glyph id="glyph261" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1600.0" x="2290.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph23" class="macromolecule">
+            <label text="L-prolyl-tRNA:Pro&#xA;(aminoacylated_MG484)"/>
+            <bbox y="1490.0" x="2290.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph240" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1400.0" x="2290.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph164" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1590.0" x="2010.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph130" class="nucleic acid feature">
+            <label text="tRNA:Pro&#xA;(MG484)"/>
+            <bbox y="1500.0" x="1956.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph93" class="simple chemical">
+            <label text="L-Proline"/>
+            <bbox y="1400.0" x="2000.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph43" class="macromolecule">
+            <label text="prolyl-tRNA ligase&#xA;(MG_283_DIMER)"/>
+            <bbox y="1362.5" x="2100.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph278" class="process">
+            <bbox y="1518.0" x="2168.0" h="24.0" w="24.0"/>
+            <port y="1530.0" x="2204.0" id="glyph278.2"/>
+            <port y="1530.0" x="2156.0" id="glyph278.1"/>
+        </glyph>
+        <glyph id="glyph150" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="940.0" x="3540.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph1" class="macromolecule">
+            <label text="L-tyrosyl-tRNA:Tyr&#xA;(aminoacylated_MG503)"/>
+            <bbox y="830.0" x="3540.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph247" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="740.0" x="3540.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph209" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="930.0" x="3260.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph121" class="nucleic acid feature">
+            <label text="tRNA:Tyr&#xA;(MG503)"/>
+            <bbox y="840.0" x="3206.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph99" class="simple chemical">
+            <label text="L-Tyrosine"/>
+            <bbox y="740.0" x="3250.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph46" class="macromolecule">
+            <label text="tyrosyl-tRNA ligase&#xA;(MG_455_DIMER)"/>
+            <bbox y="702.5" x="3350.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph273" class="process">
+            <bbox y="858.0" x="3418.0" h="24.0" w="24.0"/>
+            <port y="870.0" x="3454.0" id="glyph273.2"/>
+            <port y="870.0" x="3406.0" id="glyph273.1"/>
+        </glyph>
+        <glyph id="glyph210" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1300.0" x="3560.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph21" class="macromolecule">
+            <label text="L-valyl-tRNA:Val&#xA;(aminoacylated_MG511)"/>
+            <bbox y="1190.0" x="3560.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph171" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1100.0" x="3560.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph234" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1290.0" x="3280.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph117" class="nucleic acid feature">
+            <label text="tRNA:Val&#xA;(MG511)"/>
+            <bbox y="1200.0" x="3226.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph79" class="simple chemical">
+            <label text="L-Valine"/>
+            <bbox y="1100.0" x="3270.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph45" class="macromolecule">
+            <label text="valyl-tRNA ligase&#xA;(MG_334_MONOMER)"/>
+            <bbox y="1062.5" x="3370.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph301" class="process">
+            <bbox y="1218.0" x="3438.0" h="24.0" w="24.0"/>
+            <port y="1230.0" x="3474.0" id="glyph301.2"/>
+            <port y="1230.0" x="3426.0" id="glyph301.1"/>
+        </glyph>
+        <glyph id="glyph229" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="260.0" x="2880.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph6" class="macromolecule">
+            <label text="L-seryl-tRNA:Ser&#xA;(aminoacylated_MG475)"/>
+            <bbox y="150.0" x="2880.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph257" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="60.0" x="2880.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph149" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="250.0" x="2600.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph119" class="nucleic acid feature">
+            <label text="tRNA:Ser&#xA;(MG475)"/>
+            <bbox y="160.0" x="2546.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph98" class="simple chemical">
+            <label text="L-Serine"/>
+            <clone/>
+            <bbox y="60.0" x="2590.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph52" class="macromolecule">
+            <label text="seryl-tRNA ligase&#xA;(MG_005_DIMER)"/>
+            <clone/>
+            <bbox y="22.5" x="2690.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph291" class="process">
+            <bbox y="178.0" x="2758.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="2794.0" id="glyph291.2"/>
+            <port y="190.0" x="2746.0" id="glyph291.1"/>
+        </glyph>
+        <glyph id="glyph256" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="620.0" x="2890.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph10" class="macromolecule">
+            <label text="L-seryl-tRNA:Ser&#xA;(aminoacylated_MG487)"/>
+            <bbox y="510.0" x="2890.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph197" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="420.0" x="2890.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph244" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="610.0" x="2610.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph140" class="nucleic acid feature">
+            <label text="tRNA:Ser&#xA;(MG487)"/>
+            <bbox y="520.0" x="2556.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph82" class="simple chemical">
+            <label text="L-Serine"/>
+            <clone/>
+            <bbox y="420.0" x="2600.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph53" class="macromolecule">
+            <label text="seryl-tRNA ligase&#xA;(MG_005_DIMER)"/>
+            <clone/>
+            <bbox y="382.5" x="2700.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph283" class="process">
+            <bbox y="538.0" x="2768.0" h="24.0" w="24.0"/>
+            <port y="550.0" x="2804.0" id="glyph283.2"/>
+            <port y="550.0" x="2756.0" id="glyph283.1"/>
+        </glyph>
+        <glyph id="glyph266" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="950.0" x="2900.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph25" class="macromolecule">
+            <label text="L-seryl-tRNA:Ser&#xA;(aminoacylated_MG506)"/>
+            <bbox y="840.0" x="2900.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph196" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="750.0" x="2900.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph270" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="940.0" x="2620.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph138" class="nucleic acid feature">
+            <label text="tRNA:Ser&#xA;(MG506)"/>
+            <bbox y="850.0" x="2566.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph104" class="simple chemical">
+            <label text="L-Serine"/>
+            <clone/>
+            <bbox y="750.0" x="2610.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph41" class="macromolecule">
+            <label text="seryl-tRNA ligase&#xA;(MG_005_DIMER)"/>
+            <clone/>
+            <bbox y="712.5" x="2710.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph303" class="process">
+            <bbox y="868.0" x="2778.0" h="24.0" w="24.0"/>
+            <port y="880.0" x="2814.0" id="glyph303.2"/>
+            <port y="880.0" x="2766.0" id="glyph303.1"/>
+        </glyph>
+        <glyph id="glyph220" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1280.0" x="2910.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph19" class="macromolecule">
+            <label text="L-seryl-tRNA:Ser&#xA;(aminoacylated_MG507)"/>
+            <bbox y="1170.0" x="2910.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph215" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1080.0" x="2910.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph214" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1270.0" x="2630.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph131" class="nucleic acid feature">
+            <label text="tRNA:Ser&#xA;(MG507)"/>
+            <bbox y="1180.0" x="2576.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph102" class="simple chemical">
+            <label text="L-Serine"/>
+            <clone/>
+            <bbox y="1080.0" x="2620.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph48" class="macromolecule">
+            <label text="seryl-tRNA ligase&#xA;(MG_005_DIMER)"/>
+            <clone/>
+            <bbox y="1042.5" x="2720.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph281" class="process">
+            <bbox y="1198.0" x="2788.0" h="24.0" w="24.0"/>
+            <port y="1210.0" x="2824.0" id="glyph281.2"/>
+            <port y="1210.0" x="2776.0" id="glyph281.1"/>
         </glyph>
         <glyph id="glyph157" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="994.375" x="1430.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="1600.0" x="2910.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph60" class="macromolecule">
-            <label text="L-glutamyl-AMP"/>
-            <bbox y="548.1" x="1176.0" h="60.0" w="108.0"/>
+        <glyph id="glyph38" class="macromolecule">
+            <label text="L-threonyl-tRNA:Thr&#xA;(aminoacylated_MG479)"/>
+            <bbox y="1490.0" x="2910.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph183" class="process">
-            <bbox y="566.1" x="1088.0" h="24.0" w="24.0"/>
-            <port y="578.1" x="1076.0" id="glyph183.1"/>
-            <port y="578.1" x="1124.0" id="glyph183.2"/>
-        </glyph>
-        <glyph id="glyph104" class="simple chemical">
+        <glyph id="glyph188" class="simple chemical">
             <label text="PPi"/>
-            <bbox y="654.375" x="1120.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="1400.0" x="2910.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph6" class="macromolecule">
-            <label text="L-glutamyl-tRNAGlu"/>
-            <bbox y="548.1" x="1454.0" h="60.0" w="140.0"/>
+        <glyph id="glyph219" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1590.0" x="2630.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph197" class="process">
-            <bbox y="566.1" x="1358.0" h="24.0" w="24.0"/>
-            <port y="578.1" x="1346.0" id="glyph197.1"/>
-            <port y="578.1" x="1394.0" id="glyph197.2"/>
+        <glyph id="glyph80" class="simple chemical">
+            <label text="L-Threonine"/>
+            <clone/>
+            <bbox y="1400.0" x="2620.0" h="80.0" w="80.0"/>
         </glyph>
-        <glyph id="glyph155" class="simple chemical">
+        <glyph id="glyph44" class="macromolecule">
+            <label text="threonyl-tRNA ligase&#xA;(MG_375_DIMER)"/>
+            <clone/>
+            <bbox y="1362.5" x="2720.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph116" class="nucleic acid feature">
+            <label text="tRNA:Thr&#xA;(MG479)"/>
+            <bbox y="1500.0" x="2576.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph298" class="process">
+            <bbox y="1518.0" x="2788.0" h="24.0" w="24.0"/>
+            <port y="1530.0" x="2824.0" id="glyph298.2"/>
+            <port y="1530.0" x="2776.0" id="glyph298.1"/>
+        </glyph>
+        <glyph id="glyph190" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="654.375" x="1450.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="1920.0" x="2930.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph22" class="macromolecule">
-            <label text="L-glutaminyl-AMP"/>
-            <bbox y="190.10527" x="1170.0" h="60.0" w="120.0"/>
+        <glyph id="glyph26" class="macromolecule">
+            <label text="L-threonyl-tRNA:Thr&#xA;(aminoacylated_MG510)"/>
+            <bbox y="1810.0" x="2930.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph179" class="process">
-            <bbox y="208.10527" x="1088.0" h="24.0" w="24.0"/>
-            <port y="220.10527" x="1076.0" id="glyph179.1"/>
-            <port y="220.10527" x="1124.0" id="glyph179.2"/>
-        </glyph>
-        <glyph id="glyph132" class="simple chemical">
+        <glyph id="glyph241" class="simple chemical">
             <label text="PPi"/>
-            <bbox y="294.375" x="1120.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="1720.0" x="2930.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph4" class="macromolecule">
-            <label text="L-glutaminyl-tRNAGln"/>
-            <bbox y="190.10527" x="1444.0" h="60.0" w="160.0"/>
+        <glyph id="glyph258" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1910.0" x="2650.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph187" class="process">
-            <bbox y="208.10527" x="1358.0" h="24.0" w="24.0"/>
-            <port y="220.10527" x="1346.0" id="glyph187.1"/>
-            <port y="220.10527" x="1394.0" id="glyph187.2"/>
-        </glyph>
-        <glyph id="glyph140" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="294.375" x="1450.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph28" class="macromolecule">
-            <label text="L-leucyl-AMP"/>
-            <bbox y="200.10527" x="1966.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph177" class="process">
-            <bbox y="218.10527" x="1878.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="1866.0" id="glyph177.1"/>
-            <port y="230.10527" x="1914.0" id="glyph177.2"/>
-        </glyph>
-        <glyph id="glyph101" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="304.375" x="1930.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph16" class="macromolecule">
-            <label text="L-leucyl-tRNALeu"/>
-            <bbox y="200.0" x="2281.6" h="60.0" w="120.0"/>
-        </glyph>
-        <glyph id="glyph184" class="process">
-            <bbox y="218.10527" x="2148.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="2136.0" id="glyph184.1"/>
-            <port y="230.10527" x="2184.0" id="glyph184.2"/>
-        </glyph>
-        <glyph id="glyph131" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="304.375" x="2250.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph32" class="macromolecule">
-            <label text="L-lysyl-AMP"/>
-            <bbox y="558.1" x="1966.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph189" class="process">
-            <bbox y="576.1" x="1878.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="1866.0" id="glyph189.1"/>
-            <port y="588.1" x="1914.0" id="glyph189.2"/>
-        </glyph>
-        <glyph id="glyph147" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="664.375" x="1930.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph21" class="macromolecule">
-            <label text="L-lysyl-tRNALys"/>
-            <bbox y="560.0" x="2260.0" h="60.0" w="120.0"/>
-        </glyph>
-        <glyph id="glyph171" class="process">
-            <bbox y="576.1" x="2148.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="2136.0" id="glyph171.1"/>
-            <port y="588.1" x="2184.0" id="glyph171.2"/>
-        </glyph>
-        <glyph id="glyph156" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="664.375" x="2250.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph19" class="macromolecule">
-            <label text="L-methionyl-AMP"/>
-            <bbox y="897.6" x="1950.0" h="60.0" w="120.0"/>
-        </glyph>
-        <glyph id="glyph191" class="process">
-            <bbox y="915.6" x="1858.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="1846.0" id="glyph191.1"/>
-            <port y="927.6" x="1894.0" id="glyph191.2"/>
-        </glyph>
-        <glyph id="glyph152" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1004.375" x="1910.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph5" class="macromolecule">
-            <label text="L-methionyl-tRNAMet"/>
-            <bbox y="900.0" x="2261.6" h="60.0" w="160.0"/>
-        </glyph>
-        <glyph id="glyph194" class="process">
-            <bbox y="915.6" x="2148.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="2136.0" id="glyph194.1"/>
-            <port y="927.6" x="2184.0" id="glyph194.2"/>
-        </glyph>
-        <glyph id="glyph139" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1004.375" x="2250.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph8" class="macromolecule">
-            <label text="L-phenylalanyl-AMP"/>
-            <bbox y="1239.1" x="1910.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph160" class="process">
-            <bbox y="1257.1" x="1838.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="1826.0" id="glyph160.1"/>
-            <port y="1269.1" x="1874.0" id="glyph160.2"/>
-        </glyph>
-        <glyph id="glyph153" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1344.375" x="1890.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph1" class="macromolecule">
-            <label text="L-phenylalanyl-tRNAPhe"/>
-            <bbox y="1250.0" x="2251.6" h="60.0" w="180.0"/>
-        </glyph>
-        <glyph id="glyph174" class="process">
-            <bbox y="1257.1" x="2148.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="2136.0" id="glyph174.1"/>
-            <port y="1269.1" x="2184.0" id="glyph174.2"/>
-        </glyph>
-        <glyph id="glyph148" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1344.375" x="2250.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph27" class="macromolecule">
-            <label text="L-prolyl-AMP"/>
-            <bbox y="1597.1" x="1936.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph162" class="process">
-            <bbox y="1615.1" x="1838.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="1826.0" id="glyph162.1"/>
-            <port y="1627.1" x="1874.0" id="glyph162.2"/>
-        </glyph>
-        <glyph id="glyph111" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1704.375" x="1890.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph11" class="macromolecule">
-            <label text="L-prolyl-tRNAPro"/>
-            <bbox y="1597.1" x="2271.6" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph181" class="process">
-            <bbox y="1615.1" x="2148.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="2136.0" id="glyph181.1"/>
-            <port y="1627.1" x="2184.0" id="glyph181.2"/>
-        </glyph>
-        <glyph id="glyph145" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1704.375" x="2250.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph59" class="macromolecule">
-            <label text="L-valyl-AMP"/>
-            <bbox y="1597.1" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph180" class="process">
-            <bbox y="1615.1" x="2695.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="2683.0" id="glyph180.1"/>
-            <port y="1627.1" x="2731.0" id="glyph180.2"/>
-        </glyph>
-        <glyph id="glyph158" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1704.375" x="2750.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph54" class="macromolecule">
-            <label text="L-valyl-tRNAVal"/>
-            <bbox y="1597.1" x="3110.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph175" class="process">
-            <bbox y="1615.1" x="3028.0" h="24.0" w="24.0"/>
-            <port y="1627.1" x="3016.0" id="glyph175.1"/>
-            <port y="1627.1" x="3064.0" id="glyph175.2"/>
-        </glyph>
-        <glyph id="glyph123" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1704.375" x="3104.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph9" class="macromolecule">
-            <label text="L-tyrosyl-tRNATyr"/>
-            <bbox y="1239.1" x="3094.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph166" class="process">
-            <bbox y="1257.1" x="3028.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="3016.0" id="glyph166.1"/>
-            <port y="1269.1" x="3064.0" id="glyph166.2"/>
+        <glyph id="glyph134" class="nucleic acid feature">
+            <label text="tRNA:Thr&#xA;(MG510)"/>
+            <bbox y="1820.0" x="2596.0" h="60.0" w="108.0"/>
         </glyph>
         <glyph id="glyph107" class="simple chemical">
+            <label text="L-Threonine"/>
+            <clone/>
+            <bbox y="1720.0" x="2640.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph42" class="macromolecule">
+            <label text="threonyl-tRNA ligase&#xA;(MG_375_DIMER)"/>
+            <clone/>
+            <bbox y="1682.5" x="2740.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph274" class="process">
+            <bbox y="1838.0" x="2808.0" h="24.0" w="24.0"/>
+            <port y="1850.0" x="2844.0" id="glyph274.2"/>
+            <port y="1850.0" x="2796.0" id="glyph274.1"/>
+        </glyph>
+        <glyph id="glyph192" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="1344.375" x="3104.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph45" class="macromolecule">
-            <label text="L-tyrosyl-AMP"/>
-            <bbox y="1239.1" x="2796.0" h="60.0" w="108.0"/>
-        </glyph>
-        <glyph id="glyph169" class="process">
-            <bbox y="1257.1" x="2695.0" h="24.0" w="24.0"/>
-            <port y="1269.1" x="2683.0" id="glyph169.1"/>
-            <port y="1269.1" x="2731.0" id="glyph169.2"/>
-        </glyph>
-        <glyph id="glyph100" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1344.375" x="2750.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph24" class="macromolecule">
-            <label text="L-tryptophyl-AMP"/>
-            <bbox y="897.6" x="2790.0" h="60.0" w="120.0"/>
-        </glyph>
-        <glyph id="glyph165" class="process">
-            <bbox y="915.6" x="2695.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="2683.0" id="glyph165.1"/>
-            <port y="927.6" x="2731.0" id="glyph165.2"/>
-        </glyph>
-        <glyph id="glyph97" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1004.375" x="2750.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph3" class="macromolecule">
-            <label text="L-tryptophyl-tRNATrp"/>
-            <bbox y="897.6" x="3084.0" h="60.0" w="160.0"/>
-        </glyph>
-        <glyph id="glyph173" class="process">
-            <bbox y="915.6" x="3028.0" h="24.0" w="24.0"/>
-            <port y="927.6" x="3016.0" id="glyph173.1"/>
-            <port y="927.6" x="3064.0" id="glyph173.2"/>
-        </glyph>
-        <glyph id="glyph136" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="1004.375" x="3104.0" h="60.0" w="60.0"/>
-        </glyph>
-        <glyph id="glyph15" class="macromolecule">
-            <label text="L-threonyl-tRNAThr"/>
-            <bbox y="558.1" x="3094.0" h="60.0" w="140.0"/>
-        </glyph>
-        <glyph id="glyph190" class="process">
-            <bbox y="576.1" x="3028.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="3016.0" id="glyph190.1"/>
-            <port y="588.1" x="3064.0" id="glyph190.2"/>
-        </glyph>
-        <glyph id="glyph115" class="simple chemical">
-            <label text="AMP"/>
-            <bbox y="664.375" x="3104.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="2250.0" x="2950.0" h="60.0" w="60.0"/>
         </glyph>
         <glyph id="glyph29" class="macromolecule">
-            <label text="L-threonyl-AMP"/>
-            <bbox y="558.1" x="2796.0" h="60.0" w="108.0"/>
+            <label text="L-threonyl-tRNA:Thr&#xA;(aminoacylated_MG512)"/>
+            <bbox y="2140.0" x="2950.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph195" class="process">
-            <bbox y="576.1" x="2695.0" h="24.0" w="24.0"/>
-            <port y="588.1" x="2683.0" id="glyph195.1"/>
-            <port y="588.1" x="2731.0" id="glyph195.2"/>
-        </glyph>
-        <glyph id="glyph116" class="simple chemical">
+        <glyph id="glyph198" class="simple chemical">
             <label text="PPi"/>
-            <bbox y="664.375" x="2750.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="2050.0" x="2950.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph23" class="macromolecule">
-            <label text="L-seryl-tRNASer"/>
-            <bbox y="200.10527" x="3104.0" h="60.0" w="120.0"/>
+        <glyph id="glyph153" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="2240.0" x="2670.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph164" class="process">
-            <bbox y="218.10527" x="3028.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="3016.0" id="glyph164.1"/>
-            <port y="230.10527" x="3064.0" id="glyph164.2"/>
+        <glyph id="glyph126" class="nucleic acid feature">
+            <label text="tRNA:Thr&#xA;(MG512)"/>
+            <bbox y="2150.0" x="2616.0" h="60.0" w="108.0"/>
         </glyph>
-        <glyph id="glyph122" class="simple chemical">
+        <glyph id="glyph95" class="simple chemical">
+            <label text="L-Threonine"/>
+            <clone/>
+            <bbox y="2050.0" x="2660.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph49" class="macromolecule">
+            <label text="threonyl-tRNA ligase&#xA;(MG_375_DIMER)"/>
+            <clone/>
+            <bbox y="2012.5" x="2760.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph294" class="process">
+            <bbox y="2168.0" x="2828.0" h="24.0" w="24.0"/>
+            <port y="2180.0" x="2864.0" id="glyph294.2"/>
+            <port y="2180.0" x="2816.0" id="glyph294.1"/>
+        </glyph>
+        <glyph id="glyph195" class="simple chemical">
             <label text="AMP"/>
-            <bbox y="304.375" x="3104.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="260.0" x="3550.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph48" class="macromolecule">
-            <label text="L-seryl-AMP"/>
-            <bbox y="200.10527" x="2796.0" h="60.0" w="108.0"/>
+        <glyph id="glyph28" class="macromolecule">
+            <label text="L-tryptophanyl-tRNA:Trp&#xA;(aminoacylated_MG496)"/>
+            <bbox y="150.0" x="3550.0" h="80.0" w="200.0"/>
         </glyph>
-        <glyph id="glyph185" class="process">
-            <bbox y="218.10527" x="2695.0" h="24.0" w="24.0"/>
-            <port y="230.10527" x="2683.0" id="glyph185.1"/>
-            <port y="230.10527" x="2731.0" id="glyph185.2"/>
-        </glyph>
-        <glyph id="glyph129" class="simple chemical">
+        <glyph id="glyph203" class="simple chemical">
             <label text="PPi"/>
-            <bbox y="304.375" x="2750.0" h="60.0" w="60.0"/>
+            <clone/>
+            <bbox y="60.0" x="3550.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph246" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="250.0" x="3270.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph122" class="nucleic acid feature">
+            <label text="tRNA:Trp&#xA;(MG496)"/>
+            <bbox y="160.0" x="3216.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph92" class="simple chemical">
+            <label text="L-Tryptophan"/>
+            <clone/>
+            <bbox y="60.0" x="3260.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph50" class="macromolecule">
+            <label text="tryptophanyl-tRNA ligase&#xA;(MG_126_DIMER)"/>
+            <clone/>
+            <bbox y="22.5" x="3360.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph292" class="process">
+            <bbox y="178.0" x="3428.0" h="24.0" w="24.0"/>
+            <port y="190.0" x="3464.0" id="glyph292.2"/>
+            <port y="190.0" x="3416.0" id="glyph292.1"/>
+        </glyph>
+        <glyph id="glyph202" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="610.0" x="3560.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph24" class="macromolecule">
+            <label text="L-tryptophanyl-tRNA:Trp&#xA;(aminoacylated_MG504)"/>
+            <bbox y="500.0" x="3560.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph242" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="410.0" x="3560.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph225" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="600.0" x="3280.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph136" class="nucleic acid feature">
+            <label text="tRNA:Trp&#xA;(MG504)"/>
+            <bbox y="510.0" x="3226.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph91" class="simple chemical">
+            <label text="L-Tryptophan"/>
+            <clone/>
+            <bbox y="410.0" x="3270.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph54" class="macromolecule">
+            <label text="tryptophanyl-tRNA ligase&#xA;(MG_126_DIMER)"/>
+            <clone/>
+            <bbox y="372.5" x="3370.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph277" class="process">
+            <bbox y="528.0" x="3438.0" h="24.0" w="24.0"/>
+            <port y="540.0" x="3474.0" id="glyph277.2"/>
+            <port y="540.0" x="3426.0" id="glyph277.1"/>
+        </glyph>
+        <glyph id="glyph254" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="1880.0" x="3770.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph32" class="macromolecule">
+            <label text="L-alanyl-tmRNA&#xA;(aminoacylated_MG_0004)"/>
+            <bbox y="1770.0" x="3770.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph249" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="1680.0" x="3770.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph217" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="1870.0" x="3490.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph112" class="nucleic acid feature">
+            <label text="tmRNA&#xA;(MG_0004)"/>
+            <bbox y="1780.0" x="3436.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph97" class="simple chemical">
+            <label text="L-Alanine"/>
+            <clone/>
+            <bbox y="1680.0" x="3480.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph51" class="macromolecule">
+            <label text="alanyl-tRNA ligase&#xA;(MG_292_TETRAMER)"/>
+            <clone/>
+            <bbox y="1642.5" x="3580.0" h="80.0" w="160.0"/>
+        </glyph>
+        <glyph id="glyph299" class="process">
+            <bbox y="1798.0" x="3648.0" h="24.0" w="24.0"/>
+            <port y="1810.0" x="3684.0" id="glyph299.2"/>
+            <port y="1810.0" x="3636.0" id="glyph299.1"/>
+        </glyph>
+        <glyph id="glyph263" class="simple chemical">
+            <label text="H"/>
+            <clone/>
+            <bbox y="2680.0" x="3110.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph169" class="simple chemical">
+            <label text="THF"/>
+            <bbox y="2480.0" x="3110.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph179" class="simple chemical">
+            <label text="H2O"/>
+            <clone/>
+            <bbox y="2670.0" x="2700.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph86" class="simple chemical">
+            <label text="FTHF10"/>
+            <bbox y="2480.0" x="2690.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph27" class="macromolecule">
+            <label text="methionyl-tRNA formyltransferase&#xA;(MG_365_MONOMER)"/>
+            <bbox y="2442.5" x="2830.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph0" class="macromolecule">
+            <label text="formyl-methionyl-tRNA:fMet&#xA;(aminoacylated_MG488)"/>
+            <bbox y="2560.0" x="3160.0" h="80.0" w="260.0"/>
+        </glyph>
+        <glyph id="glyph39" class="macromolecule">
+            <label text="L-methionyl-tRNA:fMet&#xA;(aminoacylated_MG485)"/>
+            <bbox y="2570.0" x="2430.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph289" class="process">
+            <bbox y="2598.0" x="2918.0" h="24.0" w="24.0"/>
+            <port y="2610.0" x="2954.0" id="glyph289.2"/>
+            <port y="2610.0" x="2906.0" id="glyph289.1"/>
+        </glyph>
+        <glyph id="glyph177" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="930.0" x="2270.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph31" class="macromolecule">
+            <label text="L-methionyl-tRNA:Met&#xA;(aminoacylated_MG485)"/>
+            <bbox y="820.0" x="2300.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph248" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="730.0" x="2270.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph154" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="920.0" x="1990.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph125" class="nucleic acid feature">
+            <label text="tRNA:Met&#xA;(MG485)"/>
+            <bbox y="830.0" x="1936.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph105" class="simple chemical">
+            <label text="L-Methionine"/>
+            <clone/>
+            <bbox y="730.0" x="1980.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph71" class="macromolecule">
+            <label text="methionyl-tRNA ligase&#xA;(MG_021_DIMER)"/>
+            <clone/>
+            <bbox y="692.5" x="2090.0" h="80.0" w="140.0"/>
+        </glyph>
+        <glyph id="glyph309" class="process">
+            <bbox y="848.0" x="2148.0" h="24.0" w="24.0"/>
+            <port y="860.0" x="2184.0" id="glyph309.2"/>
+            <port y="860.0" x="2136.0" id="glyph309.1"/>
+        </glyph>
+        <glyph id="glyph267" class="simple chemical">
+            <label text="AMP"/>
+            <clone/>
+            <bbox y="2680.0" x="630.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph168" class="simple chemical">
+            <label text="PPi"/>
+            <clone/>
+            <bbox y="2480.0" x="630.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph243" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="2670.0" x="350.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph139" class="nucleic acid feature">
+            <label text="tRNA:Gln&#xA;(MG502)"/>
+            <bbox y="2580.0" x="296.0" h="60.0" w="108.0"/>
+        </glyph>
+        <glyph id="glyph100" class="simple chemical">
+            <label text="L-Glutamate"/>
+            <clone/>
+            <bbox y="2480.0" x="340.0" h="80.0" w="80.0"/>
         </glyph>
         <glyph id="glyph57" class="macromolecule">
-            <label text="L-histidyl-AMP"/>
-            <bbox y="1229.1" x="1146.0" h="60.0" w="108.0"/>
+            <label text="glutamyl-tRNA ligase&#xA;(MG_462_MONOMER)"/>
+            <clone/>
+            <bbox y="2442.5" x="450.0" h="80.0" w="140.0"/>
         </glyph>
-        <glyph id="glyph163" class="process">
-            <bbox y="1247.1" x="1048.0" h="24.0" w="24.0"/>
-            <port y="1259.1" x="1036.0" id="glyph163.1"/>
-            <port y="1259.1" x="1084.0" id="glyph163.2"/>
+        <glyph id="glyph288" class="process">
+            <bbox y="2598.0" x="508.0" h="24.0" w="24.0"/>
+            <port y="2610.0" x="544.0" id="glyph288.2"/>
+            <port y="2610.0" x="496.0" id="glyph288.1"/>
         </glyph>
-        <glyph id="glyph151" class="simple chemical">
-            <label text="PPi"/>
-            <bbox y="1334.375" x="1120.0" h="60.0" w="60.0"/>
+        <glyph id="glyph231" class="simple chemical">
+            <label text="Pi"/>
+            <bbox y="2480.0" x="1280.0" h="60.0" w="60.0"/>
         </glyph>
-        <arc target="glyph178" source="glyph25" id="arc0" class="catalysis">
-            <start y="132.5" x="427.086"/>
-            <end y="219.16766" x="332.0"/>
-        </arc>
-        <arc target="glyph192" source="glyph25" id="arc1" class="catalysis">
-            <start y="132.5" x="490.563"/>
-            <end y="218.32631" x="578.0"/>
-        </arc>
-        <arc target="glyph186" source="glyph30" id="arc2" class="catalysis">
-            <start y="492.5" x="426.56052"/>
-            <end y="577.3343" x="332.0"/>
-        </arc>
-        <arc target="glyph196" source="glyph30" id="arc3" class="catalysis">
-            <start y="492.5" x="491.05096"/>
-            <end y="576.50616" x="578.0"/>
-        </arc>
-        <arc target="glyph188" source="glyph52" id="arc4" class="catalysis">
-            <start y="832.5" x="406.42685"/>
-            <end y="916.87714" x="312.0"/>
-        </arc>
-        <arc target="glyph172" source="glyph52" id="arc5" class="catalysis">
-            <start y="832.5" x="471.17505"/>
-            <end y="916.0523" x="558.0"/>
-        </arc>
-        <arc target="glyph198" source="glyph26" id="arc6" class="catalysis">
-            <start y="1172.5" x="386.82465"/>
-            <end y="1258.2485" x="292.0"/>
-        </arc>
-        <arc target="glyph167" source="glyph26" id="arc7" class="catalysis">
-            <start y="1172.5" x="450.8057"/>
-            <end y="1257.4138" x="538.0"/>
-        </arc>
-        <arc target="glyph176" source="glyph43" id="arc8" class="catalysis">
-            <start y="1532.5" x="386.29214"/>
-            <end y="1616.42" x="292.0"/>
-        </arc>
-        <arc target="glyph193" source="glyph43" id="arc9" class="catalysis">
-            <start y="1532.5" x="451.30017"/>
-            <end y="1615.5985" x="538.0"/>
-        </arc>
-        <arc target="glyph179" source="glyph58" id="arc10" class="catalysis">
-            <start y="122.5" x="1207.0859"/>
-            <end y="209.16766" x="1112.0"/>
-        </arc>
-        <arc target="glyph187" source="glyph58" id="arc11" class="catalysis">
-            <start y="122.5" x="1270.563"/>
-            <end y="208.32631" x="1358.0"/>
-        </arc>
-        <arc target="glyph183" source="glyph50" id="arc12" class="catalysis">
-            <start y="482.5" x="1206.5605"/>
-            <end y="567.3343" x="1112.0"/>
-        </arc>
-        <arc target="glyph197" source="glyph50" id="arc13" class="catalysis">
-            <start y="482.5" x="1271.0509"/>
-            <end y="566.50616" x="1358.0"/>
-        </arc>
-        <arc target="glyph161" source="glyph33" id="arc14" class="catalysis">
-            <start y="822.5" x="1186.4269"/>
-            <end y="906.87714" x="1092.0"/>
-        </arc>
-        <arc target="glyph182" source="glyph33" id="arc15" class="catalysis">
-            <start y="822.5" x="1251.175"/>
-            <end y="906.0523" x="1338.0"/>
-        </arc>
-        <arc target="glyph163" source="glyph55" id="arc16" class="catalysis">
-            <start y="1162.5" x="1166.8246"/>
-            <end y="1248.2485" x="1072.0"/>
-        </arc>
-        <arc target="glyph168" source="glyph55" id="arc17" class="catalysis">
-            <start y="1162.5" x="1230.8057"/>
-            <end y="1247.4138" x="1318.0"/>
-        </arc>
-        <arc target="glyph170" source="glyph40" id="arc18" class="catalysis">
-            <start y="1522.5" x="1166.2921"/>
-            <end y="1606.42" x="1072.0"/>
-        </arc>
-        <arc target="glyph199" source="glyph40" id="arc19" class="catalysis">
-            <start y="1522.5" x="1231.3002"/>
-            <end y="1605.5985" x="1318.0"/>
-        </arc>
-        <arc target="glyph177" source="glyph51" id="arc20" class="catalysis">
-            <start y="132.5" x="1997.0859"/>
-            <end y="219.16766" x="1902.0"/>
-        </arc>
-        <arc target="glyph184" source="glyph51" id="arc21" class="catalysis">
-            <start y="132.5" x="2060.563"/>
-            <end y="218.32631" x="2148.0"/>
-        </arc>
-        <arc target="glyph189" source="glyph49" id="arc22" class="catalysis">
-            <start y="492.5" x="1996.5605"/>
-            <end y="577.3343" x="1902.0"/>
-        </arc>
-        <arc target="glyph171" source="glyph49" id="arc23" class="catalysis">
-            <start y="492.5" x="2061.051"/>
-            <end y="576.50616" x="2148.0"/>
-        </arc>
-        <arc target="glyph191" source="glyph41" id="arc24" class="catalysis">
-            <start y="832.5" x="1976.4269"/>
-            <end y="916.87714" x="1882.0"/>
-        </arc>
-        <arc target="glyph194" source="glyph41" id="arc25" class="catalysis">
-            <start y="832.5" x="2045.9712"/>
-            <end y="917.592" x="2148.0"/>
-        </arc>
-        <arc target="glyph160" source="glyph39" id="arc26" class="catalysis">
-            <start y="1172.5" x="1956.8246"/>
-            <end y="1258.2485" x="1862.0"/>
-        </arc>
-        <arc target="glyph174" source="glyph39" id="arc27" class="catalysis">
-            <start y="1172.5" x="2030.2843"/>
-            <end y="1260.1636" x="2148.0"/>
-        </arc>
-        <arc target="glyph162" source="glyph35" id="arc28" class="catalysis">
-            <start y="1532.5" x="1956.2921"/>
-            <end y="1616.42" x="1862.0"/>
-        </arc>
-        <arc target="glyph181" source="glyph35" id="arc29" class="catalysis">
-            <start y="1532.5" x="2030.931"/>
-            <end y="1618.3047" x="2148.0"/>
-        </arc>
-        <arc target="glyph185" source="glyph31" id="arc30" class="catalysis">
-            <start y="132.5" x="2816.3806"/>
-            <end y="219.39713" x="2719.0"/>
-        </arc>
-        <arc target="glyph164" source="glyph31" id="arc31" class="catalysis">
-            <start y="132.5" x="2894.669"/>
-            <end y="222.04599" x="3028.0"/>
-        </arc>
-        <arc target="glyph195" source="glyph34" id="arc32" class="catalysis">
-            <start y="492.5" x="2815.844"/>
-            <end y="577.5601" x="2719.0"/>
-        </arc>
-        <arc target="glyph190" source="glyph34" id="arc33" class="catalysis">
-            <start y="492.5" x="2895.382"/>
-            <end y="580.16736" x="3028.0"/>
-        </arc>
-        <arc target="glyph165" source="glyph46" id="arc34" class="catalysis">
-            <start y="832.5" x="2815.7075"/>
-            <end y="917.1021" x="2719.0"/>
-        </arc>
-        <arc target="glyph173" source="glyph46" id="arc35" class="catalysis">
-            <start y="832.5" x="2895.5635"/>
-            <end y="919.699" x="3028.0"/>
-        </arc>
-        <arc target="glyph169" source="glyph47" id="arc36" class="catalysis">
-            <start y="1172.5" x="2816.1138"/>
-            <end y="1258.4762" x="2719.0"/>
-        </arc>
-        <arc target="glyph166" source="glyph47" id="arc37" class="catalysis">
-            <start y="1172.5" x="2895.0237"/>
-            <end y="1261.1042" x="3028.0"/>
-        </arc>
-        <arc target="glyph180" source="glyph56" id="arc38" class="catalysis">
-            <start y="1532.5" x="2815.5698"/>
-            <end y="1616.644" x="2719.0"/>
-        </arc>
-        <arc target="glyph175" source="glyph56" id="arc39" class="catalysis">
-            <start y="1532.5" x="2895.7463"/>
-            <end y="1619.2305" x="3028.0"/>
-        </arc>
-        <arc target="glyph178.1" source="glyph113" id="arc40" class="consumption">
-            <start y="230.10527" x="195.0"/>
-            <end y="230.10527" x="296.0"/>
-        </arc>
-        <arc target="glyph178.1" source="glyph134" id="arc41" class="consumption">
-            <start y="315.69214" x="188.47234"/>
-            <end y="230.10527" x="296.0"/>
-        </arc>
-        <arc target="glyph110" source="glyph178.2" id="arc42" class="production">
-            <start y="230.10527" x="344.0"/>
-            <end y="309.4673" x="373.27856"/>
-        </arc>
-        <arc target="glyph192.1" source="glyph91" id="arc43" class="consumption">
-            <start y="304.375" x="547.4806"/>
-            <end y="230.10527" x="566.0"/>
-        </arc>
-        <arc target="glyph95" source="glyph192.2" id="arc44" class="production">
-            <start y="230.10527" x="614.0"/>
-            <end y="313.73648" x="678.2273"/>
-        </arc>
-        <arc target="glyph17" source="glyph192.2" id="arc45" class="production">
-            <start y="230.10527" x="614.0"/>
-            <end y="230.10527" x="716.0"/>
-        </arc>
-        <arc target="glyph192.1" source="glyph38" id="arc46" class="consumption">
-            <start y="230.10527" x="514.0"/>
-            <end y="230.10527" x="566.0"/>
-        </arc>
-        <arc target="glyph38" source="glyph178.2" id="arc47" class="production">
-            <start y="230.10527" x="344.0"/>
-            <end y="230.10527" x="406.0"/>
-        </arc>
-        <arc target="glyph186.1" source="glyph63" id="arc48" class="consumption">
-            <start y="588.1" x="205.0"/>
-            <end y="588.1" x="296.0"/>
-        </arc>
-        <arc target="glyph186.1" source="glyph94" id="arc49" class="consumption">
-            <start y="675.4746" x="188.29756"/>
-            <end y="588.1" x="296.0"/>
-        </arc>
-        <arc target="glyph196.1" source="glyph42" id="arc50" class="consumption">
-            <start y="588.1" x="504.0"/>
-            <end y="588.1" x="566.0"/>
-        </arc>
-        <arc target="glyph196.1" source="glyph80" id="arc51" class="consumption">
-            <start y="664.375" x="547.3395"/>
-            <end y="588.1" x="566.0"/>
-        </arc>
-        <arc target="glyph14" source="glyph196.2" id="arc52" class="production">
-            <start y="588.1" x="614.0"/>
-            <end y="588.1" x="706.0"/>
-        </arc>
-        <arc target="glyph125" source="glyph196.2" id="arc53" class="production">
-            <start y="588.1" x="614.0"/>
-            <end y="673.5303" x="678.4246"/>
-        </arc>
-        <arc target="glyph98" source="glyph186.2" id="arc54" class="production">
-            <start y="588.1" x="344.0"/>
-            <end y="669.3214" x="373.498"/>
-        </arc>
-        <arc target="glyph42" source="glyph186.2" id="arc55" class="production">
-            <start y="588.1" x="344.0"/>
-            <end y="588.1" x="396.0"/>
-        </arc>
-        <arc target="glyph188.1" source="glyph66" id="arc56" class="consumption">
-            <start y="927.6" x="205.0"/>
-            <end y="927.6" x="276.0"/>
-        </arc>
-        <arc target="glyph188.1" source="glyph119" id="arc57" class="consumption">
-            <start y="1013.5773" x="186.62068"/>
-            <end y="927.6" x="276.0"/>
-        </arc>
-        <arc target="glyph172.1" source="glyph10" id="arc58" class="consumption">
-            <start y="927.6" x="510.0"/>
-            <end y="927.6" x="546.0"/>
-        </arc>
-        <arc target="glyph172.1" source="glyph93" id="arc59" class="consumption">
-            <start y="1004.375" x="527.30505"/>
-            <end y="927.6" x="546.0"/>
-        </arc>
-        <arc target="glyph0" source="glyph172.2" id="arc60" class="production">
-            <start y="927.6" x="594.0"/>
-            <end y="927.6" x="686.0"/>
-        </arc>
-        <arc target="glyph109" source="glyph172.2" id="arc61" class="production">
-            <start y="927.6" x="594.0"/>
-            <end y="1013.4797" x="658.4736"/>
-        </arc>
-        <arc target="glyph10" source="glyph188.2" id="arc62" class="production">
-            <start y="927.6" x="324.0"/>
-            <end y="927.6" x="370.0"/>
-        </arc>
-        <arc target="glyph118" source="glyph188.2" id="arc63" class="production">
-            <start y="927.6" x="324.0"/>
-            <end y="1009.2859" x="353.55197"/>
-        </arc>
-        <arc target="glyph198.1" source="glyph70" id="arc64" class="consumption">
-            <start y="1269.1" x="205.0"/>
-            <end y="1269.1" x="256.0"/>
-        </arc>
-        <arc target="glyph198.1" source="glyph133" id="arc65" class="consumption">
-            <start y="1351.679" x="184.61856"/>
-            <end y="1269.1" x="256.0"/>
-        </arc>
-        <arc target="glyph167.1" source="glyph37" id="arc66" class="consumption">
-            <start y="1269.1" x="464.0"/>
-            <end y="1269.1" x="526.0"/>
-        </arc>
-        <arc target="glyph167.1" source="glyph86" id="arc67" class="consumption">
-            <start y="1344.375" x="507.40918"/>
-            <end y="1269.1" x="526.0"/>
-        </arc>
-        <arc target="glyph176.1" source="glyph68" id="arc68" class="consumption">
-            <start y="1627.1" x="205.0"/>
-            <end y="1627.1" x="256.0"/>
-        </arc>
-        <arc target="glyph176.1" source="glyph120" id="arc69" class="consumption">
-            <start y="1711.4974" x="184.4067"/>
-            <end y="1627.1" x="256.0"/>
-        </arc>
-        <arc target="glyph193.1" source="glyph81" id="arc70" class="consumption">
-            <start y="1704.375" x="507.27103"/>
-            <end y="1627.1" x="526.0"/>
-        </arc>
-        <arc target="glyph193.1" source="glyph44" id="arc71" class="consumption">
-            <start y="1627.1" x="464.0"/>
-            <end y="1627.1" x="526.0"/>
-        </arc>
-        <arc target="glyph170.1" source="glyph67" id="arc72" class="consumption">
-            <start y="1617.1" x="990.0"/>
-            <end y="1617.1" x="1036.0"/>
-        </arc>
-        <arc target="glyph170.1" source="glyph96" id="arc73" class="consumption">
-            <start y="1702.0195" x="960.0058"/>
-            <end y="1617.1" x="1036.0"/>
-        </arc>
-        <arc target="glyph199.1" source="glyph20" id="arc74" class="consumption">
-            <start y="1617.1" x="1250.0"/>
-            <end y="1617.1" x="1306.0"/>
-        </arc>
-        <arc target="glyph199.1" source="glyph79" id="arc75" class="consumption">
-            <start y="1694.375" x="1287.271"/>
-            <end y="1617.1" x="1306.0"/>
-        </arc>
-        <arc target="glyph168.1" source="glyph78" id="arc76" class="consumption">
-            <start y="1334.375" x="1287.4092"/>
-            <end y="1259.1" x="1306.0"/>
-        </arc>
-        <arc target="glyph168.1" source="glyph57" id="arc77" class="consumption">
-            <start y="1259.1" x="1254.0"/>
-            <end y="1259.1" x="1306.0"/>
-        </arc>
-        <arc target="glyph163.1" source="glyph71" id="arc78" class="consumption">
-            <start y="1259.1" x="990.0"/>
-            <end y="1259.1" x="1036.0"/>
-        </arc>
-        <arc target="glyph163.1" source="glyph105" id="arc79" class="consumption">
-            <start y="1342.2078" x="960.21423"/>
-            <end y="1259.1" x="1036.0"/>
-        </arc>
-        <arc target="glyph161.1" source="glyph117" id="arc80" class="consumption">
-            <start y="1002.06604" x="980.0577"/>
-            <end y="917.6" x="1056.0"/>
-        </arc>
-        <arc target="glyph161.1" source="glyph138" id="arc81" class="consumption">
-            <start y="917.6" x="1000.0"/>
-            <end y="917.6" x="1056.0"/>
-        </arc>
-        <arc target="glyph182.1" source="glyph89" id="arc82" class="consumption">
-            <start y="994.375" x="1307.305"/>
-            <end y="917.6" x="1326.0"/>
-        </arc>
-        <arc target="glyph182.1" source="glyph53" id="arc83" class="consumption">
-            <start y="917.6" x="1264.0"/>
-            <end y="917.6" x="1326.0"/>
-        </arc>
-        <arc target="glyph197.1" source="glyph85" id="arc84" class="consumption">
-            <start y="654.375" x="1327.3395"/>
-            <end y="578.1" x="1346.0"/>
-        </arc>
-        <arc target="glyph197.1" source="glyph60" id="arc85" class="consumption">
-            <start y="578.1" x="1284.0"/>
-            <end y="578.1" x="1346.0"/>
-        </arc>
-        <arc target="glyph183.1" source="glyph121" id="arc86" class="consumption">
-            <start y="662.1129" x="1000.1097"/>
-            <end y="578.1" x="1076.0"/>
-        </arc>
-        <arc target="glyph183.1" source="glyph65" id="arc87" class="consumption">
-            <start y="578.1" x="1030.0"/>
-            <end y="578.1" x="1076.0"/>
-        </arc>
-        <arc target="glyph187.1" source="glyph87" id="arc88" class="consumption">
-            <start y="294.375" x="1327.4806"/>
-            <end y="220.10527" x="1346.0"/>
-        </arc>
-        <arc target="glyph187.1" source="glyph22" id="arc89" class="consumption">
-            <start y="220.10527" x="1290.0"/>
-            <end y="220.10527" x="1346.0"/>
-        </arc>
-        <arc target="glyph179.1" source="glyph135" id="arc90" class="consumption">
-            <start y="302.30466" x="1000.31995"/>
-            <end y="220.10527" x="1076.0"/>
-        </arc>
-        <arc target="glyph179.1" source="glyph62" id="arc91" class="consumption">
-            <start y="220.10527" x="1030.0"/>
-            <end y="220.10527" x="1076.0"/>
-        </arc>
-        <arc target="glyph177.1" source="glyph141" id="arc92" class="consumption">
-            <start y="312.30466" x="1790.32"/>
-            <end y="230.10527" x="1866.0"/>
-        </arc>
-        <arc target="glyph177.1" source="glyph64" id="arc93" class="consumption">
-            <start y="230.10527" x="1820.0"/>
-            <end y="230.10527" x="1866.0"/>
-        </arc>
-        <arc target="glyph184.1" source="glyph82" id="arc94" class="consumption">
-            <start y="304.375" x="2117.4807"/>
-            <end y="230.10527" x="2136.0"/>
-        </arc>
-        <arc target="glyph184.1" source="glyph28" id="arc95" class="consumption">
-            <start y="230.10527" x="2074.0"/>
-            <end y="230.10527" x="2136.0"/>
-        </arc>
-        <arc target="glyph171.1" source="glyph76" id="arc96" class="consumption">
-            <start y="664.375" x="2117.3394"/>
-            <end y="588.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph171.1" source="glyph32" id="arc97" class="consumption">
-            <start y="588.1" x="2074.0"/>
-            <end y="588.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph189.1" source="glyph112" id="arc98" class="consumption">
-            <start y="672.1129" x="1790.1097"/>
-            <end y="588.1" x="1866.0"/>
-        </arc>
-        <arc target="glyph189.1" source="glyph150" id="arc99" class="consumption">
-            <start y="588.1" x="1810.0"/>
-            <end y="588.1" x="1866.0"/>
-        </arc>
-        <arc target="glyph194.1" source="glyph83" id="arc100" class="consumption">
-            <start y="1004.375" x="2102.9243"/>
-            <end y="927.6" x="2136.0"/>
-        </arc>
-        <arc target="glyph194.1" source="glyph19" id="arc101" class="consumption">
-            <start y="927.6" x="2070.0"/>
-            <end y="927.6" x="2136.0"/>
-        </arc>
-        <arc target="glyph191.1" source="glyph99" id="arc102" class="consumption">
-            <start y="1012.06604" x="1770.0577"/>
-            <end y="927.6" x="1846.0"/>
-        </arc>
-        <arc target="glyph191.1" source="glyph72" id="arc103" class="consumption">
-            <start y="927.6" x="1800.0"/>
-            <end y="927.6" x="1846.0"/>
-        </arc>
-        <arc target="glyph160.1" source="glyph128" id="arc104" class="consumption">
-            <start y="1352.2078" x="1750.2142"/>
-            <end y="1269.1" x="1826.0"/>
-        </arc>
-        <arc target="glyph160.1" source="glyph2" id="arc105" class="consumption">
-            <start y="1269.1" x="1790.0"/>
-            <end y="1269.1" x="1826.0"/>
-        </arc>
-        <arc target="glyph174.1" source="glyph8" id="arc106" class="consumption">
-            <start y="1269.1" x="2050.0"/>
-            <end y="1269.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph174.1" source="glyph84" id="arc107" class="consumption">
-            <start y="1344.375" x="2088.8079"/>
-            <end y="1269.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph162.1" source="glyph126" id="arc108" class="consumption">
-            <start y="1712.0195" x="1750.0059"/>
-            <end y="1627.1" x="1826.0"/>
-        </arc>
-        <arc target="glyph162.1" source="glyph144" id="arc109" class="consumption">
-            <start y="1627.1" x="1770.0"/>
-            <end y="1627.1" x="1826.0"/>
-        </arc>
-        <arc target="glyph181.1" source="glyph90" id="arc110" class="consumption">
-            <start y="1704.375" x="2088.4573"/>
-            <end y="1627.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph181.1" source="glyph27" id="arc111" class="consumption">
-            <start y="1627.1" x="2044.0"/>
-            <end y="1627.1" x="2136.0"/>
-        </arc>
-        <arc target="glyph175.1" source="glyph74" id="arc112" class="consumption">
-            <start y="1704.375" x="2968.4573"/>
-            <end y="1627.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph175.1" source="glyph59" id="arc113" class="consumption">
-            <start y="1627.1" x="2904.0"/>
-            <end y="1627.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph180.1" source="glyph103" id="arc114" class="consumption">
-            <start y="1711.1807" x="2614.0269"/>
-            <end y="1627.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph180.1" source="glyph102" id="arc115" class="consumption">
-            <start y="1627.1" x="2625.0"/>
-            <end y="1627.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph169.1" source="glyph137" id="arc116" class="consumption">
-            <start y="1351.3575" x="2614.2405"/>
-            <end y="1269.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph169.1" source="glyph69" id="arc117" class="consumption">
-            <start y="1269.1" x="2635.0"/>
-            <end y="1269.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph166.1" source="glyph45" id="arc118" class="consumption">
-            <start y="1269.1" x="2904.0"/>
-            <end y="1269.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph166.1" source="glyph88" id="arc119" class="consumption">
-            <start y="1344.375" x="2968.8079"/>
-            <end y="1269.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph173.1" source="glyph24" id="arc120" class="consumption">
-            <start y="927.6" x="2910.0"/>
-            <end y="927.6" x="3016.0"/>
-        </arc>
-        <arc target="glyph173.1" source="glyph77" id="arc121" class="consumption">
-            <start y="1004.375" x="2968.5437"/>
-            <end y="927.6" x="3016.0"/>
-        </arc>
-        <arc target="glyph165.1" source="glyph154" id="arc122" class="consumption">
-            <start y="1011.2243" x="2614.0798"/>
-            <end y="927.6" x="2683.0"/>
-        </arc>
-        <arc target="glyph165.1" source="glyph73" id="arc123" class="consumption">
-            <start y="927.6" x="2635.0"/>
-            <end y="927.6" x="2683.0"/>
-        </arc>
-        <arc target="glyph195.1" source="glyph159" id="arc124" class="consumption">
-            <start y="671.2683" x="2614.1333"/>
-            <end y="588.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph195.1" source="glyph61" id="arc125" class="consumption">
-            <start y="588.1" x="2635.0"/>
-            <end y="588.1" x="2683.0"/>
-        </arc>
-        <arc target="glyph190.1" source="glyph75" id="arc126" class="consumption">
-            <start y="664.375" x="2968.6309"/>
-            <end y="588.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph190.1" source="glyph29" id="arc127" class="consumption">
-            <start y="588.1" x="2904.0"/>
-            <end y="588.1" x="3016.0"/>
-        </arc>
-        <arc target="glyph185.1" source="glyph114" id="arc128" class="consumption">
-            <start y="311.44867" x="2614.349"/>
-            <end y="230.10527" x="2683.0"/>
-        </arc>
-        <arc target="glyph185.1" source="glyph130" id="arc129" class="consumption">
-            <start y="230.10527" x="2625.0"/>
-            <end y="230.10527" x="2683.0"/>
-        </arc>
-        <arc target="glyph164.1" source="glyph48" id="arc130" class="consumption">
-            <start y="230.10527" x="2904.0"/>
-            <end y="230.10527" x="3016.0"/>
-        </arc>
-        <arc target="glyph164.1" source="glyph92" id="arc131" class="consumption">
-            <start y="304.375" x="2968.9893"/>
-            <end y="230.10527" x="3016.0"/>
-        </arc>
-        <arc target="glyph37" source="glyph198.2" id="arc132" class="production">
-            <start y="1269.1" x="304.0"/>
-            <end y="1269.1" x="356.0"/>
-        </arc>
-        <arc target="glyph142" source="glyph198.2" id="arc133" class="production">
-            <start y="1269.1" x="304.0"/>
-            <end y="1349.3934" x="333.38913"/>
-        </arc>
-        <arc target="glyph7" source="glyph167.2" id="arc134" class="production">
-            <start y="1269.1" x="574.0"/>
-            <end y="1269.1" x="706.0"/>
-        </arc>
-        <arc target="glyph146" source="glyph167.2" id="arc135" class="production">
-            <start y="1269.1" x="574.0"/>
-            <end y="1353.6324" x="638.3264"/>
-        </arc>
-        <arc target="glyph143" source="glyph176.2" id="arc136" class="production">
-            <start y="1627.1" x="304.0"/>
-            <end y="1709.2507" x="333.6057"/>
-        </arc>
-        <arc target="glyph44" source="glyph176.2" id="arc137" class="production">
-            <start y="1627.1" x="304.0"/>
-            <end y="1627.1" x="356.0"/>
-        </arc>
-        <arc target="glyph13" source="glyph193.2" id="arc138" class="production">
-            <start y="1627.1" x="574.0"/>
-            <end y="1627.1" x="706.0"/>
-        </arc>
-        <arc target="glyph108" source="glyph193.2" id="arc139" class="production">
-            <start y="1627.1" x="574.0"/>
-            <end y="1713.4294" x="638.52246"/>
-        </arc>
-        <arc target="glyph20" source="glyph170.2" id="arc140" class="production">
-            <start y="1617.1" x="1084.0"/>
-            <end y="1617.1" x="1130.0"/>
-        </arc>
-        <arc target="glyph124" source="glyph170.2" id="arc141" class="production">
-            <start y="1617.1" x="1084.0"/>
-            <end y="1701.3921" x="1130.7181"/>
-        </arc>
-        <arc target="glyph12" source="glyph199.2" id="arc142" class="production">
-            <start y="1617.1" x="1354.0"/>
-            <end y="1617.1" x="1454.0"/>
-        </arc>
-        <arc target="glyph149" source="glyph199.2" id="arc143" class="production">
-            <start y="1617.1" x="1354.0"/>
-            <end y="1703.4294" x="1418.5225"/>
-        </arc>
-        <arc target="glyph36" source="glyph168.2" id="arc144" class="production">
-            <start y="1259.1" x="1354.0"/>
-            <end y="1259.1" x="1470.0"/>
-        </arc>
-        <arc target="glyph106" source="glyph168.2" id="arc145" class="production">
-            <start y="1259.1" x="1354.0"/>
-            <end y="1343.6324" x="1418.3264"/>
-        </arc>
-        <arc target="glyph53" source="glyph161.2" id="arc146" class="production">
-            <start y="917.6" x="1104.0"/>
-            <end y="917.6" x="1156.0"/>
-        </arc>
-        <arc target="glyph127" source="glyph161.2" id="arc147" class="production">
-            <start y="917.6" x="1104.0"/>
-            <end y="999.2859" x="1133.552"/>
-        </arc>
-        <arc target="glyph18" source="glyph182.2" id="arc148" class="production">
-            <start y="917.6" x="1374.0"/>
-            <end y="917.6" x="1464.0"/>
-        </arc>
-        <arc target="glyph157" source="glyph182.2" id="arc149" class="production">
-            <start y="917.6" x="1374.0"/>
-            <end y="1003.4797" x="1438.4736"/>
-        </arc>
-        <arc target="glyph60" source="glyph183.2" id="arc150" class="production">
-            <start y="578.1" x="1124.0"/>
-            <end y="578.1" x="1176.0"/>
-        </arc>
-        <arc target="glyph104" source="glyph183.2" id="arc151" class="production">
-            <start y="578.1" x="1124.0"/>
-            <end y="657.2293" x="1137.2285"/>
-        </arc>
-        <arc target="glyph6" source="glyph197.2" id="arc152" class="production">
-            <start y="578.1" x="1394.0"/>
-            <end y="578.1" x="1454.0"/>
-        </arc>
-        <arc target="glyph155" source="glyph197.2" id="arc153" class="production">
-            <start y="578.1" x="1394.0"/>
-            <end y="663.5303" x="1458.4247"/>
-        </arc>
-        <arc target="glyph22" source="glyph179.2" id="arc154" class="production">
-            <start y="220.10527" x="1124.0"/>
-            <end y="220.10527" x="1170.0"/>
-        </arc>
-        <arc target="glyph132" source="glyph179.2" id="arc155" class="production">
-            <start y="220.10527" x="1124.0"/>
-            <end y="297.3243" x="1137.0284"/>
-        </arc>
-        <arc target="glyph4" source="glyph187.2" id="arc156" class="production">
-            <start y="220.10527" x="1394.0"/>
-            <end y="220.10527" x="1444.0"/>
-        </arc>
-        <arc target="glyph140" source="glyph187.2" id="arc157" class="production">
-            <start y="220.10527" x="1394.0"/>
-            <end y="303.73648" x="1458.2273"/>
-        </arc>
-        <arc target="glyph28" source="glyph177.2" id="arc158" class="production">
-            <start y="230.10527" x="1914.0"/>
-            <end y="230.10527" x="1966.0"/>
-        </arc>
-        <arc target="glyph101" source="glyph177.2" id="arc159" class="production">
-            <start y="230.10527" x="1914.0"/>
-            <end y="309.4673" x="1943.2786"/>
-        </arc>
-        <arc target="glyph16" source="glyph184.2" id="arc160" class="production">
-            <start y="230.10527" x="2184.0"/>
-            <end y="230.03477" x="2281.6"/>
-        </arc>
-        <arc target="glyph131" source="glyph184.2" id="arc161" class="production">
-            <start y="230.10527" x="2184.0"/>
-            <end y="314.69803" x="2257.3545"/>
-        </arc>
-        <arc target="glyph32" source="glyph189.2" id="arc162" class="production">
-            <start y="588.1" x="1914.0"/>
-            <end y="588.1" x="1966.0"/>
-        </arc>
-        <arc target="glyph147" source="glyph189.2" id="arc163" class="production">
-            <start y="588.1" x="1914.0"/>
-            <end y="669.3214" x="1943.4979"/>
-        </arc>
-        <arc target="glyph21" source="glyph171.2" id="arc164" class="production">
-            <start y="588.1" x="2184.0"/>
-            <end y="589.2875" x="2260.0"/>
-        </arc>
-        <arc target="glyph156" source="glyph171.2" id="arc165" class="production">
-            <start y="588.1" x="2184.0"/>
-            <end y="674.48505" x="2257.5413"/>
-        </arc>
-        <arc target="glyph19" source="glyph191.2" id="arc166" class="production">
-            <start y="927.6" x="1894.0"/>
-            <end y="927.6" x="1950.0"/>
-        </arc>
-        <arc target="glyph152" source="glyph191.2" id="arc167" class="production">
-            <start y="927.6" x="1894.0"/>
-            <end y="1009.2859" x="1923.552"/>
-        </arc>
-        <arc target="glyph5" source="glyph194.2" id="arc168" class="production">
-            <start y="927.6" x="2184.0"/>
-            <end y="928.94275" x="2261.6"/>
-        </arc>
-        <arc target="glyph139" source="glyph194.2" id="arc169" class="production">
-            <start y="927.6" x="2184.0"/>
-            <end y="1014.4328" x="2257.588"/>
-        </arc>
-        <arc target="glyph8" source="glyph160.2" id="arc170" class="production">
-            <start y="1269.1" x="1874.0"/>
-            <end y="1269.1" x="1910.0"/>
-        </arc>
-        <arc target="glyph153" source="glyph160.2" id="arc171" class="production">
-            <start y="1269.1" x="1874.0"/>
-            <end y="1349.3934" x="1903.3892"/>
-        </arc>
-        <arc target="glyph1" source="glyph174.2" id="arc172" class="production">
-            <start y="1269.1" x="2184.0"/>
-            <end y="1274.598" x="2251.6"/>
-        </arc>
-        <arc target="glyph148" source="glyph174.2" id="arc173" class="production">
-            <start y="1269.1" x="2184.0"/>
-            <end y="1354.5906" x="2257.4482"/>
-        </arc>
-        <arc target="glyph27" source="glyph162.2" id="arc174" class="production">
-            <start y="1627.1" x="1874.0"/>
-            <end y="1627.1" x="1936.0"/>
-        </arc>
-        <arc target="glyph111" source="glyph162.2" id="arc175" class="production">
-            <start y="1627.1" x="1874.0"/>
-            <end y="1709.2507" x="1903.6057"/>
-        </arc>
-        <arc target="glyph11" source="glyph181.2" id="arc176" class="production">
-            <start y="1627.1" x="2184.0"/>
-            <end y="1627.1" x="2271.6"/>
-        </arc>
-        <arc target="glyph145" source="glyph181.2" id="arc177" class="production">
-            <start y="1627.1" x="2184.0"/>
-            <end y="1714.3809" x="2257.634"/>
-        </arc>
-        <arc target="glyph59" source="glyph180.2" id="arc178" class="production">
-            <start y="1627.1" x="2731.0"/>
-            <end y="1627.1" x="2796.0"/>
-        </arc>
-        <arc target="glyph158" source="glyph180.2" id="arc179" class="production">
-            <start y="1627.1" x="2731.0"/>
-            <end y="1709.5729" x="2763.1223"/>
-        </arc>
-        <arc target="glyph54" source="glyph175.2" id="arc180" class="production">
-            <start y="1627.1" x="3064.0"/>
-            <end y="1627.1" x="3110.0"/>
-        </arc>
-        <arc target="glyph123" source="glyph175.2" id="arc181" class="production">
-            <start y="1627.1" x="3064.0"/>
-            <end y="1711.8118" x="3114.2288"/>
-        </arc>
-        <arc target="glyph9" source="glyph166.2" id="arc182" class="production">
-            <start y="1269.1" x="3064.0"/>
-            <end y="1269.1" x="3094.0"/>
-        </arc>
-        <arc target="glyph107" source="glyph166.2" id="arc183" class="production">
-            <start y="1269.1" x="3064.0"/>
-            <end y="1351.9973" x="3114.019"/>
-        </arc>
-        <arc target="glyph45" source="glyph169.2" id="arc184" class="production">
-            <start y="1269.1" x="2731.0"/>
-            <end y="1269.1" x="2796.0"/>
-        </arc>
-        <arc target="glyph100" source="glyph169.2" id="arc185" class="production">
-            <start y="1269.1" x="2731.0"/>
-            <end y="1349.722" x="2762.905"/>
-        </arc>
-        <arc target="glyph24" source="glyph165.2" id="arc186" class="production">
-            <start y="927.6" x="2731.0"/>
-            <end y="927.6" x="2790.0"/>
-        </arc>
-        <arc target="glyph97" source="glyph165.2" id="arc187" class="production">
-            <start y="927.6" x="2731.0"/>
-            <end y="1009.6097" x="2763.0684"/>
-        </arc>
-        <arc target="glyph3" source="glyph173.2" id="arc188" class="production">
-            <start y="927.6" x="3064.0"/>
-            <end y="927.6" x="3084.0"/>
-        </arc>
-        <arc target="glyph136" source="glyph173.2" id="arc189" class="production">
-            <start y="927.6" x="3064.0"/>
-            <end y="1011.85754" x="3114.1768"/>
-        </arc>
-        <arc target="glyph15" source="glyph190.2" id="arc190" class="production">
-            <start y="588.1" x="3064.0"/>
-            <end y="588.1" x="3094.0"/>
-        </arc>
-        <arc target="glyph115" source="glyph190.2" id="arc191" class="production">
-            <start y="588.1" x="3064.0"/>
-            <end y="671.9038" x="3114.1243"/>
-        </arc>
-        <arc target="glyph29" source="glyph195.2" id="arc192" class="production">
-            <start y="588.1" x="2731.0"/>
-            <end y="588.1" x="2796.0"/>
-        </arc>
-        <arc target="glyph116" source="glyph195.2" id="arc193" class="production">
-            <start y="588.1" x="2731.0"/>
-            <end y="669.6468" x="2763.0142"/>
-        </arc>
-        <arc target="glyph23" source="glyph164.2" id="arc194" class="production">
-            <start y="230.10527" x="3064.0"/>
-            <end y="230.10527" x="3104.0"/>
-        </arc>
-        <arc target="glyph122" source="glyph164.2" id="arc195" class="production">
-            <start y="230.10527" x="3064.0"/>
-            <end y="312.0929" x="3113.9126"/>
-        </arc>
-        <arc target="glyph48" source="glyph185.2" id="arc196" class="production">
-            <start y="230.10527" x="2731.0"/>
-            <end y="230.10527" x="2796.0"/>
-        </arc>
-        <arc target="glyph129" source="glyph185.2" id="arc197" class="production">
-            <start y="230.10527" x="2731.0"/>
-            <end y="309.7993" x="2762.7944"/>
-        </arc>
-        <arc target="glyph57" source="glyph163.2" id="arc198" class="production">
-            <start y="1259.1" x="1084.0"/>
-            <end y="1259.1" x="1146.0"/>
-        </arc>
-        <arc target="glyph151" source="glyph163.2" id="arc199" class="production">
-            <start y="1259.1" x="1084.0"/>
-            <end y="1341.5721" x="1130.5057"/>
+        <glyph id="glyph176" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="2670.0" x="1000.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph191" class="simple chemical">
+            <label text="H2O"/>
+            <clone/>
+            <bbox y="2490.0" x="1000.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph33" class="macromolecule">
+            <label text="glutamyl-tRNA amidotransferase&#xA;(MG_098_099_100_TRIMER)"/>
+            <bbox y="2442.5" x="1070.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph4" class="macromolecule">
+            <label text="L-glutaminyl-tRNA:Gln&#xA;(aminoacylated_MG502)"/>
+            <bbox y="2560.0" x="1360.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph94" class="simple chemical">
+            <label text="L-Glutamate"/>
+            <clone/>
+            <bbox y="2650.0" x="1290.0" h="80.0" w="80.0"/>
+        </glyph>
+        <glyph id="glyph161" class="simple chemical">
+            <label text="H"/>
+            <clone/>
+            <bbox y="2700.0" x="1210.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph17" class="macromolecule">
+            <label text="L-glutamyl-tRNA:Gln&#xA;(aminoacylated_MG502)"/>
+            <bbox y="2570.0" x="730.0" h="80.0" w="200.0"/>
+        </glyph>
+        <glyph id="glyph280" class="process">
+            <bbox y="2598.0" x="1158.0" h="24.0" w="24.0"/>
+            <port y="2610.0" x="1194.0" id="glyph280.2"/>
+            <port y="2610.0" x="1146.0" id="glyph280.1"/>
+        </glyph>
+        <arc target="glyph293" source="glyph67" id="arc0" class="catalysis">
+            <start y="102.5" x="250.0"/>
+            <end y="178.0" x="250.0"/>
+        </arc>
+        <arc target="glyph293.1" source="glyph123" id="arc1" class="consumption">
+            <start y="190.0" x="134.0"/>
+            <end y="190.0" x="226.0"/>
+        </arc>
+        <arc target="glyph178" source="glyph293.2" id="arc2" class="production">
+            <start y="190.0" x="274.0"/>
+            <end y="272.56287" x="365.58798"/>
+        </arc>
+        <arc target="glyph11" source="glyph293.2" id="arc3" class="production">
+            <start y="190.0" x="274.0"/>
+            <end y="190.0" x="360.0"/>
+        </arc>
+        <arc target="glyph293.1" source="glyph201" id="arc4" class="consumption">
+            <start y="118.389915" x="133.70256"/>
+            <end y="190.0" x="226.0"/>
+        </arc>
+        <arc target="glyph293.1" source="glyph181" id="arc5" class="consumption">
+            <start y="261.61008" x="133.70256"/>
+            <end y="190.0" x="226.0"/>
+        </arc>
+        <arc target="glyph250" source="glyph293.2" id="arc6" class="production">
+            <start y="190.0" x="274.0"/>
+            <end y="107.43715" x="365.58798"/>
+        </arc>
+        <arc target="glyph228" source="glyph304.2" id="arc7" class="production">
+            <start y="540.0" x="274.0"/>
+            <end y="622.56287" x="365.58798"/>
+        </arc>
+        <arc target="glyph8" source="glyph304.2" id="arc8" class="production">
+            <start y="540.0" x="274.0"/>
+            <end y="540.0" x="360.0"/>
+        </arc>
+        <arc target="glyph222" source="glyph304.2" id="arc9" class="production">
+            <start y="540.0" x="274.0"/>
+            <end y="457.43713" x="365.58798"/>
+        </arc>
+        <arc target="glyph304.1" source="glyph183" id="arc10" class="consumption">
+            <start y="468.38992" x="133.70256"/>
+            <end y="540.0" x="226.0"/>
+        </arc>
+        <arc target="glyph304.1" source="glyph205" id="arc11" class="consumption">
+            <start y="611.6101" x="133.70256"/>
+            <end y="540.0" x="226.0"/>
+        </arc>
+        <arc target="glyph304.1" source="glyph148" id="arc12" class="consumption">
+            <start y="540.0" x="134.0"/>
+            <end y="540.0" x="226.0"/>
+        </arc>
+        <arc target="glyph304" source="glyph69" id="arc13" class="catalysis">
+            <start y="452.5" x="250.0"/>
+            <end y="528.0" x="250.0"/>
+        </arc>
+        <arc target="glyph189" source="glyph310.2" id="arc14" class="production">
+            <start y="880.0" x="284.0"/>
+            <end y="962.56287" x="375.58798"/>
+        </arc>
+        <arc target="glyph18" source="glyph310.2" id="arc15" class="production">
+            <start y="880.0" x="284.0"/>
+            <end y="880.0" x="370.0"/>
+        </arc>
+        <arc target="glyph233" source="glyph310.2" id="arc16" class="production">
+            <start y="880.0" x="284.0"/>
+            <end y="797.43713" x="375.58798"/>
+        </arc>
+        <arc target="glyph310.1" source="glyph227" id="arc17" class="consumption">
+            <start y="951.6101" x="143.70256"/>
+            <end y="880.0" x="236.0"/>
+        </arc>
+        <arc target="glyph310.1" source="glyph156" id="arc18" class="consumption">
+            <start y="808.3899" x="143.70256"/>
+            <end y="880.0" x="236.0"/>
+        </arc>
+        <arc target="glyph310.1" source="glyph115" id="arc19" class="consumption">
+            <start y="880.0" x="144.0"/>
+            <end y="880.0" x="236.0"/>
+        </arc>
+        <arc target="glyph310" source="glyph72" id="arc20" class="catalysis">
+            <start y="792.5" x="260.0"/>
+            <end y="868.0" x="260.0"/>
+        </arc>
+        <arc target="glyph218" source="glyph307.2" id="arc21" class="production">
+            <start y="1200.0" x="284.0"/>
+            <end y="1282.5629" x="375.58798"/>
+        </arc>
+        <arc target="glyph40" source="glyph307.2" id="arc22" class="production">
+            <start y="1200.0" x="284.0"/>
+            <end y="1200.0" x="370.0"/>
+        </arc>
+        <arc target="glyph211" source="glyph307.2" id="arc23" class="production">
+            <start y="1200.0" x="284.0"/>
+            <end y="1117.4371" x="375.58798"/>
+        </arc>
+        <arc target="glyph307.1" source="glyph271" id="arc24" class="consumption">
+            <start y="1271.6101" x="143.70256"/>
+            <end y="1200.0" x="236.0"/>
+        </arc>
+        <arc target="glyph307.1" source="glyph172" id="arc25" class="consumption">
+            <start y="1128.3899" x="143.70256"/>
+            <end y="1200.0" x="236.0"/>
+        </arc>
+        <arc target="glyph307.1" source="glyph120" id="arc26" class="consumption">
+            <start y="1200.0" x="144.0"/>
+            <end y="1200.0" x="236.0"/>
+        </arc>
+        <arc target="glyph307" source="glyph55" id="arc27" class="catalysis">
+            <start y="1112.5" x="260.0"/>
+            <end y="1188.0" x="260.0"/>
+        </arc>
+        <arc target="glyph268" source="glyph296.2" id="arc28" class="production">
+            <start y="1530.0" x="264.0"/>
+            <end y="1612.5629" x="355.58798"/>
+        </arc>
+        <arc target="glyph36" source="glyph296.2" id="arc29" class="production">
+            <start y="1530.0" x="264.0"/>
+            <end y="1530.0" x="350.0"/>
+        </arc>
+        <arc target="glyph208" source="glyph296.2" id="arc30" class="production">
+            <start y="1530.0" x="264.0"/>
+            <end y="1447.4371" x="355.58798"/>
+        </arc>
+        <arc target="glyph296.1" source="glyph186" id="arc31" class="consumption">
+            <start y="1601.6101" x="123.70255"/>
+            <end y="1530.0" x="216.0"/>
+        </arc>
+        <arc target="glyph296.1" source="glyph238" id="arc32" class="consumption">
+            <start y="1458.3899" x="123.70255"/>
+            <end y="1530.0" x="216.0"/>
+        </arc>
+        <arc target="glyph296.1" source="glyph142" id="arc33" class="consumption">
+            <start y="1530.0" x="124.0"/>
+            <end y="1530.0" x="216.0"/>
+        </arc>
+        <arc target="glyph296" source="glyph63" id="arc34" class="catalysis">
+            <start y="1442.5" x="240.0"/>
+            <end y="1518.0" x="240.0"/>
+        </arc>
+        <arc target="glyph260" source="glyph287.2" id="arc35" class="production">
+            <start y="190.0" x="904.0"/>
+            <end y="272.56287" x="995.588"/>
+        </arc>
+        <arc target="glyph12" source="glyph287.2" id="arc36" class="production">
+            <start y="190.0" x="904.0"/>
+            <end y="190.0" x="990.0"/>
+        </arc>
+        <arc target="glyph206" source="glyph287.2" id="arc37" class="production">
+            <start y="190.0" x="904.0"/>
+            <end y="107.43715" x="995.588"/>
+        </arc>
+        <arc target="glyph287.1" source="glyph89" id="arc38" class="consumption">
+            <start y="124.51988" x="771.6034"/>
+            <end y="190.0" x="856.0"/>
+        </arc>
+        <arc target="glyph287.1" source="glyph165" id="arc39" class="consumption">
+            <start y="261.61008" x="763.7026"/>
+            <end y="190.0" x="856.0"/>
+        </arc>
+        <arc target="glyph287.1" source="glyph118" id="arc40" class="consumption">
+            <start y="190.0" x="764.0"/>
+            <end y="190.0" x="856.0"/>
+        </arc>
+        <arc target="glyph287" source="glyph59" id="arc41" class="catalysis">
+            <start y="102.5" x="880.0"/>
+            <end y="178.0" x="880.0"/>
+        </arc>
+        <arc target="glyph216" source="glyph295.2" id="arc42" class="production">
+            <start y="540.0" x="914.0"/>
+            <end y="622.56287" x="1005.588"/>
+        </arc>
+        <arc target="glyph34" source="glyph295.2" id="arc43" class="production">
+            <start y="540.0" x="914.0"/>
+            <end y="540.0" x="1000.0"/>
+        </arc>
+        <arc target="glyph232" source="glyph295.2" id="arc44" class="production">
+            <start y="540.0" x="914.0"/>
+            <end y="457.43713" x="1005.588"/>
+        </arc>
+        <arc target="glyph295.1" source="glyph101" id="arc45" class="consumption">
+            <start y="474.5199" x="781.6034"/>
+            <end y="540.0" x="866.0"/>
+        </arc>
+        <arc target="glyph295.1" source="glyph237" id="arc46" class="consumption">
+            <start y="611.6101" x="773.7026"/>
+            <end y="540.0" x="866.0"/>
+        </arc>
+        <arc target="glyph295.1" source="glyph133" id="arc47" class="consumption">
+            <start y="540.0" x="774.0"/>
+            <end y="540.0" x="866.0"/>
+        </arc>
+        <arc target="glyph295" source="glyph64" id="arc48" class="catalysis">
+            <start y="452.5" x="890.0"/>
+            <end y="528.0" x="890.0"/>
+        </arc>
+        <arc target="glyph253" source="glyph286.2" id="arc49" class="production">
+            <start y="870.0" x="924.0"/>
+            <end y="952.56287" x="1015.588"/>
+        </arc>
+        <arc target="glyph5" source="glyph286.2" id="arc50" class="production">
+            <start y="870.0" x="924.0"/>
+            <end y="870.0" x="1010.0"/>
+        </arc>
+        <arc target="glyph224" source="glyph286.2" id="arc51" class="production">
+            <start y="870.0" x="924.0"/>
+            <end y="787.43713" x="1015.588"/>
+        </arc>
+        <arc target="glyph286.1" source="glyph193" id="arc52" class="consumption">
+            <start y="941.6101" x="783.7026"/>
+            <end y="870.0" x="876.0"/>
+        </arc>
+        <arc target="glyph286.1" source="glyph129" id="arc53" class="consumption">
+            <start y="870.0" x="784.0"/>
+            <end y="870.0" x="876.0"/>
+        </arc>
+        <arc target="glyph286.1" source="glyph81" id="arc54" class="consumption">
+            <start y="804.5199" x="791.6034"/>
+            <end y="870.0" x="876.0"/>
+        </arc>
+        <arc target="glyph286" source="glyph68" id="arc55" class="catalysis">
+            <start y="782.5" x="900.0"/>
+            <end y="858.0" x="900.0"/>
+        </arc>
+        <arc target="glyph269" source="glyph308.2" id="arc56" class="production">
+            <start y="1200.0" x="924.0"/>
+            <end y="1282.5629" x="1015.588"/>
+        </arc>
+        <arc target="glyph15" source="glyph308.2" id="arc57" class="production">
+            <start y="1200.0" x="924.0"/>
+            <end y="1200.0" x="1010.0"/>
+        </arc>
+        <arc target="glyph162" source="glyph308.2" id="arc58" class="production">
+            <start y="1200.0" x="924.0"/>
+            <end y="1117.4371" x="1015.588"/>
+        </arc>
+        <arc target="glyph308.1" source="glyph207" id="arc59" class="consumption">
+            <start y="1271.6101" x="783.7026"/>
+            <end y="1200.0" x="876.0"/>
+        </arc>
+        <arc target="glyph308.1" source="glyph128" id="arc60" class="consumption">
+            <start y="1200.0" x="784.0"/>
+            <end y="1200.0" x="876.0"/>
+        </arc>
+        <arc target="glyph308.1" source="glyph83" id="arc61" class="consumption">
+            <start y="1134.5199" x="791.6034"/>
+            <end y="1200.0" x="876.0"/>
+        </arc>
+        <arc target="glyph308" source="glyph70" id="arc62" class="catalysis">
+            <start y="1112.5" x="900.0"/>
+            <end y="1188.0" x="900.0"/>
+        </arc>
+        <arc target="glyph184" source="glyph284.2" id="arc63" class="production">
+            <start y="1530.0" x="924.0"/>
+            <end y="1612.5629" x="1015.588"/>
+        </arc>
+        <arc target="glyph2" source="glyph284.2" id="arc64" class="production">
+            <start y="1530.0" x="924.0"/>
+            <end y="1530.0" x="1010.0"/>
+        </arc>
+        <arc target="glyph235" source="glyph284.2" id="arc65" class="production">
+            <start y="1530.0" x="924.0"/>
+            <end y="1447.4371" x="1015.588"/>
+        </arc>
+        <arc target="glyph212" source="glyph282.2" id="arc66" class="production">
+            <start y="1860.0" x="924.0"/>
+            <end y="1942.5629" x="1015.588"/>
+        </arc>
+        <arc target="glyph30" source="glyph282.2" id="arc67" class="production">
+            <start y="1860.0" x="924.0"/>
+            <end y="1860.0" x="1010.0"/>
+        </arc>
+        <arc target="glyph185" source="glyph282.2" id="arc68" class="production">
+            <start y="1860.0" x="924.0"/>
+            <end y="1777.4371" x="1015.588"/>
+        </arc>
+        <arc target="glyph282.1" source="glyph160" id="arc69" class="consumption">
+            <start y="1931.6101" x="783.7026"/>
+            <end y="1860.0" x="876.0"/>
+        </arc>
+        <arc target="glyph284.1" source="glyph265" id="arc70" class="consumption">
+            <start y="1601.6101" x="783.7026"/>
+            <end y="1530.0" x="876.0"/>
+        </arc>
+        <arc target="glyph282.1" source="glyph132" id="arc71" class="consumption">
+            <start y="1860.0" x="784.0"/>
+            <end y="1860.0" x="876.0"/>
+        </arc>
+        <arc target="glyph284.1" source="glyph145" id="arc72" class="consumption">
+            <start y="1530.0" x="784.0"/>
+            <end y="1530.0" x="876.0"/>
+        </arc>
+        <arc target="glyph284.1" source="glyph84" id="arc73" class="consumption">
+            <start y="1464.5199" x="791.6034"/>
+            <end y="1530.0" x="876.0"/>
+        </arc>
+        <arc target="glyph282.1" source="glyph88" id="arc74" class="consumption">
+            <start y="1794.5199" x="791.6034"/>
+            <end y="1860.0" x="876.0"/>
+        </arc>
+        <arc target="glyph282" source="glyph66" id="arc75" class="catalysis">
+            <start y="1772.5" x="900.0"/>
+            <end y="1848.0" x="900.0"/>
+        </arc>
+        <arc target="glyph284" source="glyph62" id="arc76" class="catalysis">
+            <start y="1442.5" x="900.0"/>
+            <end y="1518.0" x="900.0"/>
+        </arc>
+        <arc target="glyph200" source="glyph305.2" id="arc77" class="production">
+            <start y="190.0" x="1534.0"/>
+            <end y="272.56287" x="1625.588"/>
+        </arc>
+        <arc target="glyph22" source="glyph305.2" id="arc78" class="production">
+            <start y="190.0" x="1534.0"/>
+            <end y="190.0" x="1620.0"/>
+        </arc>
+        <arc target="glyph180" source="glyph305.2" id="arc79" class="production">
+            <start y="190.0" x="1534.0"/>
+            <end y="107.43715" x="1625.588"/>
+        </arc>
+        <arc target="glyph305.1" source="glyph155" id="arc80" class="consumption">
+            <start y="261.61008" x="1393.7025"/>
+            <end y="190.0" x="1486.0"/>
+        </arc>
+        <arc target="glyph305.1" source="glyph113" id="arc81" class="consumption">
+            <start y="190.0" x="1394.0"/>
+            <end y="190.0" x="1486.0"/>
+        </arc>
+        <arc target="glyph305.1" source="glyph110" id="arc82" class="consumption">
+            <start y="124.51988" x="1401.6034"/>
+            <end y="190.0" x="1486.0"/>
+        </arc>
+        <arc target="glyph305" source="glyph75" id="arc83" class="catalysis">
+            <start y="102.5" x="1510.0"/>
+            <end y="178.0" x="1510.0"/>
+        </arc>
+        <arc target="glyph264" source="glyph297.2" id="arc84" class="production">
+            <start y="540.0" x="1544.0"/>
+            <end y="622.56287" x="1635.588"/>
+        </arc>
+        <arc target="glyph9" source="glyph297.2" id="arc85" class="production">
+            <start y="540.0" x="1544.0"/>
+            <end y="540.0" x="1630.0"/>
+        </arc>
+        <arc target="glyph174" source="glyph297.2" id="arc86" class="production">
+            <start y="540.0" x="1544.0"/>
+            <end y="457.43713" x="1635.588"/>
+        </arc>
+        <arc target="glyph297.1" source="glyph194" id="arc87" class="consumption">
+            <start y="611.6101" x="1403.7025"/>
+            <end y="540.0" x="1496.0"/>
+        </arc>
+        <arc target="glyph297.1" source="glyph147" id="arc88" class="consumption">
+            <start y="540.0" x="1404.0"/>
+            <end y="540.0" x="1496.0"/>
+        </arc>
+        <arc target="glyph297.1" source="glyph109" id="arc89" class="consumption">
+            <start y="474.5199" x="1411.6034"/>
+            <end y="540.0" x="1496.0"/>
+        </arc>
+        <arc target="glyph297" source="glyph60" id="arc90" class="catalysis">
+            <start y="450.0" x="1520.0"/>
+            <end y="528.0" x="1520.0"/>
+        </arc>
+        <arc target="glyph251" source="glyph276.2" id="arc91" class="production">
+            <start y="870.0" x="1554.0"/>
+            <end y="952.56287" x="1645.588"/>
+        </arc>
+        <arc target="glyph14" source="glyph276.2" id="arc92" class="production">
+            <start y="870.0" x="1554.0"/>
+            <end y="870.0" x="1640.0"/>
+        </arc>
+        <arc target="glyph199" source="glyph276.2" id="arc93" class="production">
+            <start y="870.0" x="1554.0"/>
+            <end y="787.43713" x="1645.588"/>
+        </arc>
+        <arc target="glyph276.1" source="glyph259" id="arc94" class="consumption">
+            <start y="941.6101" x="1413.7025"/>
+            <end y="870.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph276.1" source="glyph143" id="arc95" class="consumption">
+            <start y="870.0" x="1414.0"/>
+            <end y="870.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph276.1" source="glyph103" id="arc96" class="consumption">
+            <start y="804.5199" x="1421.6034"/>
+            <end y="870.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph276" source="glyph73" id="arc97" class="catalysis">
+            <start y="782.5" x="1530.0"/>
+            <end y="858.0" x="1530.0"/>
+        </arc>
+        <arc target="glyph175" source="glyph279.2" id="arc98" class="production">
+            <start y="1200.0" x="1554.0"/>
+            <end y="1282.5629" x="1645.588"/>
+        </arc>
+        <arc target="glyph7" source="glyph279.2" id="arc99" class="production">
+            <start y="1200.0" x="1554.0"/>
+            <end y="1200.0" x="1640.0"/>
+        </arc>
+        <arc target="glyph159" source="glyph279.2" id="arc100" class="production">
+            <start y="1200.0" x="1554.0"/>
+            <end y="1117.4371" x="1645.588"/>
+        </arc>
+        <arc target="glyph279.1" source="glyph236" id="arc101" class="consumption">
+            <start y="1271.6101" x="1413.7025"/>
+            <end y="1200.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph279.1" source="glyph137" id="arc102" class="consumption">
+            <start y="1200.0" x="1414.0"/>
+            <end y="1200.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph279.1" source="glyph111" id="arc103" class="consumption">
+            <start y="1134.5199" x="1421.6034"/>
+            <end y="1200.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph279" source="glyph65" id="arc104" class="catalysis">
+            <start y="1112.5" x="1530.0"/>
+            <end y="1188.0" x="1530.0"/>
+        </arc>
+        <arc target="glyph167" source="glyph306.2" id="arc105" class="production">
+            <start y="1530.0" x="1554.0"/>
+            <end y="1612.5629" x="1645.588"/>
+        </arc>
+        <arc target="glyph3" source="glyph306.2" id="arc106" class="production">
+            <start y="1530.0" x="1554.0"/>
+            <end y="1530.0" x="1640.0"/>
+        </arc>
+        <arc target="glyph187" source="glyph306.2" id="arc107" class="production">
+            <start y="1530.0" x="1554.0"/>
+            <end y="1447.4371" x="1645.588"/>
+        </arc>
+        <arc target="glyph306.1" source="glyph221" id="arc108" class="consumption">
+            <start y="1601.6101" x="1413.7025"/>
+            <end y="1530.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph306.1" source="glyph141" id="arc109" class="consumption">
+            <start y="1530.0" x="1414.0"/>
+            <end y="1530.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph306.1" source="glyph96" id="arc110" class="consumption">
+            <start y="1464.5199" x="1421.6034"/>
+            <end y="1530.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph306" source="glyph61" id="arc111" class="catalysis">
+            <start y="1442.5" x="1530.0"/>
+            <end y="1518.0" x="1530.0"/>
+        </arc>
+        <arc target="glyph173" source="glyph275.2" id="arc112" class="production">
+            <start y="1860.0" x="1554.0"/>
+            <end y="1942.5629" x="1645.588"/>
+        </arc>
+        <arc target="glyph16" source="glyph275.2" id="arc113" class="production">
+            <start y="1860.0" x="1554.0"/>
+            <end y="1860.0" x="1640.0"/>
+        </arc>
+        <arc target="glyph252" source="glyph275.2" id="arc114" class="production">
+            <start y="1860.0" x="1554.0"/>
+            <end y="1777.4371" x="1645.588"/>
+        </arc>
+        <arc target="glyph275.1" source="glyph182" id="arc115" class="consumption">
+            <start y="1931.6101" x="1413.7025"/>
+            <end y="1860.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph275.1" source="glyph114" id="arc116" class="consumption">
+            <start y="1860.0" x="1414.0"/>
+            <end y="1860.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph275.1" source="glyph85" id="arc117" class="consumption">
+            <start y="1794.5199" x="1421.6034"/>
+            <end y="1860.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph275" source="glyph77" id="arc118" class="catalysis">
+            <start y="1772.5" x="1530.0"/>
+            <end y="1848.0" x="1530.0"/>
+        </arc>
+        <arc target="glyph152" source="glyph285.2" id="arc119" class="production">
+            <start y="2180.0" x="1554.0"/>
+            <end y="2262.5627" x="1645.588"/>
+        </arc>
+        <arc target="glyph35" source="glyph285.2" id="arc120" class="production">
+            <start y="2180.0" x="1554.0"/>
+            <end y="2180.0" x="1640.0"/>
+        </arc>
+        <arc target="glyph230" source="glyph285.2" id="arc121" class="production">
+            <start y="2180.0" x="1554.0"/>
+            <end y="2097.4373" x="1645.588"/>
+        </arc>
+        <arc target="glyph285.1" source="glyph245" id="arc122" class="consumption">
+            <start y="2251.61" x="1413.7025"/>
+            <end y="2180.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph285.1" source="glyph146" id="arc123" class="consumption">
+            <start y="2180.0" x="1414.0"/>
+            <end y="2180.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph285.1" source="glyph106" id="arc124" class="consumption">
+            <start y="2114.5198" x="1421.6034"/>
+            <end y="2180.0" x="1506.0"/>
+        </arc>
+        <arc target="glyph285" source="glyph58" id="arc125" class="catalysis">
+            <start y="2092.5" x="1530.0"/>
+            <end y="2168.0" x="1530.0"/>
+        </arc>
+        <arc target="glyph163" source="glyph302.2" id="arc126" class="production">
+            <start y="190.0" x="2174.0"/>
+            <end y="272.56287" x="2265.588"/>
+        </arc>
+        <arc target="glyph13" source="glyph302.2" id="arc127" class="production">
+            <start y="190.0" x="2174.0"/>
+            <end y="190.0" x="2260.0"/>
+        </arc>
+        <arc target="glyph223" source="glyph302.2" id="arc128" class="production">
+            <start y="190.0" x="2174.0"/>
+            <end y="107.43715" x="2265.588"/>
+        </arc>
+        <arc target="glyph302.1" source="glyph204" id="arc129" class="consumption">
+            <start y="261.61008" x="2033.7025"/>
+            <end y="190.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph302.1" source="glyph124" id="arc130" class="consumption">
+            <start y="190.0" x="2034.0"/>
+            <end y="190.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph302.1" source="glyph90" id="arc131" class="consumption">
+            <start y="124.51988" x="2041.6034"/>
+            <end y="190.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph302" source="glyph56" id="arc132" class="catalysis">
+            <start y="102.5" x="2150.0"/>
+            <end y="178.0" x="2150.0"/>
+        </arc>
+        <arc target="glyph255" source="glyph300.2" id="arc133" class="production">
+            <start y="540.0" x="2174.0"/>
+            <end y="622.56287" x="2265.588"/>
+        </arc>
+        <arc target="glyph37" source="glyph300.2" id="arc134" class="production">
+            <start y="540.0" x="2174.0"/>
+            <end y="540.0" x="2260.0"/>
+        </arc>
+        <arc target="glyph226" source="glyph300.2" id="arc135" class="production">
+            <start y="540.0" x="2174.0"/>
+            <end y="457.43713" x="2265.588"/>
+        </arc>
+        <arc target="glyph300.1" source="glyph239" id="arc136" class="consumption">
+            <start y="611.6101" x="2033.7025"/>
+            <end y="540.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph300.1" source="glyph135" id="arc137" class="consumption">
+            <start y="540.0" x="2034.0"/>
+            <end y="540.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph300.1" source="glyph108" id="arc138" class="consumption">
+            <start y="474.5199" x="2041.6034"/>
+            <end y="540.0" x="2126.0"/>
+        </arc>
+        <arc target="glyph300" source="glyph76" id="arc139" class="catalysis">
+            <start y="452.5" x="2150.0"/>
+            <end y="528.0" x="2150.0"/>
+        </arc>
+        <arc target="glyph170" source="glyph290.2" id="arc140" class="production">
+            <start y="2610.0" x="2224.0"/>
+            <end y="2692.5627" x="2315.588"/>
+        </arc>
+        <arc target="glyph39" source="glyph290.2" id="arc141" class="production">
+            <start y="2610.0" x="2224.0"/>
+            <end y="2610.0" x="2430.0"/>
+        </arc>
+        <arc target="glyph166" source="glyph290.2" id="arc142" class="production">
+            <start y="2610.0" x="2224.0"/>
+            <end y="2527.4373" x="2315.588"/>
+        </arc>
+        <arc target="glyph290.1" source="glyph151" id="arc143" class="consumption">
+            <start y="2681.61" x="2083.7026"/>
+            <end y="2610.0" x="2176.0"/>
+        </arc>
+        <arc target="glyph290.1" source="glyph127" id="arc144" class="consumption">
+            <start y="2610.0" x="2084.0"/>
+            <end y="2610.0" x="2176.0"/>
+        </arc>
+        <arc target="glyph290.1" source="glyph87" id="arc145" class="consumption">
+            <start y="2544.5198" x="2091.6035"/>
+            <end y="2610.0" x="2176.0"/>
+        </arc>
+        <arc target="glyph290" source="glyph74" id="arc146" class="catalysis">
+            <start y="2522.5" x="2200.0"/>
+            <end y="2598.0" x="2200.0"/>
+        </arc>
+        <arc target="glyph213" source="glyph272.2" id="arc147" class="production">
+            <start y="1200.0" x="2194.0"/>
+            <end y="1282.5629" x="2285.588"/>
+        </arc>
+        <arc target="glyph20" source="glyph272.2" id="arc148" class="production">
+            <start y="1200.0" x="2194.0"/>
+            <end y="1200.0" x="2280.0"/>
+        </arc>
+        <arc target="glyph262" source="glyph272.2" id="arc149" class="production">
+            <start y="1200.0" x="2194.0"/>
+            <end y="1117.4371" x="2285.588"/>
+        </arc>
+        <arc target="glyph272.1" source="glyph158" id="arc150" class="consumption">
+            <start y="1271.6101" x="2053.7026"/>
+            <end y="1200.0" x="2146.0"/>
+        </arc>
+        <arc target="glyph272.1" source="glyph144" id="arc151" class="consumption">
+            <start y="1200.0" x="2054.0"/>
+            <end y="1200.0" x="2146.0"/>
+        </arc>
+        <arc target="glyph272.1" source="glyph78" id="arc152" class="consumption">
+            <start y="1140.6499" x="2069.5042"/>
+            <end y="1200.0" x="2146.0"/>
+        </arc>
+        <arc target="glyph272" source="glyph47" id="arc153" class="catalysis">
+            <start y="1112.5" x="2170.0"/>
+            <end y="1188.0" x="2170.0"/>
+        </arc>
+        <arc target="glyph261" source="glyph278.2" id="arc154" class="production">
+            <start y="1530.0" x="2204.0"/>
+            <end y="1612.5629" x="2295.588"/>
+        </arc>
+        <arc target="glyph23" source="glyph278.2" id="arc155" class="production">
+            <start y="1530.0" x="2204.0"/>
+            <end y="1530.0" x="2290.0"/>
+        </arc>
+        <arc target="glyph240" source="glyph278.2" id="arc156" class="production">
+            <start y="1530.0" x="2204.0"/>
+            <end y="1447.4371" x="2295.588"/>
+        </arc>
+        <arc target="glyph278.1" source="glyph164" id="arc157" class="consumption">
+            <start y="1601.6101" x="2063.7026"/>
+            <end y="1530.0" x="2156.0"/>
+        </arc>
+        <arc target="glyph278.1" source="glyph130" id="arc158" class="consumption">
+            <start y="1530.0" x="2064.0"/>
+            <end y="1530.0" x="2156.0"/>
+        </arc>
+        <arc target="glyph278.1" source="glyph93" id="arc159" class="consumption">
+            <start y="1464.5199" x="2071.6035"/>
+            <end y="1530.0" x="2156.0"/>
+        </arc>
+        <arc target="glyph278" source="glyph43" id="arc160" class="catalysis">
+            <start y="1442.5" x="2180.0"/>
+            <end y="1518.0" x="2180.0"/>
+        </arc>
+        <arc target="glyph150" source="glyph273.2" id="arc161" class="production">
+            <start y="870.0" x="3454.0"/>
+            <end y="952.56287" x="3545.588"/>
+        </arc>
+        <arc target="glyph1" source="glyph273.2" id="arc162" class="production">
+            <start y="870.0" x="3454.0"/>
+            <end y="870.0" x="3540.0"/>
+        </arc>
+        <arc target="glyph247" source="glyph273.2" id="arc163" class="production">
+            <start y="870.0" x="3454.0"/>
+            <end y="787.43713" x="3545.588"/>
+        </arc>
+        <arc target="glyph273.1" source="glyph209" id="arc164" class="consumption">
+            <start y="941.6101" x="3313.7026"/>
+            <end y="870.0" x="3406.0"/>
+        </arc>
+        <arc target="glyph273.1" source="glyph121" id="arc165" class="consumption">
+            <start y="870.0" x="3314.0"/>
+            <end y="870.0" x="3406.0"/>
+        </arc>
+        <arc target="glyph273.1" source="glyph99" id="arc166" class="consumption">
+            <start y="804.5199" x="3321.6035"/>
+            <end y="870.0" x="3406.0"/>
+        </arc>
+        <arc target="glyph273" source="glyph46" id="arc167" class="catalysis">
+            <start y="782.5" x="3430.0"/>
+            <end y="858.0" x="3430.0"/>
+        </arc>
+        <arc target="glyph210" source="glyph301.2" id="arc168" class="production">
+            <start y="1230.0" x="3474.0"/>
+            <end y="1312.5629" x="3565.588"/>
+        </arc>
+        <arc target="glyph21" source="glyph301.2" id="arc169" class="production">
+            <start y="1230.0" x="3474.0"/>
+            <end y="1230.0" x="3560.0"/>
+        </arc>
+        <arc target="glyph171" source="glyph301.2" id="arc170" class="production">
+            <start y="1230.0" x="3474.0"/>
+            <end y="1147.4371" x="3565.588"/>
+        </arc>
+        <arc target="glyph301.1" source="glyph234" id="arc171" class="consumption">
+            <start y="1301.6101" x="3333.7026"/>
+            <end y="1230.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph301.1" source="glyph117" id="arc172" class="consumption">
+            <start y="1230.0" x="3334.0"/>
+            <end y="1230.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph301.1" source="glyph79" id="arc173" class="consumption">
+            <start y="1164.5199" x="3341.6035"/>
+            <end y="1230.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph301" source="glyph45" id="arc174" class="catalysis">
+            <start y="1142.5" x="3450.0"/>
+            <end y="1218.0" x="3450.0"/>
+        </arc>
+        <arc target="glyph229" source="glyph291.2" id="arc175" class="production">
+            <start y="190.0" x="2794.0"/>
+            <end y="272.56287" x="2885.588"/>
+        </arc>
+        <arc target="glyph6" source="glyph291.2" id="arc176" class="production">
+            <start y="190.0" x="2794.0"/>
+            <end y="190.0" x="2880.0"/>
+        </arc>
+        <arc target="glyph257" source="glyph291.2" id="arc177" class="production">
+            <start y="190.0" x="2794.0"/>
+            <end y="107.43715" x="2885.588"/>
+        </arc>
+        <arc target="glyph291.1" source="glyph149" id="arc178" class="consumption">
+            <start y="261.61008" x="2653.7026"/>
+            <end y="190.0" x="2746.0"/>
+        </arc>
+        <arc target="glyph291.1" source="glyph119" id="arc179" class="consumption">
+            <start y="190.0" x="2654.0"/>
+            <end y="190.0" x="2746.0"/>
+        </arc>
+        <arc target="glyph291.1" source="glyph98" id="arc180" class="consumption">
+            <start y="124.51988" x="2661.6035"/>
+            <end y="190.0" x="2746.0"/>
+        </arc>
+        <arc target="glyph291" source="glyph52" id="arc181" class="catalysis">
+            <start y="102.5" x="2770.0"/>
+            <end y="178.0" x="2770.0"/>
+        </arc>
+        <arc target="glyph256" source="glyph283.2" id="arc182" class="production">
+            <start y="550.0" x="2804.0"/>
+            <end y="632.56287" x="2895.588"/>
+        </arc>
+        <arc target="glyph10" source="glyph283.2" id="arc183" class="production">
+            <start y="550.0" x="2804.0"/>
+            <end y="550.0" x="2890.0"/>
+        </arc>
+        <arc target="glyph197" source="glyph283.2" id="arc184" class="production">
+            <start y="550.0" x="2804.0"/>
+            <end y="467.43713" x="2895.588"/>
+        </arc>
+        <arc target="glyph283.1" source="glyph244" id="arc185" class="consumption">
+            <start y="621.6101" x="2663.7026"/>
+            <end y="550.0" x="2756.0"/>
+        </arc>
+        <arc target="glyph283.1" source="glyph140" id="arc186" class="consumption">
+            <start y="550.0" x="2664.0"/>
+            <end y="550.0" x="2756.0"/>
+        </arc>
+        <arc target="glyph283.1" source="glyph82" id="arc187" class="consumption">
+            <start y="484.5199" x="2671.6035"/>
+            <end y="550.0" x="2756.0"/>
+        </arc>
+        <arc target="glyph283" source="glyph53" id="arc188" class="catalysis">
+            <start y="462.5" x="2780.0"/>
+            <end y="538.0" x="2780.0"/>
+        </arc>
+        <arc target="glyph266" source="glyph303.2" id="arc189" class="production">
+            <start y="880.0" x="2814.0"/>
+            <end y="962.56287" x="2905.588"/>
+        </arc>
+        <arc target="glyph25" source="glyph303.2" id="arc190" class="production">
+            <start y="880.0" x="2814.0"/>
+            <end y="880.0" x="2900.0"/>
+        </arc>
+        <arc target="glyph196" source="glyph303.2" id="arc191" class="production">
+            <start y="880.0" x="2814.0"/>
+            <end y="797.43713" x="2905.588"/>
+        </arc>
+        <arc target="glyph303.1" source="glyph270" id="arc192" class="consumption">
+            <start y="951.6101" x="2673.7026"/>
+            <end y="880.0" x="2766.0"/>
+        </arc>
+        <arc target="glyph303.1" source="glyph138" id="arc193" class="consumption">
+            <start y="880.0" x="2674.0"/>
+            <end y="880.0" x="2766.0"/>
+        </arc>
+        <arc target="glyph303.1" source="glyph104" id="arc194" class="consumption">
+            <start y="814.5199" x="2681.6035"/>
+            <end y="880.0" x="2766.0"/>
+        </arc>
+        <arc target="glyph303" source="glyph41" id="arc195" class="catalysis">
+            <start y="792.5" x="2790.0"/>
+            <end y="868.0" x="2790.0"/>
+        </arc>
+        <arc target="glyph220" source="glyph281.2" id="arc196" class="production">
+            <start y="1210.0" x="2824.0"/>
+            <end y="1292.5629" x="2915.588"/>
+        </arc>
+        <arc target="glyph19" source="glyph281.2" id="arc197" class="production">
+            <start y="1210.0" x="2824.0"/>
+            <end y="1210.0" x="2910.0"/>
+        </arc>
+        <arc target="glyph215" source="glyph281.2" id="arc198" class="production">
+            <start y="1210.0" x="2824.0"/>
+            <end y="1127.4371" x="2915.588"/>
+        </arc>
+        <arc target="glyph281.1" source="glyph214" id="arc199" class="consumption">
+            <start y="1281.6101" x="2683.7026"/>
+            <end y="1210.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph281.1" source="glyph131" id="arc200" class="consumption">
+            <start y="1210.0" x="2684.0"/>
+            <end y="1210.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph281.1" source="glyph102" id="arc201" class="consumption">
+            <start y="1144.5199" x="2691.6035"/>
+            <end y="1210.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph281" source="glyph48" id="arc202" class="catalysis">
+            <start y="1122.5" x="2800.0"/>
+            <end y="1198.0" x="2800.0"/>
+        </arc>
+        <arc target="glyph157" source="glyph298.2" id="arc203" class="production">
+            <start y="1530.0" x="2824.0"/>
+            <end y="1612.5629" x="2915.588"/>
+        </arc>
+        <arc target="glyph38" source="glyph298.2" id="arc204" class="production">
+            <start y="1530.0" x="2824.0"/>
+            <end y="1530.0" x="2910.0"/>
+        </arc>
+        <arc target="glyph188" source="glyph298.2" id="arc205" class="production">
+            <start y="1530.0" x="2824.0"/>
+            <end y="1447.4371" x="2915.588"/>
+        </arc>
+        <arc target="glyph298.1" source="glyph219" id="arc206" class="consumption">
+            <start y="1601.6101" x="2683.7026"/>
+            <end y="1530.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph298.1" source="glyph80" id="arc207" class="consumption">
+            <start y="1464.5199" x="2691.6035"/>
+            <end y="1530.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph298" source="glyph44" id="arc208" class="catalysis">
+            <start y="1442.5" x="2800.0"/>
+            <end y="1518.0" x="2800.0"/>
+        </arc>
+        <arc target="glyph298.1" source="glyph116" id="arc209" class="consumption">
+            <start y="1530.0" x="2684.0"/>
+            <end y="1530.0" x="2776.0"/>
+        </arc>
+        <arc target="glyph190" source="glyph274.2" id="arc210" class="production">
+            <start y="1850.0" x="2844.0"/>
+            <end y="1932.5629" x="2935.588"/>
+        </arc>
+        <arc target="glyph26" source="glyph274.2" id="arc211" class="production">
+            <start y="1850.0" x="2844.0"/>
+            <end y="1850.0" x="2930.0"/>
+        </arc>
+        <arc target="glyph241" source="glyph274.2" id="arc212" class="production">
+            <start y="1850.0" x="2844.0"/>
+            <end y="1767.4371" x="2935.588"/>
+        </arc>
+        <arc target="glyph274.1" source="glyph258" id="arc213" class="consumption">
+            <start y="1921.6101" x="2703.7026"/>
+            <end y="1850.0" x="2796.0"/>
+        </arc>
+        <arc target="glyph274.1" source="glyph134" id="arc214" class="consumption">
+            <start y="1850.0" x="2704.0"/>
+            <end y="1850.0" x="2796.0"/>
+        </arc>
+        <arc target="glyph274.1" source="glyph107" id="arc215" class="consumption">
+            <start y="1784.5199" x="2711.6035"/>
+            <end y="1850.0" x="2796.0"/>
+        </arc>
+        <arc target="glyph274" source="glyph42" id="arc216" class="catalysis">
+            <start y="1762.5" x="2820.0"/>
+            <end y="1838.0" x="2820.0"/>
+        </arc>
+        <arc target="glyph192" source="glyph294.2" id="arc217" class="production">
+            <start y="2180.0" x="2864.0"/>
+            <end y="2262.5627" x="2955.588"/>
+        </arc>
+        <arc target="glyph29" source="glyph294.2" id="arc218" class="production">
+            <start y="2180.0" x="2864.0"/>
+            <end y="2180.0" x="2950.0"/>
+        </arc>
+        <arc target="glyph198" source="glyph294.2" id="arc219" class="production">
+            <start y="2180.0" x="2864.0"/>
+            <end y="2097.4373" x="2955.588"/>
+        </arc>
+        <arc target="glyph294.1" source="glyph153" id="arc220" class="consumption">
+            <start y="2251.61" x="2723.7026"/>
+            <end y="2180.0" x="2816.0"/>
+        </arc>
+        <arc target="glyph294.1" source="glyph126" id="arc221" class="consumption">
+            <start y="2180.0" x="2724.0"/>
+            <end y="2180.0" x="2816.0"/>
+        </arc>
+        <arc target="glyph294.1" source="glyph95" id="arc222" class="consumption">
+            <start y="2114.5198" x="2731.6035"/>
+            <end y="2180.0" x="2816.0"/>
+        </arc>
+        <arc target="glyph294" source="glyph49" id="arc223" class="catalysis">
+            <start y="2092.5" x="2840.0"/>
+            <end y="2168.0" x="2840.0"/>
+        </arc>
+        <arc target="glyph195" source="glyph292.2" id="arc224" class="production">
+            <start y="190.0" x="3464.0"/>
+            <end y="272.56287" x="3555.588"/>
+        </arc>
+        <arc target="glyph28" source="glyph292.2" id="arc225" class="production">
+            <start y="190.0" x="3464.0"/>
+            <end y="190.0" x="3550.0"/>
+        </arc>
+        <arc target="glyph203" source="glyph292.2" id="arc226" class="production">
+            <start y="190.0" x="3464.0"/>
+            <end y="107.43715" x="3555.588"/>
+        </arc>
+        <arc target="glyph292.1" source="glyph246" id="arc227" class="consumption">
+            <start y="261.61008" x="3323.7026"/>
+            <end y="190.0" x="3416.0"/>
+        </arc>
+        <arc target="glyph292.1" source="glyph122" id="arc228" class="consumption">
+            <start y="190.0" x="3324.0"/>
+            <end y="190.0" x="3416.0"/>
+        </arc>
+        <arc target="glyph292.1" source="glyph92" id="arc229" class="consumption">
+            <start y="124.51988" x="3331.6035"/>
+            <end y="190.0" x="3416.0"/>
+        </arc>
+        <arc target="glyph292" source="glyph50" id="arc230" class="catalysis">
+            <start y="102.5" x="3440.0"/>
+            <end y="178.0" x="3440.0"/>
+        </arc>
+        <arc target="glyph202" source="glyph277.2" id="arc231" class="production">
+            <start y="540.0" x="3474.0"/>
+            <end y="622.56287" x="3565.588"/>
+        </arc>
+        <arc target="glyph24" source="glyph277.2" id="arc232" class="production">
+            <start y="540.0" x="3474.0"/>
+            <end y="540.0" x="3560.0"/>
+        </arc>
+        <arc target="glyph242" source="glyph277.2" id="arc233" class="production">
+            <start y="540.0" x="3474.0"/>
+            <end y="457.43713" x="3565.588"/>
+        </arc>
+        <arc target="glyph277.1" source="glyph225" id="arc234" class="consumption">
+            <start y="611.6101" x="3333.7026"/>
+            <end y="540.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph277.1" source="glyph136" id="arc235" class="consumption">
+            <start y="540.0" x="3334.0"/>
+            <end y="540.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph277.1" source="glyph91" id="arc236" class="consumption">
+            <start y="474.5199" x="3341.6035"/>
+            <end y="540.0" x="3426.0"/>
+        </arc>
+        <arc target="glyph277" source="glyph54" id="arc237" class="catalysis">
+            <start y="452.5" x="3450.0"/>
+            <end y="528.0" x="3450.0"/>
+        </arc>
+        <arc target="glyph254" source="glyph299.2" id="arc238" class="production">
+            <start y="1810.0" x="3684.0"/>
+            <end y="1892.5629" x="3775.588"/>
+        </arc>
+        <arc target="glyph32" source="glyph299.2" id="arc239" class="production">
+            <start y="1810.0" x="3684.0"/>
+            <end y="1810.0" x="3770.0"/>
+        </arc>
+        <arc target="glyph249" source="glyph299.2" id="arc240" class="production">
+            <start y="1810.0" x="3684.0"/>
+            <end y="1727.4371" x="3775.588"/>
+        </arc>
+        <arc target="glyph299.1" source="glyph217" id="arc241" class="consumption">
+            <start y="1881.6101" x="3543.7026"/>
+            <end y="1810.0" x="3636.0"/>
+        </arc>
+        <arc target="glyph299.1" source="glyph112" id="arc242" class="consumption">
+            <start y="1810.0" x="3544.0"/>
+            <end y="1810.0" x="3636.0"/>
+        </arc>
+        <arc target="glyph299.1" source="glyph97" id="arc243" class="consumption">
+            <start y="1744.5199" x="3551.6035"/>
+            <end y="1810.0" x="3636.0"/>
+        </arc>
+        <arc target="glyph299" source="glyph51" id="arc244" class="catalysis">
+            <start y="1722.5" x="3660.0"/>
+            <end y="1798.0" x="3660.0"/>
+        </arc>
+        <arc target="glyph263" source="glyph289.2" id="arc245" class="production">
+            <start y="2610.0" x="2954.0"/>
+            <end y="2697.102" x="3112.914"/>
+        </arc>
+        <arc target="glyph169" source="glyph289.2" id="arc246" class="production">
+            <start y="2610.0" x="2954.0"/>
+            <end y="2522.898" x="3112.914"/>
+        </arc>
+        <arc target="glyph289.1" source="glyph179" id="arc247" class="consumption">
+            <start y="2686.3413" x="2756.7102"/>
+            <end y="2610.0" x="2906.0"/>
+        </arc>
+        <arc target="glyph289.1" source="glyph86" id="arc248" class="consumption">
+            <start y="2538.2117" x="2765.6138"/>
+            <end y="2610.0" x="2906.0"/>
+        </arc>
+        <arc target="glyph289" source="glyph27" id="arc249" class="catalysis">
+            <start y="2522.5" x="2930.0"/>
+            <end y="2598.0" x="2930.0"/>
+        </arc>
+        <arc target="glyph0" source="glyph289.2" id="arc250" class="production">
+            <start y="2610.0" x="2954.0"/>
+            <end y="2603.611" x="3160.0"/>
+        </arc>
+        <arc target="glyph289.1" source="glyph39" id="arc251" class="consumption">
+            <start y="2610.0" x="2630.0"/>
+            <end y="2610.0" x="2906.0"/>
+        </arc>
+        <arc target="glyph177" source="glyph309.2" id="arc252" class="production">
+            <start y="860.0" x="2184.0"/>
+            <end y="942.56287" x="2275.588"/>
+        </arc>
+        <arc target="glyph31" source="glyph309.2" id="arc253" class="production">
+            <start y="860.0" x="2184.0"/>
+            <end y="860.0" x="2300.0"/>
+        </arc>
+        <arc target="glyph248" source="glyph309.2" id="arc254" class="production">
+            <start y="860.0" x="2184.0"/>
+            <end y="777.43713" x="2275.588"/>
+        </arc>
+        <arc target="glyph309.1" source="glyph154" id="arc255" class="consumption">
+            <start y="931.6101" x="2043.7025"/>
+            <end y="860.0" x="2136.0"/>
+        </arc>
+        <arc target="glyph309.1" source="glyph125" id="arc256" class="consumption">
+            <start y="860.0" x="2044.0"/>
+            <end y="860.0" x="2136.0"/>
+        </arc>
+        <arc target="glyph309.1" source="glyph105" id="arc257" class="consumption">
+            <start y="794.5199" x="2051.6035"/>
+            <end y="860.0" x="2136.0"/>
+        </arc>
+        <arc target="glyph309" source="glyph71" id="arc258" class="catalysis">
+            <start y="772.5" x="2160.0"/>
+            <end y="848.0" x="2160.0"/>
+        </arc>
+        <arc target="glyph267" source="glyph288.2" id="arc259" class="production">
+            <start y="2610.0" x="544.0"/>
+            <end y="2692.5627" x="635.588"/>
+        </arc>
+        <arc target="glyph17" source="glyph288.2" id="arc260" class="production">
+            <start y="2610.0" x="544.0"/>
+            <end y="2610.0" x="730.0"/>
+        </arc>
+        <arc target="glyph168" source="glyph288.2" id="arc261" class="production">
+            <start y="2610.0" x="544.0"/>
+            <end y="2527.4373" x="635.588"/>
+        </arc>
+        <arc target="glyph288.1" source="glyph243" id="arc262" class="consumption">
+            <start y="2681.61" x="403.70255"/>
+            <end y="2610.0" x="496.0"/>
+        </arc>
+        <arc target="glyph288.1" source="glyph139" id="arc263" class="consumption">
+            <start y="2610.0" x="404.0"/>
+            <end y="2610.0" x="496.0"/>
+        </arc>
+        <arc target="glyph288.1" source="glyph100" id="arc264" class="consumption">
+            <start y="2544.5198" x="411.6034"/>
+            <end y="2610.0" x="496.0"/>
+        </arc>
+        <arc target="glyph288" source="glyph57" id="arc265" class="catalysis">
+            <start y="2522.5" x="520.0"/>
+            <end y="2598.0" x="520.0"/>
+        </arc>
+        <arc target="glyph231" source="glyph280.2" id="arc266" class="production">
+            <start y="2610.0" x="1194.0"/>
+            <end y="2527.4373" x="1285.588"/>
+        </arc>
+        <arc target="glyph280.1" source="glyph176" id="arc267" class="consumption">
+            <start y="2681.61" x="1053.7025"/>
+            <end y="2610.0" x="1146.0"/>
+        </arc>
+        <arc target="glyph280.1" source="glyph191" id="arc268" class="consumption">
+            <start y="2538.39" x="1053.7025"/>
+            <end y="2610.0" x="1146.0"/>
+        </arc>
+        <arc target="glyph280" source="glyph33" id="arc269" class="catalysis">
+            <start y="2522.5" x="1170.0"/>
+            <end y="2598.0" x="1170.0"/>
+        </arc>
+        <arc target="glyph4" source="glyph280.2" id="arc270" class="production">
+            <start y="2610.0" x="1194.0"/>
+            <end y="2603.4482" x="1360.0"/>
+        </arc>
+        <arc target="glyph94" source="glyph280.2" id="arc271" class="production">
+            <start y="2610.0" x="1194.0"/>
+            <end y="2672.1116" x="1294.2229"/>
+        </arc>
+        <arc target="glyph161" source="glyph280.2" id="arc272" class="production">
+            <start y="2610.0" x="1194.0"/>
+            <end y="2704.0867" x="1224.8839"/>
+        </arc>
+        <arc target="glyph280.1" source="glyph17" id="arc273" class="consumption">
+            <start y="2610.0" x="930.0"/>
+            <end y="2610.0" x="1146.0"/>
         </arc>
     </map>
 </sbgn>

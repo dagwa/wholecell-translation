@@ -1,10 +1,7 @@
 
 
 TranslationSBMLgenerator.py creates SBML file model_toy.xml with few reactions
-To create a full model uncomment the last line
-
-
-.
+To create a full model uncomment the last line and comment out the line before last.
 
 
 

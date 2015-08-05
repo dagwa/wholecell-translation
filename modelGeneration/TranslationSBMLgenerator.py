@@ -685,10 +685,11 @@ def create_model(names,lengthsofseq,sequenceAAs):
   return writeSBMLToFile(document,'model_toy.xml')
 
 if __name__ == '__main__':
-  print(create_model(prot_names[0:3], prot_len[0:3], sequence[0:3]))
 
-  #DO NOT RUN!
-  # to create full  model (more that 1.3 Gb text file)
+    #DO NOT RUN!
+    # to create full  model (more that 1.3 Gb text file)
+    # comment out the next line and uncomment the last line
+    print(create_model(prot_names[0:3], prot_len[0:3], sequence[0:3]))
   #   print(create_model(prot_names[0:len(prot_names)], prot_len[0:len(prot_len)], sequence[0:len(sequence)]))
   
 

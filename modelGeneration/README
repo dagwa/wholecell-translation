@@ -7,8 +7,7 @@ To create a full model uncomment the last line and comment out the line before l
 
 
 
-Some notes on SBML file
+Some notes on SBML ID naming:
 Translation initiation reactions IDs end up  with Init.  Ex.: MG_015_MONOMER_Transl_Init
-
-MG_001_MONOMER_p9_plus_L3
+Elongation reactions IDs include 'plus' in the name, eg MG_001_MONOMER_p9_plus_L3
 

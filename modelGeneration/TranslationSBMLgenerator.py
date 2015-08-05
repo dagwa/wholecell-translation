@@ -629,7 +629,7 @@ def create_model(names,lengthsofseq,sequenceAAs):
   initialAmount=1 
   SpeciesList = ['GTP', 'MG_089_MONOMER', 'MG_451_MONOMER', 'H2O', 'GDP', 'PI', 'MG_089_MONOMER',
                  'MG_451_MONOMER', 'H', 'MG_258_MONOMER', 'MG_143_MONOMER' , 'MG_173_MONOMER'
-                 'MG_142_MONOMER', 'MG_196_MONOMER', 'RF1_30S_50S'] 
+                 'MG_142_MONOMER', 'RF1_30S_50S'] 
   for One_Specie in SpeciesList:
     create_species(model,One_Specie,initialAmount)
 

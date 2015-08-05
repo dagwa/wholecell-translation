@@ -1,0 +1,483 @@
+Protein Monomer (482),Description,read only,Read and write,write only
+MG_001_MONOMER,"DNA polymerase III, beta subunit",,,x
+MG_002_MONOMER,DnaJ domain protein,,,x
+MG_003_MONOMER,"DNA gyrase, B subunit",,,x
+MG_004_MONOMER,"DNA gyrase, A subunit",,,x
+MG_005_MONOMER,seryl-tRNA synthetase,,,x
+MG_006_MONOMER,thymidylate kinase,,,x
+MG_007_MONOMER,"DNA polymerase III delta prime subunit, putative",,,x
+MG_008_MONOMER,tRNA modification GTPase TrmE,,,x
+MG_009_MONOMER,deoxyribonuclease,,,x
+MG_010_MONOMER,DNA primase-related protein,,,x
+MG_011_MONOMER,,,,x
+MG_012_MONOMER,alpha-L-glutamate ligase,,,x
+MG_013_MONOMER,methylenetetrahydrofolate dehydrogenase/methylenetetrahydrofolate cyclohydrolase,,,x
+MG_014_MONOMER,"multidrug ABC transporter, ATP-binding/permease protein",,,x
+MG_015_MONOMER,"multidrug ABC transporter, ATP-binding/permease protein",,,x
+MG_018_MONOMER,SNF2 family helicase putative,,,x
+MG_019_MONOMER,chaperone protein DnaJ,,,x
+MG_020_MONOMER,proline iminopeptidase,,,x
+MG_021_MONOMER,methionyl-tRNA synthetase,,,x
+MG_022_MONOMER,"DNA-directed RNA polymerase, delta subunit",,,x
+MG_023_MONOMER,"fructose-1,6-bisphosphate aldolase, class II",,,x
+MG_024_MONOMER,GTP-binding protein YchF,,,x
+MG_025_MONOMER,Beta-glycosyl transferase,,,x
+MG_026_MONOMER,translation elongation factor P,,x,
+MG_027_MONOMER,transcription termination/antitermination protein NusB,,,x
+MG_028_MONOMER,,,,x
+MG_029_MONOMER,DJ-1/PfpI family protein,,,x
+MG_030_MONOMER,uracil phosphoribosyltransferase,,,x
+MG_031_MONOMER,"DNA polymerase III, alpha subunit, Gram-positive type",,,x
+MG_032_MONOMER,,,,x
+MG_033_MONOMER,glycerol uptake facilitator,,,x
+MG_034_MONOMER,thymidine kinase,,,x
+MG_035_MONOMER,histidyl-tRNA synthetase,,,x
+MG_036_MONOMER,aspartyl-tRNA synthetase,,,x
+MG_037_MONOMER,nicotinate phosphoribosyltransferase,,,x
+MG_038_MONOMER,glycerol kinase,,,x
+MG_039_MONOMER,"FAD-dependent glycerol-3-phosphate dehydrogenase, putative",,,x
+MG_040_MONOMER,"Monosaccharide (riboside/galactoside) ABC transporter, substrate binding protein",,,x
+MG_041_MONOMER,"PTS system, HPr",,,x
+MG_042_MONOMER,"spermidine/putrescine (polyamine) ABC transporter, ATP-binding protein, putative",,,x
+MG_043_MONOMER,"spermidine/putrescine (polyamine) ABC transporter, permease protein, putative",,,x
+MG_044_MONOMER,"spermidine/putrescine (polyamine) ABC transporter, permease protein, putative",,,x
+MG_045_MONOMER,"spermidine/putrescine (polyamine) ABC transporter, spermidine/putrescine binding protein, putative",,,x
+MG_046_MONOMER,metalloendopeptidase,,,x
+MG_047_MONOMER,S-adenosylmethionine synthetase,,,x
+MG_048_MONOMER,signal recognition particle protein,,,x
+MG_049_MONOMER,purine nucleoside phosphorylase,,,x
+MG_050_MONOMER,deoxyribose-phosphate aldolase,,,x
+MG_051_MONOMER,pyrimidine-nucleoside phosphorylase,,,x
+MG_052_MONOMER,cytidine deaminase,,,x
+MG_053_MONOMER,"phosphoglucomutase/phosphomannomutase, putative",,,x
+MG_054_MONOMER,"transcription antitermination protein NusG, putative",,,x
+MG_055_MONOMER,"preprotein translocase, SecE subunit",,,x
+MG_473_MONOMER,ribosomal protein L33 type 2,,,x
+MG_474_MONOMER,,,,x
+MG_056_MONOMER,tetrapyrrole (corrin/porphyrin) methylase protein,,,x
+MG_057_MONOMER,small primase-like protein,,,x
+MG_058_MONOMER,ribose-phosphate pyrophosphokinase,,,x
+MG_059_MONOMER,SsrA-binding protein,,x,
+MG_060_MONOMER,glycosyl transferase,,,x
+MG_061_MONOMER,Mycoplasma MFS transporter,,,x
+MG_062_MONOMER,"PTS system, fructose-specific IIABC component",,,x
+MG_063_MONOMER,"1-phosphofructokinase, putative",,,x
+MG_064_MONOMER,"ABC transporter, permease protein, putative",,,x
+MG_065_MONOMER,"ABC transporter, ATP-binding protein",,,x
+MG_066_MONOMER,transketolase,,,x
+MG_067_MONOMER,"lipoprotein, putative",,,x
+MG_068_MONOMER,"lipoprotein, putative",,,x
+MG_069_MONOMER,"PTS system, glucose-specific IIABC component",,,x
+MG_070_MONOMER,ribosomal protein S2,,,x
+MG_071_MONOMER,"ATPase, P-type (transporting), HAD superfamily, subfamily IC",,,x
+MG_072_MONOMER,"preprotein translocase, SecA subunit",,,x
+MG_073_MONOMER,"excinuclease ABC, B subunit",,,x
+MG_074_MONOMER,,,,x
+MG_075_MONOMER,116 kDa surface antigen,,,x
+MG_076_MONOMER,,,,x
+MG_077_MONOMER,"oligopeptide ABC transporter, permease protein",,,x
+MG_078_MONOMER,"oligopeptide ABC transporter, permease protein",,,x
+MG_079_MONOMER,"oligopeptide ABC transporter, ATP-binding protein",,,x
+MG_080_MONOMER,"oligopeptide ABC transporter, ATP-binding protein",,,x
+MG_081_MONOMER,ribosomal protein L11,,,x
+MG_082_MONOMER,ribosomal protein L1,,,x
+MG_083_MONOMER,peptidyl-tRNA hydrolase,,x,
+MG_084_MONOMER,tRNA(Ile)-lysidine synthetase,,,x
+MG_085_MONOMER,HPr(Ser) kinase/phosphatase,,,x
+MG_086_MONOMER,prolipoprotein diacylglyceryl transferase,,,x
+MG_087_MONOMER,ribosomal protein S12,,,x
+MG_088_MONOMER,ribosomal protein S7,,,x
+MG_089_MONOMER,translation elongation factor G,,,x
+MG_090_MONOMER,ribosomal protein S6,,,x
+MG_091_MONOMER,single-strand binding protein family,,,x
+MG_092_MONOMER,ribosomal protein S18,,,x
+MG_093_MONOMER,ribosomal protein L9,,,x
+MG_094_MONOMER,replicative DNA helicase,,,x
+MG_095_MONOMER,"lipoprotein, putative",,,x
+MG_096_MONOMER,,,,x
+MG_097_MONOMER,"uracil-DNA glycosylase, putative",,,x
+MG_098_MONOMER,"glutamyl-tRNA(Gln) and/or aspartyl-tRNA(Asn) amidotransferase, C subunit",,,x
+MG_099_MONOMER,"glutamyl-tRNA(Gln) and/or aspartyl-tRNA(Asn) amidotransferase, A subunit",,,x
+MG_100_MONOMER,"glutamyl-tRNA(Gln) and/or aspartyl-tRNA(Asn) amidotransferase, B subunit",,,x
+MG_101_MONOMER,Uncharacterized HTH-type transcriptional regulator,,,x
+MG_102_MONOMER,thioredoxin-disulfide reductase,,,x
+MG_103_MONOMER,,,,x
+MG_476_MONOMER,"preprotein translocase, SecG subunit",,,x
+MG_104_MONOMER,ribonuclease R,,,x
+MG_105_MONOMER,putative DNA integrity scanning protein,,,x
+MG_106_MONOMER,peptide deformylase,,,x
+MG_107_MONOMER,guanylate kinase,,,x
+MG_108_MONOMER,"Ser/Thr protein phosphatase 2C, putative",,,x
+MG_109_MONOMER,"serine/threonine protein kinase, putative",,,x
+MG_110_MONOMER,ribosome small subunit-dependent GTPase A,,,x
+MG_111_MONOMER,glucose-6-phosphate isomerase,,,x
+MG_112_MONOMER,ribulose-phosphate 3-epimerase,,,x
+MG_113_MONOMER,asparaginyl-tRNA synthetase,,,x
+MG_114_MONOMER,CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase,,,x
+MG_115_MONOMER,competence/damage-inducible protein CinA domain protein,,,x
+MG_116_MONOMER,,,,x
+MG_117_MONOMER,,,,x
+MG_118_MONOMER,UDP-glucose 4-epimerase,,,x
+MG_119_MONOMER,"Monosaccharide (riboside/galactoside) ABC transporter, ATP-binding protein",,,x
+MG_120_MONOMER,"Monosaccharide (riboside/galactoside) ABC transporter, permease protein",,,x
+MG_121_MONOMER,"Monosaccharide (riboside/galactoside) ABC transporter, permease protein",,,x
+MG_122_MONOMER,DNA topoisomerase I,,,x
+MG_123_MONOMER,arginine deaminasse,,,x
+MG_124_MONOMER,thioredoxin,,,x
+MG_125_MONOMER,"Cof-like hydrolase, putative",,,x
+MG_126_MONOMER,tryptophanyl-tRNA synthetase,,,x
+MG_127_MONOMER,Spx subfamily protein,,,x
+MG_128_MONOMER,"inorganic polyphosphate/ATP-NAD kinase, probable",,,x
+MG_129_MONOMER,Putative phosphotransferase enzyme glucose-specific IIB component,,,x
+MG_130_MONOMER,,,,x
+MG_131_MONOMER,hypothetical protein,,,x
+MG_132_MONOMER,purine nucleoside phosphoramidase,,,x
+MG_133_MONOMER,"membrane protein, putative",,,x
+MG_134_MONOMER,,,,x
+MG_135_MONOMER,"membrane protein, putative",,,x
+MG_136_MONOMER,lysyl-tRNA synthetase,,,x
+MG_137_MONOMER,UDP-galactopyranose mutase,,,x
+MG_138_MONOMER,Translation elongation factor 4,,,x
+MG_139_MONOMER,ribonuclease J,,,x
+MG_140_MONOMER,putative ATP-dependent helicase,,,x
+MG_141_MONOMER,transcription termination factor NusA,,,x
+MG_477_MONOMER,,,,x
+MG_142_MONOMER,translation initiation factor IF-2,,x,
+MG_143_MONOMER,ribosome-binding factor A,,,x
+MG_144_MONOMER,,,,x
+MG_145_MONOMER,riboflavin biosynthesis protein RibF,,,x
+MG_146_MONOMER,UPF0053 protein,,,x
+MG_147_MONOMER,"membrane protein, putative",,,x
+MG_148_MONOMER,,,,x
+MG_149_MONOMER,"lipoprotein, putative",,,x
+MG_478_MONOMER,,,,x
+MG_150_MONOMER,ribosomal protein S10,,,x
+MG_151_MONOMER,ribosomal protein L3,,,x
+MG_152_MONOMER,ribosomal protein L4/L1 family,,,x
+MG_153_MONOMER,ribosomal protein L23,,,x
+MG_154_MONOMER,ribosomal protein L2,,,x
+MG_155_MONOMER,ribosomal protein S19,,,x
+MG_156_MONOMER,ribosomal protein L22,,,x
+MG_157_MONOMER,ribosomal protein S3,,,x
+MG_158_MONOMER,ribosomal protein L16,,,x
+MG_159_MONOMER,ribosomal protein L29,,,x
+MG_160_MONOMER,ribosomal protein S17,,,x
+MG_161_MONOMER,ribosomal protein L14,,,x
+MG_162_MONOMER,ribosomal protein L24,,,x
+MG_163_MONOMER,ribosomal protein L5,,,x
+MG_164_MONOMER,ribosomal protein S14,,,x
+MG_165_MONOMER,ribosomal protein S8,,,x
+MG_166_MONOMER,ribosomal protein L6,,,x
+MG_167_MONOMER,ribosomal protein L18,,,x
+MG_168_MONOMER,ribosomal protein S5,,,x
+MG_169_MONOMER,ribosomal protein L15,,,x
+MG_170_MONOMER,"preprotein translocase, SecY subunit",,,x
+MG_171_MONOMER,adenylate kinase,,,x
+MG_172_MONOMER,"methionine aminopeptidase, type I",,,x
+MG_173_MONOMER,translation initiation factor IF-1,,x,
+MG_174_MONOMER,ribosomal protein L36,,,x
+MG_175_MONOMER,ribosomal protein S13,,,x
+MG_176_MONOMER,,,,x
+MG_177_MONOMER,"DNA-directed RNA polymerase, alpha subunit",,,x
+MG_178_MONOMER,ribosomal protein L17,,,x
+MG_179_MONOMER,"metal ion (cobalt) ABC transporter, ATP-binding protein, putative",,,x
+MG_180_MONOMER,"metal ion (cobalt) ABC transporter, ATP-binding protein, putative",,,x
+MG_181_MONOMER,"metal ion (cobalt) ABC transporter, permease protein",,,x
+MG_182_MONOMER,tRNA pseudouridine synthase A,,,x
+MG_183_MONOMER,oligoendopeptidase F,,,x
+MG_184_MONOMER,adenine-specific DNA modification methylase,,,x
+MG_185_MONOMER,"lipoprotein, putative",,,x
+MG_186_MONOMER,"Oligosaccharide or polyol ABC transporter, substrate binding protein",,,x
+MG_187_MONOMER,"Oligosaccharide or polyol ABC transporter, ATP-binding protein",,,x
+MG_188_MONOMER,"Oligosaccharide or polyol ABC transporter, permease protein",,,x
+MG_189_MONOMER,"Oligosaccharide or polyol ABC transporter, permease protein",,,x
+MG_190_MONOMER,phosphoesterase,,,x
+MG_191_MONOMER,MgPa adhesin,,,x
+MG_192_MONOMER,P110 protein,,,x
+MG_194_MONOMER,"phenylalanyl-tRNA synthetase, alpha subunit",,,x
+MG_195_MONOMER,"phenylalanyl-tRNA synthetase, beta subunit",,,x
+MG_196_MONOMER,translation initiation factor IF-3,,x,
+MG_197_MONOMER,ribosomal protein L35,,,x
+MG_198_MONOMER,ribosomal protein L20,,,x
+MG_199_MONOMER,"ribonuclease HIII, putative, frameshift",,,x
+MG_200_MONOMER,DnaJ domain protein,,,x
+MG_201_MONOMER,co-chaperone GrpE,,,x
+MG_202_MONOMER,,,,x
+MG_203_MONOMER,"DNA topoisomerase IV, B subunit",,,x
+MG_204_MONOMER,"DNA topoisomerase IV, A subunit",,,x
+MG_205_MONOMER,"heat-inducible transcription repressor HrcA, putative",,,x
+MG_206_MONOMER,"excinuclease ABC, C subunit",,,x
+MG_207_MONOMER,Ser/Thr protein phosphatase 2A,,,x
+MG_208_MONOMER,glycoprotease,,,x
+MG_209_MONOMER,"23S rRNA pseudouridine synthase; U955, U2504, U2580",,,x
+MG_210_MONOMER,"prolipoprotein signal peptidase, signal peptidase II",,,x
+MG_480_MONOMER,,,,x
+MG_481_MONOMER,30S ribosomal protein S21,,,x
+MG_211_MONOMER,,,,x
+MG_482_MONOMER,holo-(acyl-carrier-protein) synthase,,,x
+MG_212_MONOMER,"1-acyl-sn-glycerol-3-phosphate acyltransferase, putative",,,x
+MG_213_MONOMER,segregation and condensation protein A,,,x
+MG_214_MONOMER,segregation and condensation protein B,,,x
+MG_215_MONOMER,6-phosphofructokinase,,,x
+MG_216_MONOMER,pyruvate kinase,,,x
+MG_217_MONOMER,P65 adhesin,,,x
+MG_218_MONOMER,high molecular weight cytadherence accessory protein 2,,,x
+MG_491_MONOMER,,,,x
+MG_219_MONOMER,,,,x
+MG_220_MONOMER,,,,x
+MG_221_MONOMER,mraZ protein,,,x
+MG_222_MONOMER,S-adenosyl-methyltransferase MraW,,,x
+MG_223_MONOMER,,,,x
+MG_224_MONOMER,cell division protein FtsZ,,,x
+MG_225_MONOMER,amino acid-polyamine-organocation (APC) permease,,,x
+MG_226_MONOMER,amino acid-polyamine-organocation (APC) permease,,,x
+MG_227_MONOMER,thymidylate synthase,,,x
+MG_228_MONOMER,dihydrofolate reductase,,,x
+MG_229_MONOMER,"ribonucleoside-diphosphate reductase, beta chain",,,x
+MG_230_MONOMER,ribonucleotide reductase stimulatory protein,,,x
+MG_231_MONOMER,"ribonucleoside-diphosphate reductase, alpha chain",,,x
+MG_232_MONOMER,ribosomal protein L21,,,x
+MG_233_MONOMER,,,,x
+MG_234_MONOMER,ribosomal protein L27,,,x
+MG_235_MONOMER,apurinic endonuclease,,,x
+MG_236_MONOMER,ferric uptake repressor,,,x
+MG_237_MONOMER,,,,x
+MG_238_MONOMER,trigger factor,,,x
+MG_239_MONOMER,ATP-dependent protease La,,,x
+MG_240_MONOMER,nicotinamide-nucleotide adenylyltransferase/conserved hypothetical protein,,,x
+MG_241_MONOMER,,,,x
+MG_242_MONOMER,,,,x
+MG_243_MONOMER,"conserved hypothetical protein, authentic frameshift",,,x
+MG_244_MONOMER,3-5' helicase,,,x
+MG_245_MONOMER,"5-formyltetrahydrofolate cyclo-ligase, putative",,,x
+MG_246_MONOMER,Ser/Thr protein phosphatase 2A,,,x
+MG_247_MONOMER,"membrane protein, putative",,,x
+MG_248_MONOMER,,,,x
+MG_249_MONOMER,RNA polymerase sigma factor RpoD,,,x
+MG_250_MONOMER,DNA primase,,,x
+MG_251_MONOMER,glycyl-tRNA synthetase,,,x
+MG_252_MONOMER,23S rRNA methyltransferase; G2251,,,x
+MG_253_MONOMER,cysteinyl-tRNA synthetase,,x,
+MG_254_MONOMER,"DNA ligase, NAD-dependent",,,x
+MG_255_MONOMER,,,,x
+MG_494_MONOMER,,,,x
+MG_256_MONOMER,,,,x
+MG_257_MONOMER,ribosomal protein L31,,,x
+MG_258_MONOMER,peptide chain release factor 1,,x,
+MG_259_MONOMER,modification methylase,,,x
+MG_260_MONOMER,"lipoprotein, putative",,,x
+MG_261_MONOMER,"DNA polymerase III, alpha subunit",,,x
+MG_262_MONOMER,"polI-like 5'-3' exonuclease, putative",,,x
+MG_498_MONOMER,formamidopyrimidine-DNA glycosylase,,,x
+MG_263_MONOMER,Cof-like hydrolase,,,x
+MG_264_MONOMER,dephospho-CoA kinase,,,x
+MG_265_MONOMER,sugar phosphatase,,,x
+MG_266_MONOMER,leucyl-tRNA synthetase,,x,
+MG_267_MONOMER,,,,x
+MG_268_MONOMER,,,,x
+MG_269_MONOMER,,,,x
+MG_270_MONOMER,"lipoyltransferase/lipoate-protein ligase, putative",,,x
+MG_271_MONOMER,dihydrolipoamide dehydrogenase,,,x
+MG_272_MONOMER,dihydrolipoamide acetyltransferase,,,x
+MG_273_MONOMER,"pyruvate dehydrogenase component E1, beta subunit",,,x
+MG_274_MONOMER,"pyruvate dehydrogenase component E1, alpha subunit",,,x
+MG_275_MONOMER,NADH oxidase,,,x
+MG_276_MONOMER,adenine phosphoribosyltransferase,,,x
+MG_277_MONOMER,Protein-export membrane protein secDF,,,x
+MG_278_MONOMER,GTP diphosphokinase,,,x
+MG_279_MONOMER,,,,x
+MG_280_MONOMER,sensory rhodopsin II transducer motif,,,x
+MG_281_MONOMER,,,,x
+MG_282_MONOMER,transcription elongation factor GreA,,,x
+MG_283_MONOMER,prolyl-tRNA synthetase,,,x
+MG_284_MONOMER,,,,x
+MG_285_MONOMER,,,,x
+MG_286_MONOMER,,,,x
+MG_287_MONOMER,acyl carrier protein,,,x
+MG_288_MONOMER,protein L,,,x
+MG_289_MONOMER,"phosphonate ABC transporter, substrate binding protein (P37), putative",,,x
+MG_290_MONOMER,"phosphonate ABC transporter, ATP-binding protein, putative",,,x
+MG_291_MONOMER,"phosphonate ABC transporter, permease protein (P69), putative",,,x
+MG_505_MONOMER,putative holliday junction resolvase,,,x
+MG_292_MONOMER,alanyl-tRNA synthetase,,,x
+MG_293_MONOMER,glycerophosphoryl diester phosphodiesterase,,,x
+MG_294_MONOMER,major facilitator superfamily (MFS) protein,,,x
+MG_295_MONOMER,tRNA U34 sulfurtransferase,,,x
+MG_296_MONOMER,,,,x
+MG_297_MONOMER,signal recognition particle receptor,,,x
+MG_298_MONOMER,chromosome segregation protein SMC,,,x
+MG_299_MONOMER,phosphate acetyltransferase,,,x
+MG_300_MONOMER,phosphoglycerate kinase,,,x
+MG_301_MONOMER,"glyceraldehyde-3-phosphate dehydrogenase, type I",,,x
+MG_302_MONOMER,"metal ion (cobalt) ABC transporter, permease protein, putative",,,x
+MG_303_MONOMER,"metal ion (cobalt) ABC transporter, ATP-binding protein, putative",,,x
+MG_304_MONOMER,"metal ion (cobalt) ABC transporter, ATP-binding protein, putative",,,x
+MG_305_MONOMER,chaperone,,,x
+MG_306_MONOMER,"membrane protein, putative",,,x
+MG_307_MONOMER,"lipoprotein, putative",,,x
+MG_308_MONOMER,ATP-dependent RNA helicase,,,x
+MG_309_MONOMER,"lipoprotein, putative",,,x
+MG_310_MONOMER,"hydrolase, Putative esterase/lipase 1",,,x
+MG_311_MONOMER,ribosomal protein S4,,,x
+MG_312_MONOMER,high molecular weight cytadherence accessory protein 1,,,x
+MG_313_MONOMER,"membrane protein, putative",,,x
+MG_314_MONOMER,,,,x
+MG_315_MONOMER,"DNA polymerase III, delta subunit, putative",,,x
+MG_316_MONOMER,DNA internalization-related competence protein ComEC/Rec2,,,x
+MG_317_MONOMER,high molecular weight cytadherence accessory protein 3,,,x
+MG_318_MONOMER,P32 adhesin,,,x
+MG_319_MONOMER,,,,x
+MG_320_MONOMER,"membrane protein, putative",,,x
+MG_321_MONOMER,"oligopeptide ABC transporter, substrate binding protein",,,x
+MG_322_MONOMER,potassium uptake protein,,,x
+MG_323_MONOMER,potassium uptake protein,,,x
+MG_515_MONOMER,,,,x
+MG_324_MONOMER,aminopeptidase,,,x
+MG_325_MONOMER,ribosomal protein L33,,,x
+MG_326_MONOMER,degV family protein,,,x
+MG_327_MONOMER,"hydrolase, Putative esterase/lipase 2",,,x
+MG_328_MONOMER,coiled coil putative structural protein involved in cytoskeleton,,,x
+MG_329_MONOMER,GTP-binding protein engA,,,x
+MG_330_MONOMER,cytidylate kinase,,,x
+MG_331_MONOMER,,,,x
+MG_332_MONOMER,,,,x
+MG_333_MONOMER,"FMN-dependent NADH-azoreductase, putative",,,x
+MG_334_MONOMER,valyl-tRNA synthetase,,x,
+MG_335_MONOMER,"GTP-binding protein engB, putative",,,x
+MG_516_MONOMER,,,,x
+MG_517_MONOMER,"glycosyl transferase, group 2 family protein",,,x
+MG_336_MONOMER,cysteine desulfurase,,,x
+MG_337_MONOMER,,,,x
+MG_338_MONOMER,"lipoprotein, putative",,,x
+MG_339_MONOMER,"recombination protein, strand exchange",,,x
+MG_340_MONOMER,"DNA-directed RNA polymerase, beta subunit",,,x
+MG_341_MONOMER,"DNA-directed RNA polymerase, beta subunit",,,x
+MG_342_MONOMER,NADPH-dependent FMN reductase domain protein,,,x
+MG_343_MONOMER,,,,x
+MG_344_MONOMER,"hydrolase, Putative esterase/lipase 3",,,x
+MG_345_MONOMER,isoleucyl-tRNA synthetase,,x,
+MG_346_MONOMER,23S rRNA methyltransferase; U2552,,,x
+MG_347_MONOMER,tRNA (guanine-N(7)-)-methyltransferase,,,x
+MG_348_MONOMER,"lipoprotein, putative",,,x
+MG_349_MONOMER,Replication initiation/membrane attachment protein,,,x
+MG_350_MONOMER,,,,x
+MG_521_MONOMER,"membrane protein, putative",,,x
+MG_351_MONOMER,inorganic pyrophosphatase,,,x
+MG_352_MONOMER,Holliday junction endonuclease,,,x
+MG_353_MONOMER,"DNA-binding protein HU, putative",,,x
+MG_354_MONOMER,,,,x
+MG_355_MONOMER,"ATP-dependent Clp protease, ATPase subunit",,,x
+MG_356_MONOMER,"choline/ethanolamine kinase, putative",,,x
+MG_357_MONOMER,acetate kinase,,,x
+MG_358_MONOMER,Holliday junction DNA helicase,,,x
+MG_359_MONOMER,Holliday junction DNA helicase RuvB,,,x
+MG_360_MONOMER,ImpB/MucB/SamB family protein,,,x
+MG_361_MONOMER,ribosomal protein L10,,,x
+MG_362_MONOMER,ribosomal protein L7/L12,,,x
+MG_363_MONOMER,ribosomal protein L32,,,x
+MG_522_MONOMER,ribosomal protein S20,,,x
+MG_364_MONOMER,Replication initiation/membrane attachment protein,,,x
+MG_365_MONOMER,methionyl-tRNA formyltransferase,,x,
+MG_366_MONOMER,,,,x
+MG_367_MONOMER,ribonuclease III,,,x
+MG_368_MONOMER,fatty acid/phospholipid synthesis protein PlsX,,,x
+MG_369_MONOMER,DAK2 phosphatase domain protein,,,x
+MG_370_MONOMER,"23S rRNA pseudouridine synthase; U1911, U1915, U1917",,,x
+MG_371_MONOMER,DHH family protein,,,x
+MG_372_MONOMER,thiamine biosynthesis/tRNA modification protein ThiI,,,x
+MG_373_MONOMER,,,,x
+MG_374_MONOMER,,,,x
+MG_375_MONOMER,threonyl-tRNA synthetase,,,x
+MG_376_MONOMER,,,,x
+MG_377_MONOMER,,,,x
+MG_378_MONOMER,arginyl-tRNA synthetase,,x,
+MG_379_MONOMER,tRNA uridine 5-carboxymethylaminomethyl modification enzyme GidA,,,x
+MG_380_MONOMER,methyltransferase GidB,,,x
+MG_381_MONOMER,,,,x
+MG_382_MONOMER,uridine kinase,,,x
+MG_383_MONOMER,"NH(3)-dependent NAD+ synthetase, putative",,,x
+MG_384_MONOMER,GTPase1 Obg,,,x
+MG_524_MONOMER,,,,x
+MG_385_MONOMER,glycerophosphoryl diester phosphodiesterase family protein,,,x
+MG_386_MONOMER,P200 protein,,,x
+MG_387_MONOMER,GTP-binding protein Era,,,x
+MG_388_MONOMER,Putative metalloprotease,,,x
+MG_389_MONOMER,,,,x
+MG_390_MONOMER,"toxin ABC transporter, ATP-binding/permease protein",,,x
+MG_391_MONOMER,cytosol aminopeptidase,,,x
+MG_392_MONOMER,chaperonin,,,x
+MG_393_MONOMER,"chaperonin, 10 kDa",,,x
+MG_394_MONOMER,serine hydroxymethyltransferase,,,x
+MG_395_MONOMER,"lipoprotein, putative",,,x
+MG_396_MONOMER,ribose 5-phosphate isomerase B,,,x
+MG_397_MONOMER,,,,x
+MG_398_MONOMER,"ATP synthase F1, epsilon subunit",,,x
+MG_399_MONOMER,"ATP synthase F1, beta subunit",,,x
+MG_400_MONOMER,"ATP synthase F1, gamma subunit",,,x
+MG_401_MONOMER,"ATP synthase F1, alpha subunit",,,x
+MG_402_MONOMER,"ATP synthase F1, delta subunit",,,x
+MG_403_MONOMER,"ATP synthase F0, B subunit",,,x
+MG_404_MONOMER,"ATP synthase F0, C subunit",,,x
+MG_405_MONOMER,"ATP synthase F0, A subunit",,,x
+MG_406_MONOMER,,,,x
+MG_407_MONOMER,enolase,,,x
+MG_408_MONOMER,methionine-S-sulfoxide reductase,,,x
+MG_409_MONOMER,"phosphate transport system regulatory protein PhoU, putative",,,x
+MG_410_MONOMER,"phosphate ABC transporter, ATP-binding protein",,,x
+MG_411_MONOMER,"phosphate ABC transporter, permease protein PstA",,,x
+MG_412_MONOMER,"phosphate ABC transporter, substrate-binding protein",,,x
+MG_414_MONOMER,,,,x
+MG_525_MONOMER,,,,x
+MG_417_MONOMER,ribosomal protein S9,,,x
+MG_418_MONOMER,ribosomal protein L13,,,x
+MG_419_MONOMER,"DNA polymerase III, subunit gamma and tau",,,x
+MG_421_MONOMER,"excinuclease ABC, A subunit",,,x
+MG_422_MONOMER,,,,x
+MG_423_MONOMER,metallo-beta-lactamase superfamily protein,,,x
+MG_424_MONOMER,ribosomal protein S15,,,x
+MG_425_MONOMER,ATP-dependent RNA helicase,,,x
+MG_426_MONOMER,ribosomal protein L28,,,x
+MG_427_MONOMER,osmotically inducible peroxidase,,,x
+MG_428_MONOMER,"LuxR bacterial regulatory protein, putative",,,x
+MG_429_MONOMER,"PTS system, E1",,,x
+MG_430_MONOMER,"2,3-bisphosphoglycerate-independent phosphoglycerate mutase",,,x
+MG_431_MONOMER,triosephosphate isomerase,,,x
+MG_432_MONOMER,"membrane protein, putative",,,x
+MG_433_MONOMER,translation elongation factor Ts,,,x
+MG_434_MONOMER,uridylate kinase,,,x
+MG_435_MONOMER,ribosome recycling factor,,x,
+MG_437_MONOMER,phosphatidate cytidylyltransferase,,,x
+MG_438_MONOMER,type I restriction modification DNA specificity domain protein,,,x
+MG_439_MONOMER,"lipoprotein, putative",,,x
+MG_440_MONOMER,"lipoprotein, putative",,,x
+MG_441_MONOMER,,,,x
+MG_442_MONOMER,ribosomal biogenesis GTPase,,,x
+MG_443_MONOMER,"membrane protein, putative",,,x
+MG_444_MONOMER,ribosomal protein L19,,,x
+MG_445_MONOMER,tRNA (guanine-N1)-methyltransferase,,,x
+MG_446_MONOMER,ribosomal protein S16,,,x
+MG_447_MONOMER,multidrug efflux pump,,,x
+MG_448_MONOMER,methionine-R-sulfoxide reductase,,,x
+MG_449_MONOMER,"conserved hypothetical protein, authentic frameshift",,,x
+MG_450_MONOMER,degV family protein,,,x
+MG_451_MONOMER,translation elongation factor Tu,,,x
+MG_452_MONOMER,"membrane protein, putative",,,x
+MG_453_MONOMER,UTP-glucose-1-phosphate uridylyltransferase,,,x
+MG_454_MONOMER,thiol-dependent peroxidase,,,x
+MG_455_MONOMER,tyrosyl-tRNA synthetase,,,x
+MG_456_MONOMER,,,,x
+MG_457_MONOMER,ATP-dependent metalloprotease FtsH,,,x
+MG_458_MONOMER,hypoxanthine phosphoribosyltransferase,,,x
+MG_459_MONOMER,"putative 2-C-methyl-D-erythritol-2,4-cyclodiphosphate synthase",,,x
+MG_460_MONOMER,L-lactate dehydrogenase/malate dehydrogenase,,,x
+MG_461_MONOMER,HD domain protein,,,x
+MG_462_MONOMER,glutamyl-tRNA synthetase,,x,
+MG_463_MONOMER,dimethyladenosine transferase,,,x
+MG_464_MONOMER,inner-membrane protein insertion factor,,,x
+MG_465_MONOMER,ribonuclease P protein component,,,x
+MG_466_MONOMER,ribosomal protein L34,,,x
+MG_467_MONOMER,"salivaricin A ABC transporter, ATP-binding protein",,,x
+MG_468_MONOMER,"salivaricin A ABC transporter, permease protein",,,x
+MG_526_MONOMER,"salivaricin A ABC transporter, ATP-binding protein",,,x
+MG_469_MONOMER,chromosomal replication initiator protein DnaA,,,x
+MG_470_MONOMER,CobQ/CobB/MinD/ParA nucleotide binding domain,,,x

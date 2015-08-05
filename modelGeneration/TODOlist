@@ -1,0 +1,28 @@
+
+Major
+
+TODO reduce size SBML
+
+TODO: set  initialAmounts of
+      -ribosoms
+      - IFs
+      -"STUFF THAT IS THE SAME FOR ALL REACTIONS"
+
+TODO: howto process synoymous codons
+      Example: 'R':['MG492',  'MG495', 'MG497', 'MG523']
+      Current implementation tracks AAs 
+
+
+
+Minor
+TODO: fix RF1_30S_50S vs RF1_50S_30S
+      in species
+      in reactions
+
+TODO:     no species in L457 virtual 70S + specific tRNA
+
+
+
+('MG_196_MONOMER'
+
+

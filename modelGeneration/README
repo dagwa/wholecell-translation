@@ -6,8 +6,8 @@ It is just a toy example. The full model SBML is too large to load.
 To create a full model uncomment the last line and comment out the line before last.
 
 
-
 Some notes on SBML ID naming:
 Translation initiation reactions IDs end up  with Init.  Ex.: MG_015_MONOMER_Transl_Init
 Elongation reactions IDs include 'plus' in the name, eg MG_001_MONOMER_p9_plus_L3
-
+There is a separate reaction for each position.
+Termination reactions IDs end up with '_termination'

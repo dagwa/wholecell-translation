@@ -1,7 +1,14 @@
 
-
+Main files: model_toy.xml, TranslationSBMLgenerator.py
+ 
 TranslationSBMLgenerator.py creates SBML file model_toy.xml with few reactions
+It is just a toy example. The full model SBML is too large to load.
 To create a full model uncomment the last line and comment out the line before last.
 
 
+
+Some notes on SBML file
+Translation initiation reactions IDs end up  with Init.  Ex.: MG_015_MONOMER_Transl_Init
+
+MG_001_MONOMER_p9_plus_L3
 

@@ -14,10 +14,6 @@ prot_len=[]
 sequence=[]
 
 
-# Get the Protein sequences
-prot_names=list()
-prot_len=list()
-sequence=list()
 
 f = open('ProtSeq.csv', 'rt')
 
@@ -44,7 +40,8 @@ f.close()
 
 
 
-# Get the AA to trna associations NOTE Z DENOTES THE FIRST AA WHICH IS FORMYL-MET!!!!
+# Get the AA to trna associations
+# NOTE Z DENOTES THE FIRST AA WHICH IS FORMYL-MET!!!!
 SingleAA = {
   'A':'MG471',
   'N':'MG514',
@@ -76,14 +73,14 @@ SingleAA = {
     
 from libsbml import *
 
-def create_species(model, var_name):
+def create_species(model, var_name,initialAmount=0):
   s1 = model.createSpecies()
   check(s1,                                 'create species s1')
   check(s1.setName(var_name),                     'set species s1 name')
   check(s1.setId(var_name),                     'set species s1 id')
   check(s1.setCompartment('c'),            'set species s1 compartment')
   check(s1.setConstant(False),              'set "constant" attribute on s1')
-  check(s1.setInitialAmount(0),             'set initial amount for s1')
+  check(s1.setInitialAmount(initialAmount),             'set initial amount for s1')
   check(s1.setSubstanceUnits('item'),       'set substance units for s1')
   check(s1.setBoundaryCondition(False),     'set "boundaryCondition" on s1')
   check(s1.setHasOnlySubstanceUnits(True), 'set "hasOnlySubstanceUnits" on s1')
@@ -618,11 +615,35 @@ def create_model(names,lengthsofseq,sequenceAAs):
 
 
     # Species (IFs)
+    ## TODO set initialAmount
+    ## TODO 'RF1_50S_30S'
+  initialAmount=1 
   SpeciesList = ['RIBOSOME_30S_IF3','RIBOSOME_50S','MG_143_MONOMER',
-                 'RIBOSOME_30S', 'MG_173_MONOMER', 'MG_142_MONOMER', 'MG_196_MONOMER']
+                 'RIBOSOME_30S', 'MG_173_MONOMER', 'MG_142_MONOMER', 'MG_196_MONOMER','RF1_50S_30S']
   for One_Specie in SpeciesList:
-    create_species(model,One_Specie)    
+    create_species(model,One_Specie,initialAmount)
 
+    # species initialization STUFF THAT IS THE SAME FOR ALL REACTIONS
+    ## TODO set initialAmount
+    ## TODO 'RF1_30S_50S'
+  initialAmount=1 
+  SpeciesList = ['GTP', 'MG_089_MONOMER', 'MG_451_MONOMER', 'H2O', 'GDP', 'PI', 'MG_089_MONOMER',
+                 'MG_451_MONOMER', 'H', 'MG_258_MONOMER', 'MG_143_MONOMER' , 'MG_173_MONOMER'
+                 'MG_142_MONOMER', 'MG_196_MONOMER', 'RF1_30S_50S'] 
+  for One_Specie in SpeciesList:
+    create_species(model,One_Specie,initialAmount)
+
+    
+    ## TODO set initialAmount
+  initialAmount=1 
+  SpeciesList = mRNAnames
+  for One_Specie in SpeciesList:
+    create_species(model,One_Specie,initialAmount)
+    One_Specie = 'aminoacylated_'+ One_Specie
+    create_species(model,One_Specie,initialAmount)
+
+################################################################
+   
   # Create a parameter object inside this model, set the required
   # attributes 'id' and 'constant' for a parameter in SBML Level 3, and
   # initialize the parameter with a value along with its units.
@@ -670,10 +691,6 @@ def create_model(names,lengthsofseq,sequenceAAs):
             i=i+1
 
 
-  # Termination
-  create_species(model, 'RF1_50S_30S')
-  create_species(model, 'RIBOSOME_30S')
-  create_species(model, 'RIBOSOME_50S')
 
   for n in range(len(names)):
     riboPos_Termination(model ,names[n])
